@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'font';
+    src: url(../assets/font/Ubuntu-Medium.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'font';
+  /* font-family: '../../public/font/Ubuntu-Medium.ttf'; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.topbar {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first_bar {
+  height: 100%;
+  width: 40%;
+  background-color: #0073BD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first_bar .icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon .location,
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-left: 30px;
+}
+
+.location p,
+.email p {
+  font-size: 13px;
+  font-family: 100;
+  letter-spacing: 0.3px;
+}
+
+.location i,
+.email i {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.second_bar {
+  height: 100%;
+  width: 60%;
+  background-color: #002249;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.second_bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 50%;
+    float: right;
+    padding-right: 30px;
+}
+
+.info .nav{
+    /* background-color: black; */
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second_bar .nav a{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.info .socail{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 35%;
+}
+
+.socail i{
+    color: white;
+}

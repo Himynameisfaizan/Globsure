@@ -1,0 +1,95 @@
+.parent {
+  /* display: flex; */
+  position: relative;
+}
+
+.mySwiper2 img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mySwiper1 {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  width: fit-content;
+  height: 40%;
+  padding: 0 15px;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 100%;
+}
+
+.mySwiper1 .hello {
+  background-color: #0073bd;
+  display: flex;
+  width: 100% !important;
+  height: 33.3%;
+  padding: 0px !important;
+}
+
+/* .hello:nth-child(1) {
+  top: 0%;
+}
+
+.hello:nth-child(2) {
+  top: 30%;
+}
+
+.hello:nth-child(3) {
+  top: 60%;
+} */
+
+.hello h2, .hello i{
+    color: white;
+}
+
+.hello .health {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.hello .life {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.hello .general {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: pink; */
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.hello .health:hover {
+  background-color: #002249;
+}
+
+.hello .life:hover {
+  background-color: #002249;
+}
+
+.hello .general:hover {
+  background-color: #002249;
+}
