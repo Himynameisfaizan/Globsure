@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import "../css/homeslider.css";
+import "../../css/homeslider.css";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 const Homesilder = () => {
@@ -22,21 +22,21 @@ const Homesilder = () => {
             "--swiper-pagination-color": "#fff",
           }}
           spaceBetween={10}
-          navigation={true}
+          // navigation={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper2"
         >
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src="src/assets/image/health1.jpg" />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img src="src/assets/image/health.jpg" />
           </SwiperSlide>
 
           <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img src="src/assets/image/car.jpg" />
           </SwiperSlide>
         </Swiper>
 
@@ -59,18 +59,23 @@ const Homesilder = () => {
           <SwiperSlide className="hello">
             <div className="general">
               <i class="ri-home-smile-2-line"></i>
-              <h2>Health insurance </h2>
+              <h2>General insurance </h2>
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="hello">
             <div className="life">
               <i class="ri-heart-pulse-line"></i>
-              <h2>Health insurance </h2>
+              <h2>Car insurance </h2>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
+      
+      <div className="wrapper">
+        <h1>Easy & quick process to get life and health <a href="#">insurance</a>. Get more help</h1>
+      </div>
+      
     </>
   );
 };

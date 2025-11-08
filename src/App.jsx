@@ -1,7 +1,8 @@
 import './App.css'
-import { Header } from './components/Header'
-import Homesilder from './components/Homesilder'
-import Topbar from './components/topbar'
+import About_section from './components/home-page/About_section'
+import { Header } from './components/home-page/Header'
+import Homesilder from './components/home-page/Homesilder'
+import Topbar from './components/home-page/Topbar'
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
     <Topbar/>
     <Header />
     <Homesilder />
+    <About_section />
     </>
   )
 }

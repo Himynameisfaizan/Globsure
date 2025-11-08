@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'font';
+    src: url(../assets/font/Ubuntu-Medium.ttf);
+}
+
+
+body{
+    font-family: 'font';
+}

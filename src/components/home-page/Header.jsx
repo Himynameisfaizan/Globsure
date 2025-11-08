@@ -1,11 +1,11 @@
 import React from "react";
-import '../css/header.css'
+import '../../css/header.css'
 export const Header = () => {
   return (
     <>
       <div className="header">
         <div className="logo">
-            <img src="src/assets/image/Globsure_International_Final.png" alt="logo"/>
+            <img src="src/assets/image/logo/Globsure_International_Final.png" alt="logo"/>
         </div>
         <div className="menu">
             <ul>

@@ -9,8 +9,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'font';
-  /* font-family: '../../public/font/Ubuntu-Medium.ttf'; */
 }
+
+
+:root{
+  --dark-color: #002249;
+  --light-color: #0073bd;
+}
+
+
 
 html,
 body {
@@ -29,7 +36,7 @@ body {
 .first_bar {
   height: 100%;
   width: 40%;
-  background-color: #0073BD;
+  background-color: var(--light-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,7 +73,7 @@ body {
 .second_bar {
   height: 100%;
   width: 60%;
-  background-color: #002249;
+  background-color: var(--dark-color);
   display: flex;
   align-items: center;
   justify-content: end;
@@ -76,14 +83,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: red; */
     width: 50%;
     float: right;
     padding-right: 30px;
 }
 
 .info .nav{
-    /* background-color: black; */
     width: 60%;
     display: flex;
     justify-content: space-around;
@@ -101,7 +106,6 @@ body {
 .info .socail{
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
     width: 35%;
 }
 

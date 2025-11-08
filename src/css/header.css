@@ -3,6 +3,12 @@
   src: url(../assets/font/Ubuntu-Medium.ttf);
 }
 
+:root {
+  --dark-color: #002249;
+  --light-color: #0073bd;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +68,7 @@ body {
 }
 
 .menu li a:hover {
-  color: #000000;
+  color: var(--dark-color);
 }
 
 .header .icon{
