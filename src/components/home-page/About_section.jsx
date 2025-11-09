@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/about_section.css";
+import About_card from "./About_card";
 
 const About_section = () => {
   return (
