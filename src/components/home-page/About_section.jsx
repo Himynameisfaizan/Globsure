@@ -1,6 +1,16 @@
 import React from "react";
 import "../../css/about_section.css";
-import About_card from "./About_card";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Parallax, Pagination, Navigation } from "swiper/modules";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper/modules";
 
 const About_section = () => {
   return (
@@ -213,6 +223,296 @@ const About_section = () => {
           </div>
         </div>
         <div className="part-three"></div>
+      </div>
+
+      <div className="linking">
+        <div className="photo">
+          <h3>
+            Compare & get <br /> Your insurance in right way
+          </h3>
+        </div>
+        <div className="button">
+          <button>Get Explore</button>
+        </div>
+      </div>
+
+      <div className="ranking">
+        <div className="rank">
+          <i class="ri-file-list-3-line"></i>
+          <h3>3.65k </h3>
+          <p>Gave insurances</p>
+        </div>
+        <div className="rank">
+          <i class="ri-team-fill"></i>
+          <h3>92 + </h3>
+          <p>Professional team</p>
+        </div>
+        <div className="rank">
+          <i class="ri-thumb-up-fill"></i>
+          <h3>4.91 k </h3>
+          <p>Satisfied customer</p>
+        </div>
+        <div className="rank">
+          <i
+            style={{ transform: "rotateY(180deg)" }}
+            class="ri-building-2-fill"
+          ></i>
+          <h3>98% </h3>
+          <p>Success rates</p>
+        </div>
+      </div>
+
+      <div className="benefits">
+        <div className="child1">
+          <div className="image">
+            <img src="src/assets/image/car.jpg" alt="" />
+          </div>
+
+          <div className="btn1">
+            <i class="ri-verified-badge-fill"></i>
+            <h2>
+              Trusted insurance <br />
+              service company
+            </h2>
+          </div>
+        </div>
+
+        <div className="child2">
+          <div className="about-first">
+            <img src="src/assets/image/logo/logo2.png" alt="logo" />
+            <h4>COMPANY'S BENEFIT</h4>
+            <h1>Reliable Protection for Families and Businesses</h1>
+            <h3>
+              We know how important your loved ones and your business are to
+              you. That’s why our insurance plans are designed to give you
+              complete peace of mind—protecting your family’s future and
+              securing your business from unexpected losses. With Globsure, you
+              get trusted coverage, quick claims, and personal support every
+              step of the way—so you can live and work with confidence.
+            </h3>
+          </div>
+          <div className="about-second">
+            <h2>Why Choose Globsure?</h2>
+            <ul>
+              <li>
+                <span>Wide Range of Policies:</span> Whether you want to protect
+                your home, vehicle, business, or secure your health, we have the
+                right policy for you.
+              </li>
+              <li>
+                <span>Expert Team:</span>Our qualified agents guide you at every
+                step, making insurance simple and transparent.
+              </li>
+              <li>
+                <span>Simple Process:</span>We believe in hassle-free insurance
+                with quick quotes and fast claim settlement.
+              </li>
+              <li>
+                <span>Trusted by Customers:</span>Our commitment to quality and
+                integrity has made us a preferred choice for thousands of
+                families.
+              </li>
+            </ul>
+            <div className="button">
+              <button>Explore More</button>
+            </div>
+          </div>
+          <div className="about-third"></div>
+        </div>
+      </div>
+
+      <div className="member">
+        <div className="part1">
+          <img src="src/assets/image/logo/logo2.png" alt="logo" />
+          <h4>OUR TEAM MEMBER</h4>
+          <h1>Meet our professional team members</h1>
+        </div>
+        <div className="part2">
+          <div className="info">
+            <h1>Experienced & Dedicated Team Working For You</h1>
+            <p>
+              Our team is the backbone of Globsure International, bringing
+              together experienced professionals who truly care about your
+              protection. Every member understands the value of reliable support
+              and works hard to make your insurance experience smooth and
+              worry-free. From guiding you through options to settling claims
+              quickly, our experts are dedicated to helping families and
+              businesses feel secure every step of the way.
+            </p>
+            <h3>Key Points</h3>
+            <ul>
+              <li>
+                Industry-certified professionals with years of insurance
+                expertise.
+              </li>
+              <li>Friendly and approachable team focused on customer needs.</li>
+              <li>
+                Quick support and personalized solutions for every client.
+              </li>
+              <li>Commitment to transparency and trustworthy guidance.</li>
+              <li>
+                Continual training to stay updated with latest insurance trends.
+                Description
+              </li>
+            </ul>
+          </div>
+          <div className="detail">
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper second"
+            >
+              <SwiperSlide className="slide">
+                <img src="src/assets/image/man.avif" alt="" />
+                <div className="detail">
+                  <h4>CONSULTANT</h4>
+                  <h2>Dinesh patel</h2>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="slide">
+                <img src="src/assets/image/man.avif" alt="" />
+                <div className="detail">
+                  <h4>CONSULTANT</h4>
+                  <h2>Dinesh patel</h2>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="slide">
+                <img src="src/assets/image/man.avif" alt="" />
+                <div className="detail">
+                  <h4>CONSULTANT</h4>
+                  <h2>Dinesh patel</h2>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </div>
+
+      <div className="testimonals">
+        <div className="part1">
+          <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+          <h4>OUR TESTIMONALS</h4>
+          <h1>
+            What they're talking <br />
+            about company
+          </h1>
+          <div className="icon">
+            <i class="ri-team-fill"></i>
+            <h3>
+              We’re trusted by more then <br />
+              <span>3800</span> satisfied & happy customers.
+            </h3>
+          </div>
+        </div>
+        <div className="part2">
+          <Swiper
+            speed={600}
+            parallax={true}
+            pagination={{
+              clickable: true,
+            }}
+            slidesPerView={2}
+            navigation={true}
+            modules={[Parallax]}
+            className="mySwiper paraller"
+          >
+            <div
+              slot="container-start"
+              className="parallax-bg"
+              data-swiper-parallax="-23%"
+            ></div>
+
+            <div className="carding">
+              <SwiperSlide className="card-section">
+                <div className="star" data-swiper-parallax="-200">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div className="desc" data-swiper-parallax="-200">
+                  <p>
+                    Globsure ne mere car aur health insurance claims ko bahut
+                    fast aur hassle-free banaya. Team bahut supportive hai!
+                  </p>
+                </div>
+                <div className="image" data-swiper-parallax="-200">
+                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+                  <h3>
+                    Rahul S. <span>-From Delhi</span>
+                  </h3>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="card-section">
+                <div className="star" data-swiper-parallax="-200">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div className="desc" data-swiper-parallax="-200">
+                  <p>
+                    Maine apni family ke liye health insurance liya Globsure se.
+                    Transparent policies aur quick response ne mujhe impress
+                    kiya
+                  </p>
+                </div>
+                <div className="image" data-swiper-parallax="-200">
+                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+                  <h3>
+                    Priya M. <span>-From Banglor</span>
+                  </h3>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="card-section">
+                <div className="star" data-swiper-parallax="-200">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div className="desc" data-swiper-parallax="-200">
+                  <p>
+                    Business insurance ke liye Globsure ko choose kiya kyunki
+                    unka personalized approach aur customer service unmatched
+                    hai.
+                  </p>
+                </div>
+                <div className="image" data-swiper-parallax="-200">
+                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+                  <h3>
+                    Amit K. <span>-From Mumbai</span>
+                  </h3>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide className="card-section">
+                <div className="star" data-swiper-parallax="-200">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div className="desc" data-swiper-parallax="-200">
+                  <p>
+                    Globsure International ki services par mujhe puri tarah
+                    bharosa hai. Unhone meri insurance needs ko bahut achhi
+                    tarah samjha
+                  </p>
+                </div>
+                <div className="image" data-swiper-parallax="-200">
+                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+                  <h3>
+                    Sneha R. <span>-From Karnataka</span>
+                  </h3>
+                </div>
+              </SwiperSlide>
+            </div>
+          </Swiper>
+        </div>
       </div>
     </>
   );

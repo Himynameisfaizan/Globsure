@@ -3,13 +3,17 @@
   --light-color: #0073bd;
 }
 
+body {
+  overflow-x: hidden;
+}
 .about-parent {
   width: 100%;
   min-height: 100vh;
   padding-top: 50px;
 }
 
-.about-parent .childs {
+.about-parent .childs,
+.benefits {
   display: flex;
 }
 
@@ -29,7 +33,6 @@
   justify-content: space-evenly;
   width: 280px;
   padding: 30px 10px;
-  /* border: 10px black solid; */
   border-width: 8px;
   border-image: linear-gradient(to top, pink, blue) 1;
   border-style: solid;
@@ -171,7 +174,6 @@
   justify-content: end;
   align-items: center;
   cursor: pointer;
-
 }
 
 .voucher {
@@ -182,18 +184,26 @@
 }
 
 .voucher {
-  --f: .5em;
-  --r: .0em;
+  --f: 0.5em;
+  --r: 0em;
   position: absolute;
   height: 100%;
   width: 30%;
   left: 0px;
-  top: calc(-1*var(--f));
-  padding: .2em;
+  top: calc(-1 * var(--f));
+  padding: 0.2em;
   background: #0073bd;
   border-right: var(--f) solid #0005;
   border-bottom: var(--r) solid #0000;
-  clip-path: polygon(calc(100% - var(--f)) 0, 0 0, 0 100%, calc(50% - var(--f)/2) calc(100% - var(--r)), calc(100% - var(--f)) 100%, calc(100% - var(--f)) var(--f), 100% var(--f));
+  clip-path: polygon(
+    calc(100% - var(--f)) 0,
+    0 0,
+    0 100%,
+    calc(50% - var(--f) / 2) calc(100% - var(--r)),
+    calc(100% - var(--f)) 100%,
+    calc(100% - var(--f)) var(--f),
+    100% var(--f)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +222,6 @@
 .voucher i {
   font-weight: lighter;
   font-size: 50px;
-  ;
   color: #ffffffa4;
   transition: 0.8s;
 }
@@ -224,7 +233,6 @@
 .plan .content {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
   width: 70%;
   align-items: start;
   float: right;
@@ -243,14 +251,11 @@
   font-weight: lighter;
 }
 
-
-
 /* Start offering section */
 
 .offering {
   width: 100%;
-  min-height: 100vh;
-  /* background-color: red; */
+  min-height: 70vh;
 }
 
 .offering .part-one {
@@ -258,8 +263,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh;
-  /* background-color: red; */
+  height: 100%;
 }
 
 .part-one img {
@@ -281,20 +285,16 @@
   color: var(--dark-color);
 }
 
-
 .part-two {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  padding: 40px 30px;
-  /* position: relative; */
-  /* background-color: pink; */
+  padding: 50px 30px;
   width: 100%;
   height: 100%;
 }
 
 .part-card {
-  /* position: absolute; */
   height: 170px;
   width: 250px;
   transform-style: preserve-3d;
@@ -311,11 +311,9 @@
 }
 
 .part-card .front {
-  /* position: absolute; */
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  /* background-color: blue; */
   padding: 10px;
 }
 
@@ -369,3 +367,408 @@
   line-height: 17px;
   letter-spacing: 0.3px;
 }
+
+.linking {
+  background-color: var(--dark-color);
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 20vh;
+  border-radius: 80px;
+  padding: 5px;
+  position: relative;
+}
+
+.linking .photo {
+  width: 80%;
+  background-image: url(../assets/image/life1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.linking .photo h3 {
+  padding-left: 80px;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.linking .button {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.linking .button button {
+  border-radius: 80px;
+}
+
+.ranking {
+  width: 100%;
+  height: 60vh;
+  margin: 100px 0px;
+  background-image: url(../assets/image/car.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rank {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+
+.rank i {
+  background-color: white;
+  padding: 18px;
+  border-radius: 50%;
+  font-size: 50px;
+  border: 6px gray solid;
+  cursor: pointer;
+  transition: 0.2s;
+  color: gray;
+}
+
+.rank i:hover {
+  background-color: gray;
+  border-radius: 50%;
+  font-size: 50px;
+  border: 6px gray solid;
+  color: white;
+}
+
+.rank h3 {
+  padding-top: 10px;
+  font-size: 35px;
+  color: white;
+}
+
+.rank p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Start benefits section */
+
+.benefits {
+  margin-top: -100px;
+}
+
+.benefits .child1 {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  object-fit: cover;
+}
+
+.benefits .child1 .image img {
+  height: 120vh;
+  width: 90%;
+  object-fit: cover;
+  object-position: 20%;
+  border-radius: 0px 0px 80px 0px;
+}
+
+.benefits .child1 .btn1 {
+  position: absolute;
+  bottom: 3px;
+  right: 10%;
+  width: 65%;
+  border-radius: 0px 0px 80px 0px;
+  background-color: var(--light-color);
+  padding: 20px 10px;
+  display: flex;
+}
+
+.benefits .child1 .btn1 i {
+  font-size: 60px;
+  background-color: white;
+  padding: 20px 15px;
+  position: absolute;
+  top: -18%;
+  border-top: 5px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+.benefits .child1 .btn1 h2 {
+  font-size: 28px;
+  color: white;
+  margin-left: 120px;
+  font-weight: 400;
+}
+
+.benefits .child2 {
+  height: 100%;
+  width: 50%;
+  padding: 30px 25px 0px 10px;
+}
+
+/* End benefits section */
+
+/* Start member swiper slider */
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 25px;
+}
+
+.member .part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member .part1 img {
+  height: 50px;
+  width: 50px;
+}
+
+.member .part1 h4 {
+  color: #0000007c;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.member .part1 h1 {
+  color: var(--dark-color);
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+.member .part2 {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  display: flex;
+}
+
+.member .part2 .info {
+  width: 50%;
+}
+
+.member .part2 .info h1 {
+  color: var(--dark-color);
+  font-size: 35px;
+}
+
+.member .part2 .info h3 {
+  color: var(--dark-color);
+  padding: 10px 0px;
+}
+
+.member .part2 .info ul {
+  padding-left: 15px;
+}
+.member .part2 .info ul li {
+  color: #000000a6;
+  line-height: 25px;
+}
+
+.member .part2 .info p {
+  padding: 15px 0px;
+  color: #000000a6;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.member .part2 .detail {
+  width: 50%;
+}
+
+.second {
+  width: 60%;
+  height: 100%;
+}
+
+.second .slide {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  flex-direction: column;
+}
+
+.second .slide img {
+  width: 100%;
+  height: 80%;
+}
+
+.second .slide .detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-color);
+  height: 100%;
+  justify-content: center;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.second .slide .detail h4 {
+  color: #ffffffaf;
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+/* End member swiper slider */
+
+/* Start testimonals section */
+
+.testimonals {
+  width: 100%;
+  height: 100vh;
+  padding: 0 25px;
+  display: flex;
+  gap: 50px;
+  margin-top: -5%;
+}
+
+.testimonals .part1 {
+  width: 50%;
+  height: 80%;
+  padding: 50px 0;
+}
+
+.testimonals .part1 img{
+  height: 50px;
+  width: 50px;
+}
+
+.testimonals .part1 h4{
+  font-size: 15px;
+  font-weight: 300;
+  color: #00000073;
+  padding: 10px 0;
+}
+
+.testimonals .part1 h1{
+  color: var(--dark-color);
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.testimonals .part1 .icon{
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.testimonals .part1 .icon i{
+background-color: var(--dark-color);
+padding: 20px;
+font-size: 35px;
+color: white;
+transition: 0.3s ease;
+cursor: pointer;
+}
+
+.testimonals .part1 .icon i:hover{
+  background-color: var(--light-color);
+  margin-top: -10px;
+}
+
+.testimonals .part1 .icon h3{
+  padding-left: 20px;
+  font-weight: 300;
+  color: var(--light-color);
+}
+
+.testimonals .part1 .icon h3 span{
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+
+.testimonals .part2 {
+  width: 65%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.testimonals .part2 .paraller {
+  width: 100%;
+  height: 40%;
+}
+
+.paraller .card-section {
+  margin-left: 10px;
+  padding: 10px 50px 10px 10px;
+  background-color: #ffc0cb93;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.8s;
+}
+
+.paraller .card-section .star i{
+  color: gray;
+}
+
+.paraller .card-section .desc p{
+color: #000000ab;
+line-height: 22px;
+font-weight: 300;
+font-size: 15px;
+padding: 10px 0;
+}
+
+.paraller .card-section .image{
+  width: 100%;
+  height: 60px;
+  background-color: #ff000025;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+
+
+.paraller .card-section .image img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.paraller .card-section .image h3{
+  color: #0073bd;
+  padding-left: 50px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.paraller .card-section .image h3 span{
+  font-size: 15px;
+  padding-left: 20px;
+
+}
+
+.testimonals .part2 .parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: 100%;
+}
+
+/* End testimonals section */
