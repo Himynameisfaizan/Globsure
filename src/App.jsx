@@ -1,4 +1,5 @@
 import './App.css'
+import { Footer } from './components/Footer'
 import About_section from './components/home-page/About_section'
 import { Header } from './components/home-page/Header'
 import Homesilder from './components/home-page/Homesilder'
@@ -11,6 +12,7 @@ function App() {
     <Header />
     <Homesilder />
     <About_section />
+    <Footer />
     </>
   )
 }

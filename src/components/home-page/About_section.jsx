@@ -8,10 +8,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Parallax, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/effect-cards";
+import "swiper/css/scrollbar";
 
 // import required modules
+import { Scrollbar } from "swiper/modules";
+// import required modules
 import { EffectCards } from "swiper/modules";
-
+const text = "GLOBSURE INTERNATIONAL INSURANCE ";
 const About_section = () => {
   return (
     <>
@@ -511,6 +514,263 @@ const About_section = () => {
                 </div>
               </SwiperSlide>
             </div>
+          </Swiper>
+        </div>
+      </div>
+
+      <div className="contact">
+        <div className="svg">
+          <div className="contact_detail">
+            <div className="part1">
+              <div className="info">
+                <img src="src/assets/image/logo/logo2.png" alt="" />
+                <h4>FREE QUOTE NOW</h4>
+                <h2>
+                  Get a insurance details <br /> to contact us
+                </h2>
+              </div>
+              <div className="form">
+                <div className="icons">
+                  <div className="icon">
+                    <i class="ri-home-7-fill"></i>
+                    <h3>Home</h3>
+                  </div>
+                  <div className="icon">
+                    <i class="ri-roadster-fill"></i>
+                    <h3>Vehical</h3>
+                  </div>
+                  <div className="icon">
+                    <i class="ri-heart-pulse-fill"></i>
+                    <h3>Life</h3>
+                  </div>
+                  <div className="icon">
+                    <i class="ri-briefcase-4-fill"></i>
+                    <h3>Business</h3>
+                  </div>
+                </div>
+                <div className="share">
+                  <input
+                    className="input"
+                    type="text"
+                    required
+                    placeholder="Full name"
+                  />
+                  <br />
+                  <input
+                    className="input"
+                    type="email"
+                    required
+                    placeholder="Email address"
+                  />
+                  <br />
+                  <select className="input">
+                    <option>Select insurance type</option>
+                    <option>Health insurance</option>
+                    <option>General insurance</option>
+                    <option>Life insurance </option>
+                    <option>Medical insurance</option>
+                  </select>
+                  <br />
+                  <input
+                    className="submit"
+                    type="submit"
+                    value={"Get Quoute"}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="part2">
+              <div className="circle">
+                {Array.from(text).map((char, i) => (
+                  <span
+                    style={{
+                      display: "inline-block",
+                      transform: `rotate(-${i * 11}deg)`,
+                    }}
+                  >
+                    {char}
+                  </span>
+                ))}
+              </div>
+              <i class="ri-parent-fill"></i>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#eaeaf3"
+              fill-opacity="1"
+              d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,96C840,85,960,139,1080,154.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div className="blog-section">
+        <div className="blog-first">
+          <img src="src/assets/image/logo/logo.jpg" alt="logo" />
+          <h4>OUR BLOG</h4>
+          <h2>Latest news & articles from the blog</h2>
+        </div>
+        <div className="blog-second">
+          <Swiper
+           
+            slidesPerView={3}
+            modules={[Scrollbar]}
+            className="mySwiper blogs"
+          >
+
+
+            <SwiperSlide className="blogger">
+              <div className="img">
+                <img src="src/assets/image/man.avif" alt="image blog" />
+              </div>
+              <div className="blog-detail">
+                <div className="date">
+                  <span>7 NOV 2025</span>
+                </div>
+                <div className="info">
+                  <div className="info-one">
+                    <div className="info-icon">
+                      <i class="ri-user-line"></i>
+                      <p>By user</p>
+                    </div>
+                    <div className="info-icon">
+                      <i class="ri-question-answer-line"></i>
+                      <p>0 Comments</p>
+                    </div>
+                  </div>
+                  <div className="info-two">
+                    <h2>Protect Your Future with Smart Insurance Choices</h2>
+                  </div>
+                  <div className="info-three">
+                    <h4>Read More</h4>
+                    <i class="ri-arrow-right-long-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="blogger">
+              <div className="img">
+                <img src="src/assets/image/man.avif" alt="image blog" />
+              </div>
+              <div className="blog-detail">
+                <div className="date">
+                  <span>7 NOV 2025</span>
+                </div>
+                <div className="info">
+                  <div className="info-one">
+                    <div className="info-icon">
+                      <i class="ri-user-line"></i>
+                      <p>By user</p>
+                    </div>
+                    <div className="info-icon">
+                      <i class="ri-question-answer-line"></i>
+                      <p>0 Comments</p>
+                    </div>
+                  </div>
+                  <div className="info-two">
+                    <h2>Protect Your Future with Smart Insurance Choices</h2>
+                  </div>
+                  <div className="info-three">
+                    <h4>Read More</h4>
+                    <i class="ri-arrow-right-long-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="blogger">
+              <div className="img">
+                <img src="src/assets/image/man.avif" alt="image blog" />
+              </div>
+              <div className="blog-detail">
+                <div className="date">
+                  <span>7 NOV 2025</span>
+                </div>
+                <div className="info">
+                  <div className="info-one">
+                    <div className="info-icon">
+                      <i class="ri-user-line"></i>
+                      <p>By user</p>
+                    </div>
+                    <div className="info-icon">
+                      <i class="ri-question-answer-line"></i>
+                      <p>0 Comments</p>
+                    </div>
+                  </div>
+                  <div className="info-two">
+                    <h2>Protect Your Future with Smart Insurance Choices</h2>
+                  </div>
+                  <div className="info-three">
+                    <h4>Read More</h4>
+                    <i class="ri-arrow-right-long-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="blogger">
+              <div className="img">
+                <img src="src/assets/image/man.avif" alt="image blog" />
+              </div>
+              <div className="blog-detail">
+                <div className="date">
+                  <span>7 NOV 2025</span>
+                </div>
+                <div className="info">
+                  <div className="info-one">
+                    <div className="info-icon">
+                      <i class="ri-user-line"></i>
+                      <p>By user</p>
+                    </div>
+                    <div className="info-icon">
+                      <i class="ri-question-answer-line"></i>
+                      <p>0 Comments</p>
+                    </div>
+                  </div>
+                  <div className="info-two">
+                    <h2>Protect Your Future with Smart Insurance Choices</h2>
+                  </div>
+                  <div className="info-three">
+                    <h4>Read More</h4>
+                    <i class="ri-arrow-right-long-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="blogger">
+              <div className="img">
+                <img src="src/assets/image/man.avif" alt="image blog" />
+              </div>
+              <div className="blog-detail">
+                <div className="date">
+                  <span>7 NOV 2025</span>
+                </div>
+                <div className="info">
+                  <div className="info-one">
+                    <div className="info-icon">
+                      <i class="ri-user-line"></i>
+                      <p>By user</p>
+                    </div>
+                    <div className="info-icon">
+                      <i class="ri-question-answer-line"></i>
+                      <p>0 Comments</p>
+                    </div>
+                  </div>
+                  <div className="info-two">
+                    <h2>Protect Your Future with Smart Insurance Choices</h2>
+                  </div>
+                  <div className="info-three">
+                    <h4>Read More</h4>
+                    <i class="ri-arrow-right-long-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
           </Swiper>
         </div>
       </div>

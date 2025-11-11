@@ -1,0 +1,73 @@
+import React from "react";
+import "../css/footer.css";
+export const Footer = () => {
+  return (
+    <>
+      <footer>
+        <div className="footer-logo">
+          <div className="email">
+            <i class="ri-mail-send-line"></i>
+            <h3>globsureinsurance@gamil.com</h3>
+          </div>
+          <div className="logo">
+            <img
+              src="src/assets/image/logo/Globsure_International_Final.png"
+              alt="logo"
+            />
+          </div>
+          <div className="number">
+            <i class="ri-phone-line"></i>
+            <h3>+91 78986 5421</h3>
+          </div>
+        </div>
+        <div className="footer-quicklink">
+          <div className="explore">
+            <h3>Explore</h3>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Our plan</a>
+              </li>
+              <li>
+                <a href="#">Our work</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div className="address">
+            <h3>Contact</h3>
+            <h4>
+              Domestic city netaji subhash <br />
+              palace new delhi 110045
+            </h4>
+            <h4>
+              Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
+            </h4>
+            <div className="social">
+              <i class="ri-facebook-fill"></i>
+              <i class="ri-instagram-line"></i>
+              <i class="ri-twitter-x-line"></i>
+              <i class="ri-linkedin-fill"></i>
+            </div>
+          </div>
+          <div className="newsletter">
+            <h3>Great insurance your solutions for life and business</h3>
+            <h4>Subscripbe our newsletter</h4>
+            <div className="email">
+              <input type="email" required placeholder="Email address" />
+              <i class="ri-send-plane-fill"></i>
+            </div>
+          </div>
+        </div>
+        <div className="footer-copyright">
+            <i class="ri-copyright-line"></i>
+            <h3>All Copyright Reserved 2025 by Globsure.com</h3>
+        </div>
+      </footer>
+    </>
+  );
+};
