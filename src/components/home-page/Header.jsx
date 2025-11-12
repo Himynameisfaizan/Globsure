@@ -10,9 +10,9 @@ export const Header = () => {
         <div className="menu">
             <ul>
              <li><a href="#">Home</a></li>
+            <li><a href="#">Insurance</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Our plans</a></li>
-            <li><a href="#">Our works</a></li>
+            <li><a href="#">Claim</a></li>
             <li><a href="#">Contact us </a></li>
             </ul>
         </div>

@@ -6,9 +6,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/effect-creative";
 import "swiper/css/thumbs";
 import "../../css/homeslider.css";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import {
+  EffectFade,
+  FreeMode,
+  Navigation,
+  Thumbs,
+  Autoplay,
+  EffectCreative,
+} from "swiper/modules";
 
 const Homesilder = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -17,26 +26,77 @@ const Homesilder = () => {
     <>
       <div className="parent">
         <Swiper
-          style={{
-            "--swiper-navigation-color": "#fff",
-            "--swiper-pagination-color": "#fff",
-          }}
           spaceBetween={10}
+          // effect={"fade"}
+          // effect={"creative"}
           // navigation={true}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
+          loop={true}
           thumbs={{ swiper: thumbsSwiper }}
-          modules={[FreeMode, Navigation, Thumbs]}
+          modules={[
+            EffectFade,
+            EffectCreative,
+            FreeMode,
+            Navigation,
+            Thumbs,
+            Autoplay,
+          ]}
           className="mySwiper2"
         >
-          <SwiperSlide>
-            <img src="src/assets/image/health1.jpg" />
+          <SwiperSlide className="slider-content">
+            <div className="img">
+              <img src="src/assets/image/health bg.jpg" />
+            </div>
+            <div className="content-detail">
+              <h2>
+                Globsure International <br />
+                Your Partner in Smart, Future Proof{" "}
+  
+
+                <span style={{ backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                color: "transparent", backgroundClip: "text" }}>
+                  Protection
+                </span>
+              </h2>
+            </div>
+            <div className="fade-color"></div>
           </SwiperSlide>
 
-          <SwiperSlide>
-            <img src="src/assets/image/health.jpg" />
+          <SwiperSlide className="slider-content">
+            <div className="img">
+              <img src="src/assets/image/life bg.jpg" />
+            </div>
+            <div className="content-detail">
+              <h2>
+                Globsure International <br />
+                Your Partner in Smart, Future Proof{" "}
+                <span style={{backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                color: "transparent", backgroundClip: "text" }}>
+                  Protection
+                </span>
+              </h2>
+            </div>
+            <div className="fade-color"></div>
           </SwiperSlide>
 
-          <SwiperSlide>
-            <img src="src/assets/image/car.jpg" />
+          <SwiperSlide className="slider-content">
+            <div className="img">
+              <img src="src/assets/image/car bg.jpg" />
+            </div>
+            <div className="content-detail">
+              <h2>
+                Globsure International <br />
+                Your Partner in Smart, Future Proof{" "}
+                <span style={{ backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                color: "transparent", backgroundClip: "text" }}>
+                  Protection
+                </span>
+              </h2>
+            </div>
+            <div className="fade-color"></div>
           </SwiperSlide>
         </Swiper>
 
@@ -58,24 +118,26 @@ const Homesilder = () => {
 
           <SwiperSlide className="hello">
             <div className="general">
-              <i class="ri-home-smile-2-line"></i>
+              <i class="ri-hand-coin-line"></i>
               <h2>General insurance </h2>
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="hello">
             <div className="life">
-              <i class="ri-heart-pulse-line"></i>
+              <i class="ri-car-line"></i>
               <h2>Car insurance </h2>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-      
+
       <div className="wrapper">
-        <h1>Easy & quick process to get life and health <a href="#">insurance</a>. Get more help</h1>
+        <h1>
+          Easy & quick process to get life and health <a href="#">insurance</a>.
+          Get more help
+        </h1>
       </div>
-      
     </>
   );
 };

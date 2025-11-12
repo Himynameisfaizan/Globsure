@@ -22,7 +22,7 @@ const About_section = () => {
         <div className="childs">
           <div className="child1">
             <div className="image">
-              <img src="src/assets/image/life1.avif" alt="" />
+              <img src="src/assets/image/life bg.jpg" alt="image" />
             </div>
 
             <div className="btn">
@@ -36,7 +36,6 @@ const About_section = () => {
 
           <div className="child2">
             <div className="about-first">
-              <img src="src/assets/image/logo/logo2.png" alt="logo" />
               <h4>ABOUT GLOBSURE INTERNATIONAL</h4>
               <h1>Welcome to Globsure International Secure with Globsure</h1>
               <h3>
@@ -49,7 +48,7 @@ const About_section = () => {
               </h3>
             </div>
             <div className="about-second">
-              <h2>Why Choose Globsure?</h2>
+              <h2>Key Benefits</h2>
               <ul>
                 <li>
                   <span>Wide Range of Policies:</span> Whether you want to
@@ -127,7 +126,6 @@ const About_section = () => {
 
       <div className="offering">
         <div className="part-one">
-          <img src="src/assets/image/logo/logo.jpg" alt="" />
           <h4>What We're Offering</h4>
           <h2>
             Complete Insurance Solutions for Every Family and Business Need
@@ -268,7 +266,7 @@ const About_section = () => {
       <div className="benefits">
         <div className="child1">
           <div className="image">
-            <img src="src/assets/image/car.jpg" alt="" />
+            <img src="src/assets/image/life bg.jpg" alt="" />
           </div>
 
           <div className="btn1">
@@ -282,9 +280,8 @@ const About_section = () => {
 
         <div className="child2">
           <div className="about-first">
-            <img src="src/assets/image/logo/logo2.png" alt="logo" />
             <h4>COMPANY'S BENEFIT</h4>
-            <h1>Reliable Protection for Families and Businesses</h1>
+            <h2>Why Choose Globsure</h2>
             <h3>
               We know how important your loved ones and your business are to
               you. That’s why our insurance plans are designed to give you
@@ -295,7 +292,7 @@ const About_section = () => {
             </h3>
           </div>
           <div className="about-second">
-            <h2>Why Choose Globsure?</h2>
+            <h1>Reliable Protection for Families and Businesses</h1>
             <ul>
               <li>
                 <span>Wide Range of Policies:</span> Whether you want to protect
@@ -324,9 +321,8 @@ const About_section = () => {
         </div>
       </div>
 
-      <div className="member">
+      <div className="member" >
         <div className="part1">
-          <img src="src/assets/image/logo/logo2.png" alt="logo" />
           <h4>OUR TEAM MEMBER</h4>
           <h1>Meet our professional team members</h1>
         </div>
@@ -394,7 +390,6 @@ const About_section = () => {
 
       <div className="testimonals">
         <div className="part1">
-          <img src="src/assets/image/logo/logo.jpg" alt="logo" />
           <h4>OUR TESTIMONALS</h4>
           <h1>
             What they're talking <br />
@@ -582,7 +577,7 @@ const About_section = () => {
             <div className="part2">
               <div className="circle">
                 {Array.from(text).map((char, i) => (
-                  <span
+                  <span key={i}
                     style={{
                       display: "inline-block",
                       transform: `rotate(-${i * 11}deg)`,
@@ -598,7 +593,6 @@ const About_section = () => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
               fill="#eaeaf3"
-              fill-opacity="1"
               d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,96C840,85,960,139,1080,154.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
             ></path>
           </svg>
@@ -607,7 +601,6 @@ const About_section = () => {
 
       <div className="blog-section">
         <div className="blog-first">
-          <img src="src/assets/image/logo/logo.jpg" alt="logo" />
           <h4>OUR BLOG</h4>
           <h2>Latest news & articles from the blog</h2>
         </div>
@@ -769,8 +762,6 @@ const About_section = () => {
                 </div>
               </div>
             </SwiperSlide>
-
-
           </Swiper>
         </div>
       </div>

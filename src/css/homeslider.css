@@ -3,17 +3,53 @@
   position: relative;
 }
 
-
-:root{
+:root {
   --dark-color: #002249;
   --light-color: #0073bd;
 }
 
+.slider-content {
+  position: relative;
+}
 
-.mySwiper2 img {
+.slider-content .img {
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-content .fade-color {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  background: linear-gradient(to right, #00224971 50%, transparent 60%);
+  top: 0;
+  left: 0;
+}
+
+.slider-content .img img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  /* background-color: #0073bd; */
+  /* filter: blur(1.5px); */
+}
+
+.slider-content .content-detail {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  /* background-color: red; */
+  width: 60%;
+  z-index: 1;
+}
+
+.slider-content .content-detail h2 {
+  font-size: 70px;
+  color: white;
+  line-height: 70px;
+  letter-spacing: -1px;
+  /* text-shadow: 0 0 9px #00000060; */
 }
 
 .mySwiper1 {
@@ -26,67 +62,103 @@
 }
 
 .swiper-free-mode > .swiper-wrapper {
-    flex-direction: column;
-    width: 100%;
-  }
+  flex-direction: column;
+  width: 100%;
+}
 
 .mySwiper1 .hello {
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   display: flex;
   width: 100% !important;
-  height: 33.3%;
+  height: 30%;
   padding: 0px !important;
 }
 
-.hello h2, .hello i{
-    color: white;
+.mySwiper1 .hello:nth-child(1) {
+  border-radius: 8px 8px 0px 0px;
 }
 
-.hello .health, .hello .life, .hello .general {
+.mySwiper1 .hello:nth-child(3) {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.mySwiper1 .hello:nth-child(1):hover.hello .health {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.mySwiper1 .hello:nth-child(3):hover.hello .life {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.hello .health:hover,
+.hello .life:hover,
+.hello .general:hover {
+  background-color: var(--light-color);
+}
+
+.hello h2,
+.hello i {
+  color: white;
+}
+
+.hello .health,
+.hello .life,
+.hello .general {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
+  /* justify-content: center; */
   width: 100%;
   transition: 0.3s;
   cursor: pointer;
   padding: 0 15px;
 }
 
-.hello .health h2, .hello .life h2, .hello .general h2{
- padding-left: 10px;
+.hello .health {
+  border-radius: 8px 8px 0px 0px;
 }
 
-.hello .health:hover, .hello .life:hover, .hello .general:hover {
-  background-color: var(--dark-color);
+.hello .life {
+  border-radius: 0px 0px 8px 8px;
 }
 
+.hello .health i,
+.hello .life i,
+.hello .general i {
+  font-size: 25px;
+}
 
+.hello .health h2,
+.hello .life h2,
+.hello .general h2 {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
 
 /* start wraper part */
 
-.wrapper{
+.wrapper {
   width: 100%;
   height: 15vh;
   background-color: var(--dark-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -10px;
+  margin-top: -2px;
 }
 
-
-.wrapper h1{
+.wrapper h1 {
   font-size: 19px;
   font-weight: 200;
   color: var(--light-color);
 }
 
-.wrapper h1 a{
+.wrapper h1 a {
   color: white;
   transition: 0.6s;
 }
 
-.wrapper h1 a:hover{
+.wrapper h1 a:hover {
   color: rgba(255, 255, 255, 0.534);
 }
 /* end wraper part */
