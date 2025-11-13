@@ -5,16 +5,18 @@ export const Footer = () => {
     <>
       <footer>
         <div className="footer-logo">
+          <div className="logo">
+            <img
+              src="src/assets/image/logo/white logo.png"
+              alt="logo"
+            />
+          </div>
+
           <div className="email">
             <i class="ri-mail-send-line"></i>
             <h3>globsureinsurance@gamil.com</h3>
           </div>
-          <div className="logo">
-            <img
-              src="src/assets/image/logo/Globsure_International_Final.png"
-              alt="logo"
-            />
-          </div>
+
           <div className="number">
             <i class="ri-phone-line"></i>
             <h3>+91 78986 5421</h3>
@@ -38,6 +40,23 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="insurance">
+            <h3>Insurance product</h3>
+            <ul>
+              <li>
+                <a href="#">General insurance</a>
+              </li>
+              <li>
+                <a href="#">Health insurance</a>
+              </li>
+              <li>
+                <a href="#">Life insurance</a>
+              </li>
+              <li>
+                <a href="#">Vehical Insurance</a>
+              </li>
+            </ul>
+          </div>
           <div className="address">
             <h3>Contact</h3>
             <h4>
@@ -48,10 +67,10 @@ export const Footer = () => {
               Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
             </h4>
             <div className="social">
-              <i class="ri-facebook-fill"></i>
-              <i class="ri-instagram-line"></i>
-              <i class="ri-twitter-x-line"></i>
-              <i class="ri-linkedin-fill"></i>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a> 
+              <a href="#"><i class="ri-twitter-x-line"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a> 
             </div>
           </div>
           <div className="newsletter">
@@ -64,8 +83,8 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-copyright">
-            <i class="ri-copyright-line"></i>
-            <h3>All Copyright Reserved 2025 by Globsure.com</h3>
+          <i class="ri-copyright-line"></i>
+          <h3>All Copyright Reserved 2025 by Globsure.com</h3>
         </div>
       </footer>
     </>

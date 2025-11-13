@@ -28,10 +28,13 @@ footer {
 
 .footer-logo .email {
   width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo .email i {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
 }
 
@@ -42,6 +45,7 @@ footer {
 
 .footer-logo .logo {
   width: 30%;
+  display: flex;
 }
 
 .footer-logo .logo img {
@@ -74,17 +78,19 @@ footer {
   height: 60%;
   display: flex;
   align-items: center;
+  /* background-color: red; */
+  justify-content: space-around;
 }
 
 .footer-quicklink .explore {
-  width: 100%;
+  width: 20%;
   height: 100%;
-  /* background-color: red; */
+  /* background-color: blue; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .footer-quicklink .explore h3 {
@@ -105,7 +111,7 @@ footer {
 
 .footer-quicklink .explore ul li a {
   text-decoration: none;
-  color: #ffffff62;
+  color: #ffffff85;
   letter-spacing: 0.4px;
   transition: 0.3s;
 }
@@ -114,15 +120,52 @@ footer {
   color: white;
 }
 
-.footer-quicklink .address {
-  width: 100%;
+.footer-quicklink .insurance {
+  width: 20%;
   height: 100%;
-  /* background-color: red; */
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 20px;
-  padding-left: 50px;
+}
+
+.footer-quicklink .insurance h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer-quicklink .insurance ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-quicklink .insurance ul li {
+  list-style-type: none;
+}
+
+.footer-quicklink .insurance ul li a {
+  text-decoration: none;
+  color: #ffffff85;
+  letter-spacing: 0.4px;
+  transition: 0.3s;
+}
+
+.footer-quicklink .insurance ul li a:hover {
+  color: white;
+}
+
+.footer-quicklink .address {
+  width: 20%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  /* padding-left: 50px; */
 }
 
 .footer-quicklink .address h3 {
@@ -132,16 +175,20 @@ footer {
 }
 
 .footer-quicklink .address h4 {
-  color: #ffffff62;
+  color: #ffffff85;
   letter-spacing: 0.4px;
   font-weight: 300;
 }
 
 .footer-quicklink .address .social {
   /* background-color: red; */
-  width: 45%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
+}
+
+.footer-quicklink .address .social a{
+  text-decoration: none;
 }
 
 .footer-quicklink .address .social i {
@@ -160,12 +207,12 @@ footer {
 }
 
 .footer-quicklink .newsletter {
-  width: 100%;
+  width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* background-color: green; */
+  justify-content: start;
+  /* background-color: yellow; */
   align-items: start;
 }
 
@@ -179,12 +226,13 @@ footer {
   color: #ffffff62;
   letter-spacing: 0.4px;
   font-weight: 300;
+  padding: 25px 0px;
 }
 
 .footer-quicklink .newsletter .email {
   display: flex;
   justify-content: start;
-  width: 90%;
+  width: 100%;
   align-items: center;
 }
 
@@ -194,7 +242,7 @@ footer {
   outline: none;
   padding: 20px;
   border-radius: 5px 0px 0px 5px;
-  margin-left: -25px;
+  margin-left: -28px;  
 }
 
 .footer-quicklink .newsletter .email i {

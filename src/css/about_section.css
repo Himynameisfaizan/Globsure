@@ -303,7 +303,7 @@ body {
   transition: all 1.2s ease;
   display: flex;
   border: 1px solid #ffc0cb52;
-  background-color: #ffc0cb52;
+  background-color: #fff;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -317,11 +317,13 @@ body {
   height: 100%;
   backface-visibility: hidden;
   padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 9px #0075bd91;
 }
 
 .part-card .front i {
   font-size: 40px;
-  color: #0075bd;
+  color: var(--light-color);
 }
 
 .part-card .front h3,
@@ -337,7 +339,8 @@ body {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.3px;
-  color: #00000075;
+  color: var(--dark-color);
+  font-weight: 300;
 }
 
 .part-card .back {
@@ -350,6 +353,8 @@ body {
   background-color: var(--dark-color);
   border-radius: 8px;
   transform: rotateY(180deg);
+  border-radius: 8px;
+  box-shadow: 0px 0px 9px #0075bd91;
 }
 
 .part-card .back i {
@@ -464,8 +469,6 @@ body {
 .benefits {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
-  /* background-color: blue; */
 }
 
 
@@ -994,8 +997,7 @@ body {
 
 .blog-section {
   width: 100%;
-  height: 150vh;
-  /* background-color: red; */
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1005,19 +1007,16 @@ body {
 
 .blog-first {
   width: 100%;
-  height: 30%;
-  /* background-color: blue; */
+  height: 20%;
   text-align: center;
-  padding-top: 40px;
 }
-
-
 
 .blog-first h4 {
   font-size: 15px;
   color: #00000094;
   font-weight: 300;
   letter-spacing: 1px;
+  padding-top: 20px;
 }
 
 .blog-first h2 {
@@ -1029,15 +1028,13 @@ body {
 
 .blog-second {
   width: 100%;
-  height: 70%;
-  margin-top: -60px;
-  margin-bottom: -250px;
+  height: 75%;
+  /* padding-bottom: 20px; */
 }
 
 .blog-second .blogs {
   width: 100%;
   height: 100%;
-  /* background-color: blue; */
   position: relative;
 }
 
@@ -1045,7 +1042,7 @@ body {
   width: 90%;
   height: 100%;
   border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -1058,12 +1055,13 @@ body {
 .blogs .blogger .blog-detail {
   position: absolute;
   width: 80%;
-  height: 30%;
+  height: 45%;
   background-color: #eaeaf3;
-  bottom: 35%;
+  bottom: 5%;
   left: 0;
   border-radius: 0px 10px 10px 10px;
   display: flex;
+  z-index: 10;
 }
 
 .blogger .blog-detail .date {
