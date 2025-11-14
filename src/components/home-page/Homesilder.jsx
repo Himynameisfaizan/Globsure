@@ -30,10 +30,10 @@ const Homesilder = () => {
           // effect={"fade"}
           // effect={"creative"}
           // navigation={true}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           loop={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[

@@ -212,7 +212,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  /* background-color: yellow; */
   align-items: start;
 }
 
@@ -246,7 +245,7 @@ footer {
 }
 
 .footer-quicklink .newsletter .email i {
-  background-color: gray;
+  background-color: #0075bd;
   padding: 16.6px;
   font-size: 20px;
   border-radius: 0px 5px 5px 0px;

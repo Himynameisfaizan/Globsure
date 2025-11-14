@@ -6,18 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Parallax, Pagination, Navigation } from "swiper/modules";
 import "swiper/css/effect-cards";
 import "swiper/css/scrollbar";
 
 // import required modules
-import { Scrollbar } from "swiper/modules";
+import { Autoplay, Scrollbar } from "swiper/modules";
 // import required modules
 import { EffectCards } from "swiper/modules";
 const text = "GLOBSURE INTERNATIONAL INSURANCE ";
 const About_section = () => {
   return (
     <>
+    <div className="parent-container">
+
       <div className="about-parent">
         <div className="childs">
           <div className="child1">
@@ -26,11 +27,12 @@ const About_section = () => {
             </div>
 
             <div className="btn">
-              <h1>30</h1>
-              <h2>
-                Years <br />
-                of experience
-              </h2>
+              <div className="icon">
+                <i class="ri-verified-badge-fill"></i>
+              </div>
+              <h3>
+                We Secure Your Dreams With <span> Unwavering Commitment.</span>
+              </h3>
             </div>
           </div>
 
@@ -266,7 +268,7 @@ const About_section = () => {
       <div className="benefits">
         <div className="child1">
           <div className="image">
-            <img src="src/assets/image/life bg.jpg" alt="" />
+            <img src="src/assets/image/car bg2.jpg" alt="benefit" />
           </div>
 
           <div className="btn1">
@@ -321,7 +323,7 @@ const About_section = () => {
         </div>
       </div>
 
-      <div className="member" >
+      <div className="member">
         <div className="part1">
           <h4>OUR TEAM MEMBER</h4>
           <h1>Meet our professional team members</h1>
@@ -405,110 +407,131 @@ const About_section = () => {
         </div>
         <div className="part2">
           <Swiper
-            speed={600}
-            parallax={true}
-            pagination={{
-              clickable: true,
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
             }}
-            slidesPerView={2}
-            navigation={true}
-            modules={[Parallax]}
-            className="mySwiper paraller"
+
+            loop={true}
+
+            modules={[Autoplay]}
+            className="testimonal-container"
           >
-            <div
-              slot="container-start"
-              className="parallax-bg"
-              data-swiper-parallax="-23%"
-            ></div>
-
-            <div className="carding">
-              <SwiperSlide className="card-section">
-                <div className="star" data-swiper-parallax="-200">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-                <div className="desc" data-swiper-parallax="-200">
+            <SwiperSlide className="testimonal-slider">
+              <div className="clip-path"></div>
+              <div className="testimonal-content">
+                <div className="para">
+                  <div className="star">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
                   <p>
-                    Globsure ne mere car aur health insurance claims ko bahut
-                    fast aur hassle-free banaya. Team bahut supportive hai!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum vitae ipsam amet quam dolor labore sint repellat
+                    similique optio eum!
                   </p>
                 </div>
-                <div className="image" data-swiper-parallax="-200">
-                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
-                  <h3>
-                    Rahul S. <span>-From Delhi</span>
-                  </h3>
+                <div className="detail">
+                  <div className="img">
+                    <img src="src/assets/image/man.avif" alt="" />
+                  </div>
+                  <div className="info">
+                    <h2>Dinesh Patel</h2>
+                    <p>Manager</p>
+                  </div>
                 </div>
-              </SwiperSlide>
+              </div>
+            </SwiperSlide>
 
-              <SwiperSlide className="card-section">
-                <div className="star" data-swiper-parallax="-200">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-                <div className="desc" data-swiper-parallax="-200">
+            <SwiperSlide className="testimonal-slider">
+              <div className="clip-path"></div>
+              <div className="testimonal-content">
+                <div className="para">
+                  <div className="star">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
                   <p>
-                    Maine apni family ke liye health insurance liya Globsure se.
-                    Transparent policies aur quick response ne mujhe impress
-                    kiya
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum vitae ipsam amet quam dolor labore sint repellat
+                    similique optio eum!
                   </p>
                 </div>
-                <div className="image" data-swiper-parallax="-200">
-                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
-                  <h3>
-                    Priya M. <span>-From Banglor</span>
-                  </h3>
+                <div className="detail">
+                  <div className="img">
+                    <img src="src/assets/image/man.avif" alt="" />
+                  </div>
+                  <div className="info">
+                    <h2>Rahul Pandey</h2>
+                    <p>Manager</p>
+                  </div>
                 </div>
-              </SwiperSlide>
+              </div>
+            </SwiperSlide>
 
-              <SwiperSlide className="card-section">
-                <div className="star" data-swiper-parallax="-200">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-                <div className="desc" data-swiper-parallax="-200">
+            <SwiperSlide className="testimonal-slider">
+              <div className="clip-path"></div>
+              <div className="testimonal-content">
+                <div className="para">
+                  <div className="star">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
                   <p>
-                    Business insurance ke liye Globsure ko choose kiya kyunki
-                    unka personalized approach aur customer service unmatched
-                    hai.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum vitae ipsam amet quam dolor labore sint repellat
+                    similique optio eum!
                   </p>
                 </div>
-                <div className="image" data-swiper-parallax="-200">
-                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
-                  <h3>
-                    Amit K. <span>-From Mumbai</span>
-                  </h3>
+                <div className="detail">
+                  <div className="img">
+                    <img src="src/assets/image/man.avif" alt="" />
+                  </div>
+                  <div className="info">
+                    <h2>Hitesh Kumar</h2>
+                    <p>Manager</p>
+                  </div>
                 </div>
-              </SwiperSlide>
+              </div>
+            </SwiperSlide>
 
-              <SwiperSlide className="card-section">
-                <div className="star" data-swiper-parallax="-200">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-                <div className="desc" data-swiper-parallax="-200">
+            <SwiperSlide className="testimonal-slider">
+              <div className="clip-path"></div>
+              <div className="testimonal-content">
+                <div className="para">
+                  <div className="star">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                  </div>
                   <p>
-                    Globsure International ki services par mujhe puri tarah
-                    bharosa hai. Unhone meri insurance needs ko bahut achhi
-                    tarah samjha
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum vitae ipsam amet quam dolor labore sint repellat
+                    similique optio eum!
                   </p>
                 </div>
-                <div className="image" data-swiper-parallax="-200">
-                  <img src="src/assets/image/logo/logo.jpg" alt="logo" />
-                  <h3>
-                    Sneha R. <span>-From Karnataka</span>
-                  </h3>
+                <div className="detail">
+                  <div className="img">
+                    <img src="src/assets/image/man.avif" alt="" />
+                  </div>
+                  <div className="info">
+                    <h2>Manish Sharma</h2>
+                    <p>Manager</p>
+                  </div>
                 </div>
-              </SwiperSlide>
-            </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
@@ -518,7 +541,6 @@ const About_section = () => {
           <div className="contact_detail">
             <div className="part1">
               <div className="info">
-                <img src="src/assets/image/logo/logo2.png" alt="" />
                 <h4>FREE QUOTE NOW</h4>
                 <h2>
                   Get a insurance details <br /> to contact us
@@ -577,7 +599,8 @@ const About_section = () => {
             <div className="part2">
               <div className="circle">
                 {Array.from(text).map((char, i) => (
-                  <span key={i}
+                  <span
+                    key={i}
                     style={{
                       display: "inline-block",
                       transform: `rotate(-${i * 11}deg)`,
@@ -606,13 +629,10 @@ const About_section = () => {
         </div>
         <div className="blog-second">
           <Swiper
-           
             slidesPerView={3}
             modules={[Scrollbar]}
             className="mySwiper blogs"
           >
-
-
             <SwiperSlide className="blogger">
               <div className="img">
                 <img src="src/assets/image/man.avif" alt="image blog" />
@@ -764,6 +784,8 @@ const About_section = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+      </div>
+
       </div>
     </>
   );
