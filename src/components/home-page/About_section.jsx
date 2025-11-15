@@ -38,9 +38,9 @@ const About_section = () => {
 
           <div className="child2">
             <div className="about-first">
-              <h4>ABOUT GLOBSURE INTERNATIONAL</h4>
-              <h1>Welcome to Globsure International Secure with Globsure</h1>
-              <h3>
+              <h4 className="text-[15px] text-[#0000008f] tracking-widest font-medium p-8">ABOUT GLOBSURE INTERNATIONAL</h4>
+              <h1 className="text-4xl text-[#002249] font-bold ">Welcome to Globsure International Secure with Globsure</h1>
+              <h3 className="text-[15px] text-[#0000008f] leading-5.5 font-thin">
                 your trusted partner in insurance. With decades of expertise,
                 our mission is to help people and businesses feel secure,
                 protected, and confident about their future. Founded with a
@@ -50,7 +50,7 @@ const About_section = () => {
               </h3>
             </div>
             <div className="about-second">
-              <h2>Key Benefits</h2>
+              <h2 className="text-2xl text-[#002249] font-bold">Key Benefits</h2>
               <ul>
                 <li>
                   <span>Wide Range of Policies:</span> Whether you want to

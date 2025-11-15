@@ -1,4 +1,4 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
 @font-face {
     font-family: 'font';
     src: url(../assets/font/Ubuntu-Medium.ttf);

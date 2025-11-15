@@ -72,35 +72,12 @@
   width: 50%;
 }
 
-.child2 .about-first img {
-  height: 40px;
-  width: 40px;
-  object-fit: contain;
-}
-
-.child2 .about-first h4 {
-  font-size: 15px;
-  font-weight: 500;
-  color: #0000006e;
-  letter-spacing: 1px;
-}
 
 .child2 .about-first h1 {
-  color: var(--dark-color);
-  letter-spacing: 0.5px;
-  padding: 20px 0px;
-}
-
-.child2 .about-first h3 {
-  color: #0000008f;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 22px;
+  padding: 10px 0px;
 }
 
 .about-second h2 {
-  color: var(--dark-color);
-  letter-spacing: 0.5px;
   padding: 20px 0px 10px 0px;
 }
 
