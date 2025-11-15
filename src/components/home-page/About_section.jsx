@@ -238,7 +238,7 @@ const About_section = () => {
 
       <div className="linking bg-[#002249] flex w-[70%] mx-auto h-[20vh] relative rounded-[80px]">
         <div className="photo w-[80%] rounded-[80px] flex items-center justify-start">
-          <h3>
+          <h3 className="font-black text-[22px] tracking-[0.5px]">
             Compare & get <br /> Your insurance in right way
           </h3>
         </div>

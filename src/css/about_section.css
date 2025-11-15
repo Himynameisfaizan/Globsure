@@ -288,21 +288,21 @@
 }
 
 .linking .photo {
-  width: 80%;
   background-image: url(../assets/image/life1.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 80px;
+  /* border-radius: 80px;
+  width: 80%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: start; */
 }
 
 .linking .photo h3 {
   padding-left: 80px;
-  color: black;
+  /* color: black;
   font-size: 22px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; */
 }
 
 .linking .button {
