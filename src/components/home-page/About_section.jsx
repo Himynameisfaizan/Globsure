@@ -38,9 +38,9 @@ const About_section = () => {
 
           <div className="child2">
             <div className="about-first">
-              <h4 className="text-[15px] text-[#0000008f] tracking-widest font-medium p-8">ABOUT GLOBSURE INTERNATIONAL</h4>
+              <h4 className="text-[15px] text-[#000000a6] tracking-widest font-medium p-8">ABOUT GLOBSURE INTERNATIONAL</h4>
               <h1 className="text-4xl text-[#002249] font-bold ">Welcome to Globsure International Secure with Globsure</h1>
-              <h3 className="text-[15px] text-[#0000008f] leading-5.5 font-thin">
+              <h3 className="text-[15px] text- leading-5.5 font-thin text-[#000000a6]">
                 your trusted partner in insurance. With decades of expertise,
                 our mission is to help people and businesses feel secure,
                 protected, and confident about their future. Founded with a
@@ -52,41 +52,44 @@ const About_section = () => {
             <div className="about-second">
               <h2 className="text-2xl text-[#002249] font-bold">Key Benefits</h2>
               <ul>
-                <li>
+                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
                   <span>Wide Range of Policies:</span> Whether you want to
                   protect your home, vehicle, business, or secure your health,
                   we have the right policy for you.
                 </li>
-                <li>
+                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
                   <span>Expert Team:</span>Our qualified agents guide you at
                   every step, making insurance simple and transparent.
                 </li>
-                <li>
+                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
                   <span>Simple Process:</span>We believe in hassle-free
                   insurance with quick quotes and fast claim settlement.
                 </li>
-                <li>
+                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
                   <span>Trusted by Customers:</span>Our commitment to quality
                   and integrity has made us a preferred choice for thousands of
                   families.
                 </li>
               </ul>
-              <div className="button">
-                <button>Explore More</button>
-                <div className="card">
-                  <i class="ri-hand-heart-line"></i>
-                  <span>
+              <div className="button flex justify-between items-center h-[15vh]">
+                <button className="bg-[#002249] hover:bg-[#0073bd] text-white text-[18px] outline-0 border-0 rounded cursor-pointer 
+                transition duration-700  ease-in-out">Explore More</button>
+
+                <div className="card flex items-center border-t-[#002249] border-t-[5px] border-solid rounded shadow-[0px_0px_4px_#b87979] 
+                transition ease-in-out duration-200 flex-col mr-[100px]">
+                  <i className="ri-hand-heart-line text-[30px] text-[#002249]"></i>
+                  <span className="text-[15px] text-[#002249]">
                     Trusted By <br />
                     Customer
                   </span>
                 </div>
               </div>
             </div>
-            <div className="about-third"></div>
+
           </div>
         </div>
 
-        <div className="child3">
+        <div className="child3 mx-w-[1250px] mx-auto flex items-center justify-around h-[50vh] relative">
           <div className="plan">
             <div className="voucher">
               <i class="ri-money-rupee-circle-line"></i>
@@ -126,15 +129,16 @@ const About_section = () => {
         </div>
       </div>
 
-      <div className="offering">
-        <div className="part-one">
-          <h4>What We're Offering</h4>
-          <h2>
+      <div className="offering mx-w-[1300px] mx-auto min-h-[60vh]">
+        <div className="part-one flex justify-center items-center flex-col h-full">
+          <h4 className="text-[#00000083]">What We're Offering</h4>
+          <h2 className="text-[35px] text-center w-[50%] leading-10 text-[#002249]">  
             Complete Insurance Solutions for Every Family and Business Need
           </h2>
         </div>
-        <div className="part-two">
-          <div className="part-card">
+        <div className="part-two flex felx-row gap-[25px] w-full h-full">
+          <div className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+          rounded-2xl transition-all duration-1000">
             <div className="front">
               <i class="ri-bus-wifi-line"></i>
               <h3>Travel insurance</h3>
@@ -152,7 +156,8 @@ const About_section = () => {
               </p>
             </div>
           </div>
-          <div className="part-card">
+          <div className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+          rounded-2xl transition-all duration-1000">
             <div className="front">
               <i class="ri-roadster-line"></i>
               <h3>Car insurance</h3>
@@ -170,7 +175,8 @@ const About_section = () => {
               </p>
             </div>
           </div>
-          <div className="part-card">
+          <div className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+          rounded-2xl transition-all duration-1000">
             <div className="front">
               <i class="ri-team-line"></i>
               <h3>Life insurance</h3>
@@ -188,7 +194,8 @@ const About_section = () => {
               </p>
             </div>
           </div>
-          <div className="part-card">
+          <div className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+          rounded-2xl transition-all duration-1000">
             <div className="front">
               <i class="ri-heart-pulse-line"></i>
               <h3>Health insurance</h3>
@@ -206,7 +213,8 @@ const About_section = () => {
               </p>
             </div>
           </div>
-          <div className="part-card">
+          <div className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+          rounded-2xl transition-all duration-1000">
             <div className="front">
               <i class="ri-briefcase-line"></i>
               <h3>Business insurance</h3>
@@ -228,8 +236,8 @@ const About_section = () => {
         <div className="part-three"></div>
       </div>
 
-      <div className="linking">
-        <div className="photo">
+      <div className="linking bg-[#002249] flex w-[70%] mx-auto h-[20vh] relative rounded-[80px]">
+        <div className="photo w-[80%] rounded-[80px] flex items-center justify-start">
           <h3>
             Compare & get <br /> Your insurance in right way
           </h3>
