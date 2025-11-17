@@ -72,7 +72,6 @@
   width: 50%;
 }
 
-
 .child2 .about-first h1 {
   padding: 10px 0px;
 }
@@ -95,13 +94,12 @@
 
 .button .card {
   padding: 25px 20px;
-  margin-right: 100px; 
+  margin-right: 100px;
 }
 
 .button .card:hover {
   margin-top: -10px;
 }
-
 
 /* start chiild3 from about-parent */
 
@@ -194,12 +192,10 @@
 
 /* Start offering section */
 
-.part-one img {
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
+.offering {
+  max-width: 1250px;
+  margin: 0 auto;
 }
-
 .part-one h2 {
   padding-top: 10px;
 }
@@ -228,17 +224,12 @@
 
 .part-card .front h3,
 .part-card .back h3 {
-  font-size: 20px;
-  font-weight: 500;
   padding: 5px 0;
   color: var(--dark-color);
 }
 
 .part-card .front p,
 .part-card .back p {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.3px;
   color: var(--dark-color);
   font-weight: 300;
 }
@@ -263,27 +254,17 @@
 }
 
 .part-card .back h3 {
-  font-size: 18px;
   padding: 5px 0;
   color: white;
 }
 
 .part-card .back p {
-  font-size: 14px;
-  font-weight: 300;
   color: #ffffff75;
-  line-height: 17px;
   letter-spacing: 0.3px;
 }
 
 .linking {
-  background-color: var(--dark-color);
-  display: flex;
-  width: 70%;
   margin: auto;
-  height: 20vh;
-  border-radius: 80px;
-  position: relative;
   padding: 5px;
 }
 
@@ -291,58 +272,20 @@
   background-image: url(../assets/image/life1.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  /* border-radius: 80px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: start; */
 }
 
 .linking .photo h3 {
   padding-left: 80px;
-  /* color: black;
-  font-size: 22px;
-  letter-spacing: 0.5px; */
-}
-
-.linking .button {
-  position: absolute;
-  top: 25%;
-  right: 10%;
-}
-
-.linking .button button {
-  border-radius: 80px;
 }
 
 .ranking {
-  width: 100%;
-  height: 50vh;
   margin: 60px 0px;
   background-image: url(../assets/image/health\ bg.jpg);
   background-repeat: no-repeat;
-  /* background-position: 20%; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.rank {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 50%;
 }
 
 .rank i {
-  background-color: white;
   padding: 15px;
-  border-radius: 50%;
-  font-size: 40px;
-  border: 6px #0073bd solid;
-  cursor: pointer;
-  transition: 0.2s;
   color: #0073bd;
 }
 
@@ -355,13 +298,6 @@
 
 .rank h3 {
   padding-top: 10px;
-  font-size: 40px;
-  color: white;
-}
-
-.rank p {
-  font-size: 18px;
-  color: white;
 }
 
 /* Start benefits section */
@@ -369,71 +305,39 @@
 .benefits {
   max-width: 1250px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.benefits .child1 {
-  position: relative;
-  height: 100vh;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  object-fit: cover;
 }
 
 .benefits .child1 .image img {
   width: 90%;
-  /* height: 100%; */
+  /* height: 100%;  */
   object-fit: cover;
   object-position: 100%;
   border-radius: 20px 20px 20px 0px;
 }
 
 .benefits .child1 .btn1 {
-  position: absolute;
-  bottom: 20%;
-  left: 22%;
-  width: 65%;
   border-radius: 0px 0px 20px 0px;
   background-color: var(--light-color);
   padding: 20px 10px;
-  display: flex;
 }
 
 .benefits .child1 .btn1 i {
-  font-size: 60px;
-  background-color: white;
   padding: 20px 15px;
-  position: absolute;
   top: -18%;
   border-top: 5px solid var(--dark-color);
   color: var(--dark-color);
 }
 
 .benefits .child1 .btn1 h2 {
-  font-size: 25px;
-  color: white;
   margin-left: 120px;
-  font-weight: 400;
-}
-
-.benefits .child2 {
-  height: 100%;
-  width: 50%;
-  /* padding: 30px 25px 0px 10px; */
 }
 
 .benefits .child2 .about-first h2 {
-  color: var(--dark-color);
-  font-size: 30px;
   padding: 10px 0px;
 }
 
 .benefits .child2 .about-second h1 {
-  color: var(--dark-color);
-  font-size: 30px;
-  padding: 10px 0px;
+  padding: 15px 0px;
 }
 
 /* End benefits section */
@@ -441,76 +345,38 @@
 /* Start member swiper slider */
 
 .member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px 0px;
   max-width: 1250px;
   margin: 0 auto;
-  height: 95vh;
-}
-
-.member .part1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.member .part1 img {
-  height: 50px;
-  width: 50px;
 }
 
 .member .part1 h4 {
-  color: #0000007c;
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1px;
   padding-top: 10px;
 }
 
 .member .part1 h1 {
-  color: var(--dark-color);
-  padding-top: 10px;
-  font-size: 35px;
+  padding-top: 15px;
 }
 
 .member .part2 {
-  /* padding-top: 60px;  */
-  width: 100%;
-  height: 80%;
-  gap: 50px;
-  display: flex;
-  align-items: center;
+  padding-top: 60px;
 }
 
-.member .part2 .info {
-  width: 60%;
-}
-
-.member .part2 .info h1 {
-  color: var(--dark-color);
-  font-size: 35px;
-}
+/* .member .part2 .info h1 {
+    color: var(--dark-color);
+    font-size: 35px;
+  } */
 
 .member .part2 .info h3 {
-  color: var(--dark-color);
   padding: 10px 0px;
 }
 
 .member .part2 .info ul {
   padding-left: 15px;
 }
-.member .part2 .info ul li {
-  color: #000000a6;
-  line-height: 25px;
-}
 
 .member .part2 .info p {
   padding: 15px 0px;
-  color: #000000a6;
-  line-height: 20px;
-  letter-spacing: 0.3px;
 }
 
 .member .part2 .detail {
@@ -538,6 +404,7 @@
 .second .slide img {
   width: 100%;
   height: 80%;
+  object-fit: cover;
 }
 
 .second .slide .detail {
@@ -553,16 +420,6 @@
   font-weight: lighter;
 }
 
-.second .slide .detail h4 {
-  color: #ffffffaf;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.second .slide .detail h2 {
-  font-weight: 300;
-}
-
 /* End member swiper slider */
 
 /* Start testimonals section */
@@ -570,63 +427,28 @@
 .testimonals {
   max-width: 1250px;
   margin: 0 auto;
-  height: 60vh;
-  /* padding: 0 25px; */
-  display: flex;
-  align-items: center;
   margin-top: -40px;
 }
 
-.testimonals .part1 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .testimonals .part1 h4 {
-  font-size: 15px;
-  font-weight: 300;
-  color: #00000073;
   padding: 10px 0;
 }
 
 .testimonals .part1 h1 {
-  color: var(--dark-color);
-  font-size: 38px;
   letter-spacing: 1px;
 }
 
 .testimonals .part1 .icon {
-  display: flex;
   padding: 20px 0px;
-  align-items: center;
 }
 
 .testimonals .part1 .icon i {
-  background-color: var(--dark-color);
   padding: 20px;
-  font-size: 35px;
   color: white;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.testimonals .part1 .icon i:hover {
-  background-color: var(--light-color);
-  margin-top: -10px;
 }
 
 .testimonals .part1 .icon h3 {
   padding-left: 20px;
-  font-weight: 300;
-  color: var(--light-color);
-}
-
-.testimonals .part1 .icon h3 span {
-  color: var(--dark-color);
-  font-weight: bold;
 }
 
 .testimonals .part2 {
@@ -723,7 +545,6 @@
 .contact {
   width: 100%;
   height: 98vh;
-  /* background-color: black; */
   position: relative;
   background-image: url(../assets/image/car\ bg.jpg);
   background-repeat: no-repeat;
@@ -744,30 +565,16 @@
   padding: 100px 0 0 25px;
 }
 
-.contact_detail .part1 .info h4 {
-  color: #00000065;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
 .contact_detail .part1 .info h2 {
-  color: var(--dark-color);
-  font-size: 40px;
   padding: 10px 0;
 }
 
 .contact_detail .part1 .form {
-  display: flex;
-  width: 100%;
   margin-top: 50px;
 }
 
 .form .icons {
-  width: 30%;
   gap: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .form .icons .icon {
@@ -788,16 +595,9 @@
   color: white;
 }
 
-.form .icons .icon:hover.icon i {
-  background-color: white;
-  color: var(--dark-color);
-}
-
 .form .icons .icon i {
-  background-color: var(--dark-color);
   color: white;
   padding: 10px;
-  border-radius: 50%;
   font-size: 14px;
 }
 
@@ -821,6 +621,7 @@
   border: none;
   padding: 20px;
   border-radius: 5px;
+  background-color: white;
 }
 
 .form .share .submit {
@@ -903,29 +704,15 @@
 .blog-section {
   width: 1200px;
   height: 90vh;
-  margin: auto;
+  margin: 20px auto;
 }
 
-.blog-first {
-  width: 100%;
-  height: 20%;
-  text-align: center;
-}
 
 .blog-first h4 {
-  font-size: 15px;
-  color: #00000094;
-  font-weight: 300;
   letter-spacing: 1px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.blog-first h2 {
-  color: var(--dark-color);
-  font-size: 35px;
-  letter-spacing: 0.3px;
-  padding: 10px 0px;
-}
 
 .blog-second {
   width: 100%;
@@ -1018,6 +805,7 @@
 
 .blog-detail .info .info-two h2 {
   font-size: 22px;
+  font-weight: 600;
   color: var(--dark-color);
   padding-top: 10px;
   letter-spacing: 0.5px;

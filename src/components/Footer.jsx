@@ -77,8 +77,8 @@ export const Footer = () => {
             <h3>Great insurance your solutions for life and business</h3>
             <h4>Subscripbe our newsletter</h4>
             <div className="email">
-              <input type="email" required placeholder="Email address" />
-              <i class="ri-send-plane-fill"></i>
+              <input className="bg-white text-black" type="email" required placeholder="Email address" />
+              <i className="ri-send-plane-fill"></i>
             </div>
           </div>
         </div>
