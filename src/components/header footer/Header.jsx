@@ -1,19 +1,20 @@
 import React from "react";
 import '../../css/header.css'
+import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
       <div className="header">
         <div className="logo">
-            <img src="src/assets/image/logo/Globsure_International_Final.png" alt="logo"/>
+            <Link to="/"><img src="src/assets/image/logo/Globsure_International_Final.png" alt="logo"/></Link>
         </div>
         <div className="menu">
             <ul>
-             <li><a href="#">Home</a></li>
-            <li><a href="#">Insurance</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Claim</a></li>
-            <li><a href="#">Contact us </a></li>
+             <li><Link to="/">Home</Link></li>
+            <li><Link to="/insurance">Insurance</Link></li>
+            <li><Link to="/about-us">About us</Link></li>
+            <li><Link to="/claim">Claim</Link></li>
+            <li><Link to="/contact-us">Contact us </Link></li>
             </ul>
         </div>
         <div className="line"></div>

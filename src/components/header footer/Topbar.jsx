@@ -7,12 +7,12 @@ const Topbar = () => {
         <div className="first_bar">
           <div className="icon">
             <div className="location">
-              <i class="ri-map-pin-fill"></i>
+              <i className="ri-map-pin-fill"></i>
               <p>30 Commercial Road Fratton, Australia</p>
             </div>
 
             <div className="email">
-              <i class="ri-mail-ai-fill"></i>
+              <i className="ri-mail-ai-fill"></i>
               <p>needhelp@company.com</p>
             </div>
           </div>

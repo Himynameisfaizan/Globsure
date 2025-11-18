@@ -361,7 +361,7 @@ const About_section = () => {
 
         <div className="member flex flex-col items-center h-[95vh]">
           <div className="part1 flex flex-col items-center">
-            <h4 className="text-[#0000007c] leading-0.5">OUR TEAM MEMBER</h4>
+            <h4 className="text-[#0000007c] leading-0.5">OUR TEAM MEMBERS</h4>
             <h1 className="text-[#002249] text-4xl">Meet our professional team members</h1>
           </div>
           <div className="part2 flex items-center w-full h-[80%] gap-4">
