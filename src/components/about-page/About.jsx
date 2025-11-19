@@ -1,15 +1,12 @@
-import React from 'react'
-import Topbar from '../header footer/Topbar'
-import { Header } from '../header footer/Header'
-import { Footer } from '../header footer/Footer'
+import React from "react";
+import Landing_page from "../contact-page/Landing_page";
 
 const About = () => {
   return (
     <>
-    
-   <h1>This is about page</h1>
+      <Landing_page />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

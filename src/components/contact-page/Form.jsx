@@ -13,7 +13,7 @@ const Form = () => {
           </div>
 
           <div className="contact-information flex flex-col gap-10">
-            <div className="contact-detail flex items-end gap-5 border-b  border-[#00224950]">
+            <div className="contact-detail flex items-end gap-5 border-b  border-[#00224930]">
               <div className="icon">
                 <i className="ri-mail-ai-line"></i>
               </div>
@@ -23,7 +23,7 @@ const Form = () => {
               </div>
             </div>
 
-            <div className="contact-detail flex items-center gap-5 border-b  border-[#00224950]">
+            <div className="contact-detail flex items-center gap-5 border-b  border-[#00224930]">
               <div className="icon">
                 <i className="ri-user-voice-line"></i>
               </div>
@@ -33,7 +33,7 @@ const Form = () => {
               </div>
             </div>
 
-            <div className="contact-detail flex items-center gap-5 border-b  border-[#00224950]">
+            <div className="contact-detail flex items-center gap-5">
               <div className="icon">
                 <i className="ri-map-pin-user-line"></i>
               </div>
@@ -73,6 +73,7 @@ const Form = () => {
               name=""
               id=""
               rows={6}
+              placeholder="Write a massage"
             ></textarea>
             <input
               className="bg-[#002249] rounded text-white hover:bg-[#0072bd] cursor-pointer duration-250"
