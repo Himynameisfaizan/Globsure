@@ -44,7 +44,7 @@ const About_section = () => {
                 <h1 className="text-4xl text-[#002249] font-bold ">
                   Welcome to Globsure International Secure with Globsure
                 </h1>
-                <h3 className="text-[15px] text- leading-5.5 font-thin text-[#000000a6]">
+                <h3 className="text-[15px] leading-5.5 font-thin text-[#000000a6]">
                   your trusted partner in insurance. With decades of expertise,
                   our mission is to help people and businesses feel secure,
                   protected, and confident about their future. Founded with a
