@@ -11,7 +11,7 @@ export const Header = () => {
         <div className="menu">
             <ul>
             <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/">Home</NavLink></li>
-            <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/insurance">Insurance</NavLink></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/insurance">Insurance <i className="ri-arrow-drop-down-line text-3xl"></i></NavLink></li>
             <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/about-us">About us</NavLink></li>
             <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/claim">Claim</NavLink></li>
             <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/contact-us">Contact us </NavLink></li>
