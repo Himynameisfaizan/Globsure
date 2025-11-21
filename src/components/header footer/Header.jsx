@@ -1,6 +1,6 @@
 import React from "react";
 import '../../css/header.css'
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
@@ -10,17 +10,17 @@ export const Header = () => {
         </div>
         <div className="menu">
             <ul>
-             <li><Link to="/">Home</Link></li>
-            <li><Link to="/insurance">Insurance</Link></li>
-            <li><Link to="/about-us">About us</Link></li>
-            <li><Link to="/claim">Claim</Link></li>
-            <li><Link to="/contact-us">Contact us </Link></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/">Home</NavLink></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/insurance">Insurance</NavLink></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/about-us">About us</NavLink></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/claim">Claim</NavLink></li>
+            <li className="text-[#000000a6] hover:text-[#002249] duration-300"><NavLink className={({isActive}) => isActive ? "text-[#002249]" : undefined} to="/contact-us">Contact us </NavLink></li>
             </ul>
         </div>
         <div className="line"></div>
         <div className="icon">
-            <i class="ri-search-eye-line"></i>
-            <i class="ri-user-3-line"></i>
+            <i className="ri-search-eye-line"></i>
+            <i className="ri-user-3-line"></i>
         </div>
       </div>
     </>

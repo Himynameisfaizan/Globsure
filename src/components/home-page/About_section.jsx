@@ -27,7 +27,7 @@ const About_section = () => {
 
               <div className="btn">
                 <div className="icon">
-                  <i class="ri-verified-badge-fill"></i>
+                  <i className="ri-verified-badge-fill"></i>
                 </div>
                 <h3>
                   We Secure Your Dreams With{" "}
@@ -103,7 +103,7 @@ const About_section = () => {
           <div className="child3 mx-w-[1250px] mx-auto flex items-center justify-around h-[50vh] relative">
             <div className="plan">
               <div className="voucher">
-                <i class="ri-money-rupee-circle-line"></i>
+                <i className="ri-money-rupee-circle-line"></i>
               </div>
               <div className="content">
                 <h3>General Insurance</h3>
@@ -115,7 +115,7 @@ const About_section = () => {
             </div>
             <div className="plan">
               <div className="voucher">
-                <i class="ri-heart-pulse-line"></i>
+                <i className="ri-heart-pulse-line"></i>
               </div>
               <div className="content">
                 <h3>Health Insurance</h3>
@@ -127,7 +127,7 @@ const About_section = () => {
             </div>
             <div className="plan">
               <div className="voucher">
-                <i class="ri-roadster-line"></i>
+                <i className="ri-roadster-line"></i>
               </div>
               <div className="content">
                 <h3>Travel insurance</h3>
@@ -161,7 +161,7 @@ const About_section = () => {
                 </p>
               </div>
               <div className="back">
-                <i class="ri-bus-wifi-line"></i>
+                <i className="ri-bus-wifi-line"></i>
                 <h3 className="text-xl font-medium">Travel insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Enjoy your journeys worry-free with plans that cover medical
@@ -174,7 +174,7 @@ const About_section = () => {
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
-                <i class="ri-roadster-line"></i>
+                <i className="ri-roadster-line"></i>
                 <h3 className="text-xl font-medium">Car insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Protect your vehicle from accidents, theft, and damages with
@@ -182,7 +182,7 @@ const About_section = () => {
                 </p>
               </div>
               <div className="back">
-                <i class="ri-roadster-line"></i>
+                <i className="ri-roadster-line"></i>
                 <h3 className="text-xl font-medium">Car insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Protect your vehicle from accidents, theft, and damages with
@@ -195,7 +195,7 @@ const About_section = () => {
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
-                <i class="ri-team-line"></i>
+                <i className="ri-team-line"></i>
                 <h3 className="text-xl font-medium">Life insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Secure your family’s future by choosing a life insurance
@@ -203,7 +203,7 @@ const About_section = () => {
                 </p>
               </div>
               <div className="back">
-                <i class="ri-team-line"></i>
+                <i className="ri-team-line"></i>
                 <h3 className="text-xl font-medium">Life insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Secure your family’s future by choosing a life insurance
@@ -216,7 +216,7 @@ const About_section = () => {
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
-                <i class="ri-heart-pulse-line"></i>
+                <i className="ri-heart-pulse-line"></i>
                 <h3 className="text-xl font-medium">Health insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Get access to the best medical care with our health plans
@@ -224,7 +224,7 @@ const About_section = () => {
                 </p>
               </div>
               <div className="back">
-                <i class="ri-heart-pulse-line"></i>
+                <i className="ri-heart-pulse-line"></i>
                 <h3 className="text-xl font-medium">Health insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Get access to the best medical care with our health plans
@@ -237,7 +237,7 @@ const About_section = () => {
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
-                <i class="ri-briefcase-line"></i>
+                <i className="ri-briefcase-line"></i>
                 <h3 className="text-xl font-medium">Business insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Keep your business protected from financial risks, property
@@ -245,7 +245,7 @@ const About_section = () => {
                 </p>
               </div>
               <div className="back">
-                <i class="ri-briefcase-line"></i>
+                <i className="ri-briefcase-line"></i>
                 <h3 className="text-xl font-medium">Business insurance</h3>
                 <p className="text-sm leading-4 space-x-0">
                   Keep your business protected from financial risks, property
@@ -458,11 +458,11 @@ const About_section = () => {
                 <div className="testimonal-content">
                   <div className="para">
                     <div className="star">
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -487,11 +487,11 @@ const About_section = () => {
                 <div className="testimonal-content">
                   <div className="para">
                     <div className="star">
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -516,11 +516,11 @@ const About_section = () => {
                 <div className="testimonal-content">
                   <div className="para">
                     <div className="star">
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -545,11 +545,11 @@ const About_section = () => {
                 <div className="testimonal-content">
                   <div className="para">
                     <div className="star">
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -646,7 +646,7 @@ const About_section = () => {
                     </span>
                   ))}
                 </div>
-                <i class="ri-parent-fill"></i>
+                <i className="ri-parent-fill"></i>
               </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -680,11 +680,11 @@ const About_section = () => {
                   <div className="info">
                     <div className="info-one">
                       <div className="info-icon">
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                         <p>By user</p>
                       </div>
                       <div className="info-icon">
-                        <i class="ri-question-answer-line"></i>
+                        <i className="ri-question-answer-line"></i>
                         <p>0 Comments</p>
                       </div>
                     </div>
@@ -693,7 +693,7 @@ const About_section = () => {
                     </div>
                     <div className="info-three">
                       <h4>Read More</h4>
-                      <i class="ri-arrow-right-long-fill"></i>
+                      <i className="ri-arrow-right-long-fill"></i>
                     </div>
                   </div>
                 </div>
@@ -710,11 +710,11 @@ const About_section = () => {
                   <div className="info">
                     <div className="info-one">
                       <div className="info-icon">
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                         <p>By user</p>
                       </div>
                       <div className="info-icon">
-                        <i class="ri-question-answer-line"></i>
+                        <i className="ri-question-answer-line"></i>
                         <p>0 Comments</p>
                       </div>
                     </div>
@@ -723,7 +723,7 @@ const About_section = () => {
                     </div>
                     <div className="info-three">
                       <h4>Read More</h4>
-                      <i class="ri-arrow-right-long-fill"></i>
+                      <i className="ri-arrow-right-long-fill"></i>
                     </div>
                   </div>
                 </div>
@@ -740,11 +740,11 @@ const About_section = () => {
                   <div className="info">
                     <div className="info-one">
                       <div className="info-icon">
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                         <p>By user</p>
                       </div>
                       <div className="info-icon">
-                        <i class="ri-question-answer-line"></i>
+                        <i className="ri-question-answer-line"></i>
                         <p>0 Comments</p>
                       </div>
                     </div>
@@ -753,7 +753,7 @@ const About_section = () => {
                     </div>
                     <div className="info-three">
                       <h4>Read More</h4>
-                      <i class="ri-arrow-right-long-fill"></i>
+                      <i className="ri-arrow-right-long-fill"></i>
                     </div>
                   </div>
                 </div>
@@ -770,11 +770,11 @@ const About_section = () => {
                   <div className="info">
                     <div className="info-one">
                       <div className="info-icon">
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                         <p>By user</p>
                       </div>
                       <div className="info-icon">
-                        <i class="ri-question-answer-line"></i>
+                        <i className="ri-question-answer-line"></i>
                         <p>0 Comments</p>
                       </div>
                     </div>
@@ -783,7 +783,7 @@ const About_section = () => {
                     </div>
                     <div className="info-three">
                       <h4>Read More</h4>
-                      <i class="ri-arrow-right-long-fill"></i>
+                      <i className="ri-arrow-right-long-fill"></i>
                     </div>
                   </div>
                 </div>
@@ -800,11 +800,11 @@ const About_section = () => {
                   <div className="info">
                     <div className="info-one">
                       <div className="info-icon">
-                        <i class="ri-user-line"></i>
+                        <i className="ri-user-line"></i>
                         <p>By user</p>
                       </div>
                       <div className="info-icon">
-                        <i class="ri-question-answer-line"></i>
+                        <i className="ri-question-answer-line"></i>
                         <p>0 Comments</p>
                       </div>
                     </div>
@@ -813,7 +813,7 @@ const About_section = () => {
                     </div>
                     <div className="info-three">
                       <h4>Read More</h4>
-                      <i class="ri-arrow-right-long-fill"></i>
+                      <i className="ri-arrow-right-long-fill"></i>
                     </div>
                   </div>
                 </div>

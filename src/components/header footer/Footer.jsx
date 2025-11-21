@@ -13,12 +13,12 @@ export const Footer = () => {
           </div>
 
           <div className="email">
-            <i class="ri-mail-send-line"></i>
+            <i className="ri-mail-send-line"></i>
             <h3>globsureinsurance@gamil.com</h3>
           </div>
 
           <div className="number">
-            <i class="ri-phone-line"></i>
+            <i className="ri-phone-line"></i>
             <h3>+91 78986 5421</h3>
           </div>
         </div>
@@ -67,10 +67,10 @@ export const Footer = () => {
               Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
             </h4>
             <div className="social">
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-              <a href="#"><i class="ri-instagram-line"></i></a> 
-              <a href="#"><i class="ri-twitter-x-line"></i></a>
-              <a href="#"><i class="ri-linkedin-fill"></i></a> 
+              <a href="#"><i className="ri-facebook-fill"></i></a>
+              <a href="#"><i className="ri-instagram-line"></i></a> 
+              <a href="#"><i className="ri-twitter-x-line"></i></a>
+              <a href="#"><i className="ri-linkedin-fill"></i></a> 
             </div>
           </div>
           <div className="newsletter">
@@ -83,7 +83,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-copyright">
-          <i class="ri-copyright-line"></i>
+          <i className="ri-copyright-line"></i>
           <h3>All Copyright Reserved 2025 by Globsure.com</h3>
         </div>
       </footer>

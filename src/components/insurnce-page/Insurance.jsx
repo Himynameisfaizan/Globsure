@@ -1,12 +1,10 @@
 import React from 'react'
-import Topbar from '../header footer/Topbar'
-import { Header } from '../header footer/Header'
-import { Footer } from '../header footer/Footer'
+import Landing_page from '../contact-page/Landing_page'
 
 const Insurance = () => {
   return (
     <>
-       <h1>insurance page</h1>
+       <Landing_page bg_image={'src/assets/image/landing-page/insurance2.jpg'} landing_title={'Insurance'}/>
     </>
   )
 }

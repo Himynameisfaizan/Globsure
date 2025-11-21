@@ -111,21 +111,21 @@ const Homesilder = () => {
         >
           <SwiperSlide className="hello">
             <div className="health">
-              <i class="ri-heart-pulse-line"></i>
+              <i className="ri-heart-pulse-line"></i>
               <h2>Health insurance </h2>
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="hello">
             <div className="general">
-              <i class="ri-hand-coin-line"></i>
+              <i className="ri-hand-coin-line"></i>
               <h2>General insurance </h2>
             </div>
           </SwiperSlide>
 
           <SwiperSlide className="hello">
             <div className="life">
-              <i class="ri-car-line"></i>
+              <i className="ri-car-line"></i>
               <h2>Car insurance </h2>
             </div>
           </SwiperSlide>

@@ -25,10 +25,10 @@ const Topbar = () => {
               <a href="">About</a>
             </div>
             <div className="socail">
-              <i class="ri-twitter-x-fill"></i>
-              <i class="ri-facebook-fill"></i>
-              <i class="ri-pinterest-fill"></i>
-              <i class="ri-instagram-fill"></i>
+              <i className="ri-twitter-x-fill"></i>
+              <i className="ri-facebook-fill"></i>
+              <i className="ri-pinterest-fill"></i>
+              <i className="ri-instagram-fill"></i>
             </div>
           </div>
         </div>
