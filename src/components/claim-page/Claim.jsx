@@ -7,7 +7,7 @@ import Landing_page from '../contact-page/Landing_page'
 const Claim = () => {
   return (
     <>
-       <Landing_page bg_image={'src/assets/image/landing-page/claim3.jpg'} landing_title={'Claim'} />
+       <Landing_page bg_image={'public/image/landing-page/claim3.jpg'} landing_title={'Claim'} />
     </>
   )
 }

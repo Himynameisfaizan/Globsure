@@ -546,7 +546,7 @@
   width: 100%;
   height: 98vh;
   position: relative;
-  background-image: url(../assets/image/car\ bg.jpg);
+  background-image: url(../public/image/car\ bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

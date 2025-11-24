@@ -1,6 +1,6 @@
 import React from "react";
 import Landing_page from "../contact-page/Landing_page";
-import landing_img from "../../assets/image/landing-page/aboutbg.jpg"
+import landing_img from "../../../public/image/landing-page/aboutbg.jpg"
 import First_section from "./First_section";
 
 const About = () => {
