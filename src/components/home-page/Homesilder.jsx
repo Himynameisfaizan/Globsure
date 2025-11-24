@@ -53,11 +53,14 @@ const Homesilder = () => {
             <div className="content-detail">
               <h2>
                 Globsure International <br />
-                Your Partner in Smart, Future Proof{" "}
-  
-
-                <span style={{ backgroundImage: "url('src/assets/image/health bg2.jpg')",
-                color: "transparent", backgroundClip: "text" }}>
+                Smart solutions for a Future proof life
+                <span
+                  style={{
+                    backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                    color: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
                   Protection
                 </span>
               </h2>
@@ -72,9 +75,14 @@ const Homesilder = () => {
             <div className="content-detail">
               <h2>
                 Globsure International <br />
-                Your Partner in Smart, Future Proof{" "}
-                <span style={{backgroundImage: "url('src/assets/image/health bg2.jpg')",
-                color: "transparent", backgroundClip: "text" }}>
+                Smart solutions for a Future proof life
+                <span
+                  style={{
+                    backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                    color: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
                   Protection
                 </span>
               </h2>
@@ -89,9 +97,14 @@ const Homesilder = () => {
             <div className="content-detail">
               <h2>
                 Globsure International <br />
-                Your Partner in Smart, Future Proof{" "}
-                <span style={{ backgroundImage: "url('src/assets/image/health bg2.jpg')",
-                color: "transparent", backgroundClip: "text" }}>
+                Smart solutions for a Future proof life
+                <span
+                  style={{
+                    backgroundImage: "url('src/assets/image/health bg2.jpg')",
+                    color: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
                   Protection
                 </span>
               </h2>
