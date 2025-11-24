@@ -1,13 +1,11 @@
 import React from 'react'
-import Topbar from '../header footer/Topbar'
-import { Header } from '../header footer/Header'
-import { Footer } from '../header footer/Footer'
 import Landing_page from '../contact-page/Landing_page'
+import landing_img from '../../../public/image/landing-page/claim3.jpg'
 
 const Claim = () => {
   return (
     <>
-       <Landing_page bg_image={'public/image/landing-page/claim3.jpg'} landing_title={'Claim'} />
+       <Landing_page bg_image={landing_img} landing_title={'Claim'} />
     </>
   )
 }
