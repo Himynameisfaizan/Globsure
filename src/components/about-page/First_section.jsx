@@ -9,7 +9,7 @@ const First_section = () => {
         <div className="img_container w-[50%] relative">
           <img
             className="rounded-lg w-[85%] h-full object-cover"
-            src="public/image/car bg2.jpg"
+            src="/image/car_bg2.jpg"
             alt=""
           />
         </div>
@@ -86,11 +86,11 @@ const First_section = () => {
           <img className="rounded-lg" src="public/image/landing-page/aboutbg1.jpg" alt="" />
         </div>
         <div className="left w-1/2 flex flex-col gap-5 justify-end">
-          <Icondiv svg={'public/svg/startup-rocket-svgrepo-com.svg'} title={'Our mision'} desc={'Our mission is to provide practical insurance solutions that safeguard your future while making each interaction friendly, clear, and supportive. Every day, we work to help individuals and families achieve peace of mind in the knowledge that expert help is always close by.'}/>
+          <Icondiv svg={'/svg/startup-rocket-svgrepo-com.svg'} title={'Our mision'} desc={'Our mission is to provide practical insurance solutions that safeguard your future while making each interaction friendly, clear, and supportive. Every day, we work to help individuals and families achieve peace of mind in the knowledge that expert help is always close by.'}/>
 
-          <Icondiv svg={'public/svg/idea-svgrepo-com.svg'} title={'Our vision'} desc={'We are committed to leading in honest and innovative insurance services at all times, while bringing timely solutions, transparent advice, and responsive support. Our vision is that of a world where everyone feels secure and confident, free from the concern of carrying any unexpected financial burdens.'} />
+          <Icondiv svg={'/svg/idea-svgrepo-com.svg'} title={'Our vision'} desc={'We are committed to leading in honest and innovative insurance services at all times, while bringing timely solutions, transparent advice, and responsive support. Our vision is that of a world where everyone feels secure and confident, free from the concern of carrying any unexpected financial burdens.'} />
 
-          <Icondiv svg={'public/svg/achivement-mission-sport-svgrepo-com.svg'} title={'Our achivement'} desc={'We are proud of the trust built with thousands of satisfied customers. Our achievements include industry recognition for quality service, a steady growth in clients, and successful partnerships in our community. Every milestone reflects our dedication and the genuine relationships we have created along the way.'} />
+          <Icondiv svg={'/svg/achivement-mission-sport-svgrepo-com.svg'} title={'Our achivement'} desc={'We are proud of the trust built with thousands of satisfied customers. Our achievements include industry recognition for quality service, a steady growth in clients, and successful partnerships in our community. Every milestone reflects our dedication and the genuine relationships we have created along the way.'} />
   
         </div>
       </div>
@@ -107,10 +107,10 @@ const First_section = () => {
         </div>
 
         <div className="team-card flex flex-wrap gap-10">
-            <Card teamName={'Yashika muchal'} teamPosition={'Co - founder'} image={'public/image/man.avif'}/>
-            <Card teamName={'Hitesh Pathak'} teamPosition={'Director'} image={'public/image/office-team/office.avif'}/>
-            <Card teamName={'Ishika Deewan'} teamPosition={'Finance Manager'} image={'public/image/office-team/office4.jpg'}/>
-            <Card teamName={'Rahul Kumar'} teamPosition={'Human Resource'} image={'public/image/office-team/office2.jpg'}/>
+            <Card teamName={'Yashika muchal'} teamPosition={'Co - founder'} image={'/image/man.avif'}/>
+            <Card teamName={'Hitesh Pathak'} teamPosition={'Director'} image={'/image/office-team/office.avif'}/>
+            <Card teamName={'Ishika Deewan'} teamPosition={'Finance Manager'} image={'/image/office-team/office4.jpg'}/>
+            <Card teamName={'Rahul Kumar'} teamPosition={'Human Resource'} image={'/image/office-team/office2.jpg'}/>
         </div>
       </div>
 

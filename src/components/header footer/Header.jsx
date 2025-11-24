@@ -6,7 +6,7 @@ export const Header = () => {
     <>
       <div className="header">
         <div className="logo">
-            <Link to="/"><img src="public/image/logo/Globsure_International_Final.png" alt="logo"/></Link>
+            <Link to="/"><img src="/image/logo/Globsure_International_Final.png" alt="logo"/></Link>
         </div>
         <div className="menu">
             <ul>

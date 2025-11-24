@@ -22,7 +22,7 @@ const About_section = () => {
           <div className="childs">
             <div className="child1">
               <div className="image">
-                <img src="public/image/life bg.jpg" alt="image" />
+                <img src="/image/life_bg.jpg" alt="image" />
               </div>
 
               <div className="btn">
@@ -298,7 +298,7 @@ const About_section = () => {
         <div className="benefits flex items-center h-screen">
           <div className="child1 relative">
             <div className="image">
-              <img src="public/image/car bg.jpg" alt="benefit" />
+              <img src="/image/car_bg.jpg" alt="benefit" />
             </div>
 
             <div className="btn1 absolute bottom-2/10 right-16 w-[70%]">
@@ -403,21 +403,21 @@ const About_section = () => {
                 className="mySwiper second"
               >
                 <SwiperSlide className="slide">
-                  <img src="public/image/man.avif" alt="" />
+                  <img src="/image/man.avif" alt="" />
                   <div className="detail">
                     <h4 className="text-[15px] text-[#ffffffaf]">CONSULTANT</h4>
                     <h2>Dinesh patel</h2>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide">
-                  <img src="public/image/man.avif" alt="" />
+                  <img src="/image/man.avif" alt="" />
                   <div className="detail">
                     <h4>CONSULTANT</h4>
                     <h2>Dinesh patel</h2>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide">
-                  <img src="public/image/man.avif" alt="" />
+                  <img src="/image/man.avif" alt="" />
                   <div className="detail">
                     <h4>CONSULTANT</h4>
                     <h2>Dinesh patel</h2>
@@ -472,7 +472,7 @@ const About_section = () => {
                   </div>
                   <div className="detail">
                     <div className="img">
-                      <img src="src/assets/image/man.avif" alt="" />
+                      <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
                       <h2>Dinesh Patel</h2>
@@ -501,7 +501,7 @@ const About_section = () => {
                   </div>
                   <div className="detail">
                     <div className="img">
-                      <img src="src/assets/image/man.avif" alt="" />
+                      <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
                       <h2>Rahul Pandey</h2>
@@ -530,7 +530,7 @@ const About_section = () => {
                   </div>
                   <div className="detail">
                     <div className="img">
-                      <img src="src/assets/image/man.avif" alt="" />
+                      <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
                       <h2>Hitesh Kumar</h2>
@@ -559,7 +559,7 @@ const About_section = () => {
                   </div>
                   <div className="detail">
                     <div className="img">
-                      <img src="src/assets/image/man.avif" alt="" />
+                      <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
                       <h2>Manish Sharma</h2>
@@ -671,7 +671,7 @@ const About_section = () => {
             >
               <SwiperSlide className="blogger">
                 <div className="img">
-                  <img src="public/image/man.avif" alt="image blog" />
+                  <img src="/image/man.avif" alt="image blog" />
                 </div>
                 <div className="blog-detail">
                   <div className="date">
@@ -701,7 +701,7 @@ const About_section = () => {
 
               <SwiperSlide className="blogger">
                 <div className="img">
-                  <img src="public/image/man.avif" alt="image blog" />
+                  <img src="/image/man.avif" alt="image blog" />
                 </div>
                 <div className="blog-detail">
                   <div className="date">
@@ -731,7 +731,7 @@ const About_section = () => {
 
               <SwiperSlide className="blogger">
                 <div className="img">
-                  <img src="public/image/man.avif" alt="image blog" />
+                  <img src="/image/man.avif" alt="image blog" />
                 </div>
                 <div className="blog-detail">
                   <div className="date">
@@ -761,7 +761,7 @@ const About_section = () => {
 
               <SwiperSlide className="blogger">
                 <div className="img">
-                  <img src="public/image/man.avif" alt="image blog" />
+                  <img src="/image/man.avif" alt="image blog" />
                 </div>
                 <div className="blog-detail">
                   <div className="date">
@@ -791,7 +791,7 @@ const About_section = () => {
 
               <SwiperSlide className="blogger">
                 <div className="img">
-                  <img src="public/image/man.avif" alt="image blog" />
+                  <img src="/image/man.avif" alt="image blog" />
                 </div>
                 <div className="blog-detail">
                   <div className="date">

@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="footer-logo">
           <div className="logo">
             <img
-              src="public/image/logo/white logo.png"
+              src="/image/logo/white_logo.png"
               alt="logo"
             />
           </div>

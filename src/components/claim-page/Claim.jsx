@@ -1,6 +1,6 @@
 import React from 'react'
 import Landing_page from '../contact-page/Landing_page'
-import landing_img from '../../../public/image/landing-page/claim3.jpg'
+import landing_img from '/image/landing-page/claim3.jpg'
 
 const Claim = () => {
   return (

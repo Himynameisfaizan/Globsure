@@ -48,7 +48,7 @@ const Homesilder = () => {
         >
           <SwiperSlide className="slider-content">
             <div className="img">
-              <img src="public/image/health bg.jpg" />
+              <img src="/image/health_bg.jpg" />
             </div>
             <div className="content-detail">
               <h2>
@@ -67,7 +67,7 @@ const Homesilder = () => {
 
           <SwiperSlide className="slider-content">
             <div className="img">
-              <img src="public/image/life bg.jpg" />
+              <img src="/image/life_bg.jpg" />
             </div>
             <div className="content-detail">
               <h2>
@@ -84,7 +84,7 @@ const Homesilder = () => {
 
           <SwiperSlide className="slider-content">
             <div className="img">
-              <img src="public/image/car bg.jpg" />
+              <img src="/image/car_bg.jpg" />
             </div>
             <div className="content-detail">
               <h2>
