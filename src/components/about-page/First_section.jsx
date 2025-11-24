@@ -83,7 +83,7 @@ const First_section = () => {
         <div className="right w-1/2 flex flex-col gap-2">
           <h4 className="text-[#002249] text-3xl font-semibold">OUR ORIGIN</h4>
           <p className="text-[15px] text-[#000000a6] text-justify" style={{padding:'10px 0'}}>With the vision to simplify and improve the way people experience insurance, our company started as a small but highly committed and caring team. Our growth over the years is a direct result of listening to our customers' needs, adapting to new challenges, and offering dependable protection through each stage of life.​</p>
-          <img className="rounded-lg" src="public/image/landing-page/aboutbg1.jpg" alt="" />
+          <img className="rounded-lg" src="/image/landing-page/aboutbg1.jpg" alt="" />
         </div>
         <div className="left w-1/2 flex flex-col gap-5 justify-end">
           <Icondiv svg={'/svg/startup-rocket-svgrepo-com.svg'} title={'Our mision'} desc={'Our mission is to provide practical insurance solutions that safeguard your future while making each interaction friendly, clear, and supportive. Every day, we work to help individuals and families achieve peace of mind in the knowledge that expert help is always close by.'}/>

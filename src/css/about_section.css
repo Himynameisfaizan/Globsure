@@ -269,7 +269,7 @@
 }
 
 .linking .photo {
-  background-image: url(image/life1.avif);
+  background-image: url(/image/life1.avif);
   background-repeat: no-repeat;
   background-size: cover;
 }
