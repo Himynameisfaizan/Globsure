@@ -6,7 +6,7 @@ const Content_part = () => {
     {
       id: "1",
       svg: "/svg/car.svg",
-      svgTitle: "Vehical Insurance",
+      svgTitle: "Vehicle Insurance",
       content: {
         guidLinesTitle: "Documents for Vehicle Claim",
         point1: "Copy of Driving License and RC.",
@@ -44,7 +44,6 @@ const Content_part = () => {
   ];
   return (
     <>
-
       <div
         className="first_container flex"
         style={{ padding: "50px 0", maxWidth: "1250px", margin: "auto" }}
@@ -128,28 +127,98 @@ const Content_part = () => {
         <Guidlines ClaimData={ClaimGuidlines} />
       </div>
 
-      <div className="" style={{maxWidth:'1250px', margin:'auto'}}>
+      <div className="" style={{ maxWidth: "1250px", margin: "auto" }}>
         <h2 className="text-[#000000a6] text-center">Download Claim Forms</h2>
-        <h2 className="text-[#002249] text-3xl font-semibold w-155 text-center" style={{margin:'auto', padding:'5px 0'}}>Download the relevant claim form, fill it out physically, and mail it to our registered office or upload it via email</h2>
+        <h2
+          className="text-[#002249] text-3xl font-semibold w-155 text-center"
+          style={{ margin: "auto", padding: "5px 0" }}
+        >
+          Download the relevant claim form, fill it out physically, and mail it
+          to our registered office or upload it via email
+        </h2>
 
-        <div className="flex items-center justify-around" style={{margin:'30px 0'}}>
-         <div className="w-1/3">
-
-          <h2 className="bg-[#0073bd26] text-lg text-[#002249]" style={{padding:"20px"}}>Claims Insurance</h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-t border-b border-[#00224962] flex items-center gap-10" style={{padding:"10px 20px"}}>Vehical Insurance <img className="w-15" src="/svg/car.svg" alt="" /></h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-b border-[#00224962] flex items-center gap-10" style={{padding:"10px 20px"}}>Health Insurance <img className="w-15" src="/svg/health.svg" alt="" /></h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-b border-[#00224962] flex items-center gap-10" style={{padding:"10px 20px"}}>General Insurance <img className="w-15" src="/svg/general.svg" alt="" /></h2>
-          
-         </div>
-         <div className="w-2/3">
-          <h2 className="bg-[#0073bd26] text-lg text-[#002249] border-l border-[#00224962] text-center" style={{padding:"20px"}}>Download Form</h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-l border-t border-b border-[#00224962] flex items-center justify-center gap-5" style={{padding:"20px"}}> <a href="#"><img className="w-10" src="/svg/pdf.svg" alt="vehical insurance form" /></a> </h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5" style={{padding:"20px"}}> <a href="#"><img className="w-10" src="/svg/pdf.svg" alt="Health insurance form" /></a></h2>
-          <h2 className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5" style={{padding:"20px"}}> <a href="#"><img className="w-10" src="/svg/pdf.svg" alt="general insurance form" /></a></h2>
-         </div>
+        <div
+          className="flex items-center justify-around"
+          style={{ margin: "30px 0" }}
+        >
+          <div className="w-1/3">
+            <h2
+              className="bg-[#0073bd26] text-lg text-[#002249]"
+              style={{ padding: "20px" }}
+            >
+              Claims Insurance
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-t border-b border-[#00224962] flex items-center gap-10"
+              style={{ padding: "10px 20px" }}
+            >
+              Vehical Insurance{" "}
+              <img className="w-15" src="/svg/car.svg" alt="" />
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-b border-[#00224962] flex items-center gap-10"
+              style={{ padding: "10px 20px" }}
+            >
+              Health Insurance{" "}
+              <img className="w-15" src="/svg/health.svg" alt="" />
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-b border-[#00224962] flex items-center gap-10"
+              style={{ padding: "10px 20px" }}
+            >
+              General Insurance{" "}
+              <img className="w-15" src="/svg/general.svg" alt="" />
+            </h2>
+          </div>
+          <div className="w-2/3">
+            <h2
+              className="bg-[#0073bd26] text-lg text-[#002249] border-l border-[#00224962] text-center"
+              style={{ padding: "20px" }}
+            >
+              Download Form
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-l border-t border-b border-[#00224962] flex items-center justify-center gap-5"
+              style={{ padding: "20px" }}
+            >
+              {" "}
+              <a href="#">
+                <img
+                  className="w-10"
+                  src="/svg/pdf.svg"
+                  alt="vehical insurance form"
+                />
+              </a>{" "}
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
+              style={{ padding: "20px" }}
+            >
+              {" "}
+              <a href="#">
+                <img
+                  className="w-10"
+                  src="/svg/pdf.svg"
+                  alt="Health insurance form"
+                />
+              </a>
+            </h2>
+            <h2
+              className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
+              style={{ padding: "20px" }}
+            >
+              {" "}
+              <a href="#">
+                <img
+                  className="w-10"
+                  src="/svg/pdf.svg"
+                  alt="general insurance form"
+                />
+              </a>
+            </h2>
+          </div>
         </div>
       </div>
-
     </>
   );
 };

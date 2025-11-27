@@ -18,6 +18,7 @@ const About_section = () => {
   return (
     <>
       <div className="parent-container">
+
         <div className="about-parent">
           <div className="childs">
             <div className="child1">
@@ -42,7 +43,7 @@ const About_section = () => {
                   ABOUT GLOBSURE INTERNATIONAL
                 </h4>
                 <h1 className="text-4xl text-[#002249] font-bold ">
-                  Welcome to Globsure International 
+                  Welcome to Globsure International
                 </h1>
                 <h3 className="text-[15px] leading-5.5 font-thin text-[#000000a6]">
                   your trusted partner in insurance. With decades of expertise,
@@ -87,7 +88,7 @@ const About_section = () => {
 
                   <div
                     className="card flex items-center border-t-[#002249] border-t-[5px] border-solid rounded shadow-[0px_0px_4px_#b87979] 
-                transition ease-in-out duration-200 flex-col mr-[100px]"
+                   duration-200 flex-col mr-[100px]"
                   >
                     <i className="ri-hand-heart-line text-[30px] text-[#002249]"></i>
                     <span className="text-[15px] text-[#002249]">
@@ -352,8 +353,12 @@ const About_section = () => {
                 </li>
               </ul>
               <div className="button">
-                <button className="bg-[#002249] hover:bg-[#0073bd] text-white text-[18px] outline-0 border-0 rounded cursor-pointer 
-                transition duration-700  ease-in-out">Explore More</button>
+                <button
+                  className="bg-[#002249] hover:bg-[#0073bd] text-white text-[18px] outline-0 border-0 rounded cursor-pointer 
+                transition duration-700  ease-in-out"
+                >
+                  Explore More
+                </button>
               </div>
             </div>
           </div>
@@ -362,11 +367,15 @@ const About_section = () => {
         <div className="member flex flex-col items-center h-[95vh]">
           <div className="part1 flex flex-col items-center">
             <h4 className="text-[#0000007c] leading-0.5">OUR TEAM MEMBERS</h4>
-            <h1 className="text-[#002249] text-4xl">Meet our professional team members</h1>
+            <h1 className="text-[#002249] text-4xl">
+              Meet our professional team members
+            </h1>
           </div>
           <div className="part2 flex items-center w-full h-[80%] gap-4">
             <div className="info w-[60%]">
-              <h1 className="text-[#002249] text-3xl">Experienced & Dedicated Team Working For You</h1>
+              <h1 className="text-[#002249] text-3xl">
+                Experienced & Dedicated Team Working For You
+              </h1>
               <p className="text-[15px] text- leading-5.5 font-thin text-[#000000a6]">
                 Our team is the backbone of Globsure International, bringing
                 together experienced professionals who truly care about your
@@ -388,7 +397,9 @@ const About_section = () => {
                 <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
                   Quick support and personalized solutions for every client.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">Commitment to transparency and trustworthy guidance.</li>
+                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                  Commitment to transparency and trustworthy guidance.
+                </li>
                 <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
                   Continual training to stay updated with latest insurance
                   trends. Description
@@ -437,9 +448,10 @@ const About_section = () => {
             </h1>
             <div className="icon flex items-center">
               <i className="ri-team-fill bg-[#002249] duration-300 hover:bg-[#0073bd] text-4xl"></i>
-              <h3 className="text-[#0073bd]"> 
+              <h3 className="text-[#0073bd]">
                 We’re trusted by more then <br />
-                <span className="text-[#002249] font-semibold">3800</span> satisfied & happy customers.
+                <span className="text-[#002249] font-semibold">3800</span>{" "}
+                satisfied & happy customers.
               </h3>
             </div>
           </div>
@@ -577,7 +589,9 @@ const About_section = () => {
             <div className="contact_detail">
               <div className="part1">
                 <div className="info">
-                  <h4 className="text-[#00000065] text-[15px]">FREE QUOTE NOW</h4>
+                  <h4 className="text-[#00000065] text-[15px]">
+                    FREE QUOTE NOW
+                  </h4>
                   <h2 className="text-[#002249] text-[40px] leading-10 font-semibold">
                     Get a insurance details <br /> to contact us
                   </h2>
@@ -661,7 +675,9 @@ const About_section = () => {
         <div className="blog-section">
           <div className="blog-first w-full h-1/5 text-center">
             <h4 className="text-[15px] text-[#00000094] ">OUR BLOG</h4>
-            <h2 className="text-4xl text-[#002249]">Latest news & articles from the blog</h2>
+            <h2 className="text-4xl text-[#002249]">
+              Latest news & articles from the blog
+            </h2>
           </div>
           <div className="blog-second">
             <Swiper
@@ -821,6 +837,7 @@ const About_section = () => {
             </Swiper>
           </div>
         </div>
+        
       </div>
     </>
   );
