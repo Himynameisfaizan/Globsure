@@ -1,4 +1,5 @@
 import React from "react";
+import Icondiv from "../about-page/Icondiv";
 
 const Insurance_header = () => {
   return (
@@ -142,53 +143,219 @@ const Insurance_header = () => {
         </div>
       </div>
 
-      <div className="first_container flex" style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }} >
-
-         <div className="company_detail w-2/3">
+      <div
+        className="first_container flex"
+        style={{ padding: "30px 0", maxWidth: "1250px", margin: "20px auto" }}
+      >
+        <div className="company_detail w-2/3">
           <h4 className="text-[#000000a6] text-[15px] font-thin">
             WHY SHOULD YOU BUY HEALTH INSURANCE PLAN
           </h4>
-          <h2 className="text-[#002249] text-3xl font-semibold" style={{ padding: "5px 0" }} >
+          <h2
+            className="text-[#002249] text-3xl font-semibold"
+            style={{ padding: "5px 0" }}
+          >
             Secure your finances and health before it's too late.
           </h2>
 
-          <ul className="w-[90%] text-justify">
-            <li style={{ padding: "5px 0" }} className="text-[#000000a6] text-[15px]" >
-              <span className="text-[#002249] text-base">Rising Medical Inflation:</span>{" "}
-             Healthcare costs are increasing by 15% every year. A simple surgery today can cost lakhs tomorrow. Lock your safety net now.{" "}
+          <ul className="w-[85%] text-justify" style={{marginTop:'10px'}}>
+            <li
+              style={{ padding: "5px 0" }}
+              className="text-[#000000a6] text-[15px]"
+            >
+              <span className="text-[#002249] text-base">
+                Rising Medical Inflation:
+              </span>{" "}
+              Healthcare costs are increasing by 15% every year. A simple
+              surgery today can cost lakhs tomorrow. Lock your safety net now.{" "}
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
-              <span className="text-[#002249] text-base">Lifestyle Diseases:</span>{" "}
-              Stress and modern lifestyle have made critical illnesses common even in young age. Being prepared is the only cure.
+              <span className="text-[#002249] text-base">
+                Lifestyle Diseases:
+              </span>{" "}
+              Stress and modern lifestyle have made critical illnesses common
+              even in young age. Being prepared is the only cure.
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
-              <span className="text-[#002249] text-base">Protect Your Savings:</span>{" "}
-             Don't let a hospital bill wipe out your hard-earned savings. Let Globsure pay the bills while you keep your savings intact.
+              <span className="text-[#002249] text-base">
+                Protect Your Savings:
+              </span>{" "}
+              Don't let a hospital bill wipe out your hard-earned savings. Let
+              Globsure pay the bills while you keep your savings intact.
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
-              <span className="text-[#002249] text-base">Quality Treatment:</span> Access top private hospitals without worrying about room rents or doctor fees. Get the best care, cashless.
+              <span className="text-[#002249] text-base">
+                Quality Treatment:
+              </span>{" "}
+              Access top private hospitals without worrying about room rents or
+              doctor fees. Get the best care, cashless.
             </li>
           </ul>
         </div>
 
         <div className="img_container w-1/3 relative">
           <img
-            className="rounded-lg w-[85%] h-full object-cover"
-            src="/image/life.avif"
+            className="rounded-lg w-full h-full object-cover"
+            src="/image/landing-page/finance2.jpg"
             alt=""
           />
         </div>
-     
       </div>
+
+      <div
+        className="first_container flex gap-4 "
+        style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }}
+      >
+        <div className="img_container w-1/3 flex items-center">
+          <img
+            className="rounded-lg w-full h-full object-cover"
+            src="/image/car_bg2.jpg"
+            alt=""
+          />
+        </div>
+
+        <div className="company_detail w-2/3">
+          <h2
+            className="text-[#002249] text-3xl font-semibold"
+            style={{ padding: "0px 5px" }}
+          >
+            What are the Key Benefits to Buy a Health Insurance Plan?
+          </h2>
+
+          <div className="" style={{padding:'0 15px'}}>
+          <h2 className="text-[#0073bd] text-lg" style={{padding:'10px 0'}}>Health Insurance buying checklist</h2>
+          <div className="flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                  Tax Savings (Section 80D)
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+                Save up to ₹75,000* on your taxes every year under Section 80D
+                of the Income Tax Act.
+              </p>
+            </div>
+
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                  Cashless Hospitalization
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+              Avail cashless treatment at over 5000+ network hospitals. Just show your Globsure health card.
+              </p>
+            </div>
+
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                 No Claim Bonus (NCB)
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+                For every claim-free year, we increase your Sum Insured amount as a bonus, at no extra cost.
+              </p>
+            </div>
+
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                  Day Care Treatments
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+                We cover advanced surgeries and treatments (like Cataract, Dialysis) that require less than 24 hours of hospitalization.
+              </p>
+            </div>
+
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                  Pre & Post Hospitalization
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+                We don't just pay hospital bills. We cover medical expenses 30 days before admission and 60 days after discharge.
+              </p>
+            </div>
+
+            <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icon flex">
+                <img className="w-8 bg-white rounded-lg shadow" style={{padding:'5px'}} src="/svg/check.svg" alt="" />
+                <h2 className="text-[#002249] text-lg" style={{paddingLeft:'10px'}}>
+                 Lifetime Renewability
+                </h2>
+              </div>
+              <p className="text-sm w-[85%] text-justify text-[#000000a6]" style={{paddingLeft:'45px'}}>
+                Once you are with us, we stay with you. Renew your policy for a lifetime without any break.
+              </p>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+         
+      <div className="origin-section w-full flex" style={{maxWidth:"1250px", margin:'50px auto'}}>
+        <div className="right w-1/2 flex flex-col gap-2">
+          <h4 className="text-[#002249] text-3xl font-semibold">Why You Need Health Insurance Today ?</h4>
+          <p className="text-[15px] text-[#000000a6] text-justify" style={{padding:'10px 0'}}>Your health is priceless, but healthcare is not. As medical costs skyrocket, a single hospitalization can disrupt your financial stability and future goals. Buying health insurance today ensures that you are prepared for tomorrow's uncertainties. From covering critical illnesses to handling daily medical expenses, our plans act as a financial shield, allowing you to focus on recovery rather than bills. Take the first step towards a worry-free life by locking in your protection now.​</p>
+          <img className="rounded-lg" src="/image/landing-page/finance1.jpg" alt="" />
+        </div>
+        <div className="left w-1/2 flex flex-col gap-5 justify-end" style={{paddingLeft:'60px'}}>
+          <Icondiv svg={'/svg/briefcase.svg'} title={"Employer Cover Isn't Enough"} desc={"Corporate insurance is linked to your job. If you switch jobs or retire, you lose coverage instantly. A personal plan stays with you forever."}/>
+
+          <Icondiv svg={'/svg/glass.svg'} title={'Beat the Waiting Period'} desc={'Specific diseases have a 2-4 year waiting period. Buying now ensures that when you actually need it later, you are already fully covered.'} />
+
+          <Icondiv svg={'/svg/percentage.svg'} title={'Lock Lower Premiums'} desc={'Premiums increase drastically as you age. Buying at a young age lets you lock in comprehensive coverage at a much lower cost.'} />
+
+          <Icondiv svg={'/svg/robot.svg'} title={'Cover Modern Treatments'} desc={'Modern healthcare includes robotic surgeries and advanced therapies which are expensive. Standard plans might miss them, but we cover them.'} />
+
+          <Icondiv svg={'/svg/heart.svg'} title={'Combat Lifestyle Risks'} desc={'Stress and modern lifestyle have made critical illnesses common even among the youth. Early protection is the best cure.'} />
+  
+        </div>
+      </div>
+         
+      <div className="origin-section w-full flex justify-start" style={{maxWidth:"1250px", margin:'50px auto'}}>
+
+        <div className="left w-1/2 flex flex-col gap-5 justify-end">
+        
+          <Icondiv svg={'/svg/briefcase.svg'} title={"Employer Cover Isn't Enough"} desc={"Corporate insurance is linked to your job. If you switch jobs or retire, you lose coverage instantly. A personal plan stays with you forever."}/>
+
+          <Icondiv svg={'/svg/glass.svg'} title={'Beat the Waiting Period'} desc={'Specific diseases have a 2-4 year waiting period. Buying now ensures that when you actually need it later, you are already fully covered.'} />
+
+          <Icondiv svg={'/svg/percentage.svg'} title={'Lock Lower Premiums'} desc={'Premiums increase drastically as you age. Buying at a young age lets you lock in comprehensive coverage at a much lower cost.'} />
+
+          <Icondiv svg={'/svg/robot.svg'} title={'Cover Modern Treatments'} desc={'Modern healthcare includes robotic surgeries and advanced therapies which are expensive. Standard plans might miss them, but we cover them.'} />
+
+          <Icondiv svg={'/svg/heart.svg'} title={'Combat Lifestyle Risks'} desc={'Stress and modern lifestyle have made critical illnesses common even among the youth. Early protection is the best cure.'} />
+  
+        </div>
+        <div className="right w-1/2 flex flex-col gap-2">
+          <h4 className="text-[#002249] text-3xl font-semibold">Why You Need Health Insurance Today ?</h4>
+          <p className="text-[15px] text-[#000000a6] text-justify" style={{padding:'10px 0'}}>Your health is priceless, but healthcare is not. As medical costs skyrocket, a single hospitalization can disrupt your financial stability and future goals. Buying health insurance today ensures that you are prepared for tomorrow's uncertainties. From covering critical illnesses to handling daily medical expenses, our plans act as a financial shield, allowing you to focus on recovery rather than bills. Take the first step towards a worry-free life by locking in your protection now.​</p>
+          <img className="rounded-lg" src="/image/landing-page/finance1.jpg" alt="" />
+        </div>
+
+      </div>
+
+
     </>
   );
 };
