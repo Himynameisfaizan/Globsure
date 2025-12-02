@@ -1,11 +1,39 @@
 import React from "react";
-import Icondiv from "../about-page/Icondiv";
+import Icondiv from "../../about-page/Icondiv";
+import Accordion from "../health/Accordion";
 
-const Insurance_header = () => {
+const Vehical_content = () => {
+  const accordionData = [
+    {
+      id: "Q1",
+      question: "What is Zero Depreciation Cover?",
+      answer: `Standard policies deduct the depreciation value of replaced parts (plastic, rubber, metal) during a claim. A 'Zero Depreciation' add-on ensures you get the full claim amount without any such deductions, saving you a lot of money.`,
+    },
+    {
+      id: "Q2",
+      question: "What is IDV in vehicle insurance?",
+      answer: `IDV stands for 'Insured Declared Value'. It is the current market value of your vehicle. In case of theft or total loss, this is the maximum amount the insurance company will pay you.`,
+    },
+    {
+      id: "Q3",
+      question: "Is vehicle insurance mandatory in India?",
+      answer: `Yes, under the Motor Vehicles Act, having at least a 'Third-Party Liability' insurance policy is mandatory for all vehicles driving on Indian roads to avoid heavy traffic fines.`,
+    },
+    {
+      id: "Q4",
+      question: "What happens to my No Claim Bonus (NCB) if I claim?",
+      answer: `NCB is a discount reward for not making a claim during the policy year. If you make a claim, your NCB usually becomes zero for the next renewal. That's why for small damages, people often avoid claiming to save their NCB.`,
+    },
+    {
+      id: "Q5",
+      question: "How do I avail cashless repair?",
+      answer: `To avail cashless repair, take your vehicle to any of our 3000+ network garages. The garage will coordinate directly with us for the payment, and you only have to pay for compulsory deductibles (if any).`,
+    },
+  ];
+
   return (
     <>
-    
-    {/* Start header section */}
+      {/* Start header section */}
       <div className="bg-[#0075bd0a] w-full">
         <div
           className="w-full flex"
@@ -14,22 +42,24 @@ const Insurance_header = () => {
           <div className="w-2/3">
             <h2
               className="text-3xl text-[#002249] font-semibold tracking-wide"
-              style={{ padding: "20px 0" }}
+              style={{ padding: "20px 0 10px 0" }}
             >
-              Buy Health Insurance Plans and Policies Online
+              Drive with Confidence Complete Protection for Your Vehicle.
             </h2>
             <p className="w-5/6 text-justify text-[#00000099]">
-              Health is your greatest asset, but preserving it shouldn't come at
-              the cost of your financial stability. Medical emergencies are
-              unpredictable and the rising cost of healthcare can be
-              overwhelming for any family.Globsure International ensures that
-              you and your loved ones have access to the best medical care
-              without the stress of upfront payments. Our plan offers end-to-end
-              protection that covers you from the moment a diagnosis is made
-              until you are fully recovered. Whether it is a planned surgery or
-              an unexpected emergency, we bridge the gap between expensive
-              treatments and affordable care, securing your savings and your
-              peace of mind.
+              Owning a vehicle gives you the freedom to travel, but the road
+              ahead is full of uncertainties. From minor scratches in heavy
+              traffic to major accidental damages, unforeseen repair costs can
+              burn a deep hole in your pocket. Additionally, driving without a
+              valid insurance policy is a serious offense under the Motor
+              Vehicles Act, attracting heavy fines and legal trouble.{" "}
+              <span className="text-black">Globsure Vehicle Insurance</span>{" "}
+              acts as your ultimate safety net. We offer comprehensive
+              protection that covers damages to your vehicle caused by
+              accidents, fire, theft, or natural calamities, along with
+              mandatory third-party liability cover. Drive with absolute
+              confidence, knowing that we are always riding shotgun to handle
+              the risks.
             </p>
 
             <h2
@@ -44,9 +74,9 @@ const Insurance_header = () => {
                 className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
-                <img className="w-12" src="/svg/cash.svg" alt="" />
+                <img className="w-12" src="/svg/car.svg" alt="" />
                 <p className="text-[15px]">
-                  Cashless Treatment at 5000+ Network Hospitals.
+                  Covers damages from accidents, fire, and natural disasters.
                 </p>
               </div>
 
@@ -56,7 +86,18 @@ const Insurance_header = () => {
               >
                 <img className="w-12" src="/svg/refund.svg" alt="" />
                 <p className="text-[15px]">
-                  Zero Co-payment & 100% Claim Settlement Ratio.
+                  Avoid hefty traffic fines with a valid third-party liability
+                  policy.
+                </p>
+              </div>
+
+              <div
+                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                style={{ padding: "10px 15px" }}
+              >
+                <img className="w-10" src="/svg/cash.svg" alt="" />
+                <p className="text-[15px]">
+                  Cashless claims at 3000+ network garages across the country.
                 </p>
               </div>
 
@@ -66,24 +107,8 @@ const Insurance_header = () => {
               >
                 <img className="w-10" src="/svg/100.svg" alt="" />
                 <p className="text-[15px]">
-                  Pre & Post Hospitalization Coverage (60 days).
+                  Get up to 50% discount on renewal for claim-free years..
                 </p>
-              </div>
-
-              <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
-                style={{ padding: "10px 15px" }}
-              >
-                <img className="w-10" src="/svg/checkup.svg" alt="" />
-                <p className="text-[15px]">Free Annual Health Check-ups.</p>
-              </div>
-
-              <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
-                style={{ padding: "10px 15px" }}
-              >
-                <img className="w-10" src="/svg/tax.svg" alt="" />
-                <p className="text-[15px]">Tax Benefits under Section 80D.</p>
               </div>
             </div>
           </div>
@@ -91,7 +116,7 @@ const Insurance_header = () => {
             className="w-1/3 flex flex-col justify-center"
             style={{ padding: "20px 0" }}
           >
-            <div className="bg-white h-[95%] rounded-xl shadow-lg">
+            <div className="bg-white h-[90%] rounded-xl shadow-lg">
               <h2
                 className="text-center text-xl text-[#002249] font-bold"
                 style={{ paddingTop: "20px" }}
@@ -145,20 +170,20 @@ const Insurance_header = () => {
         </div>
       </div>
 
-    {/* Start secure section */}
+      {/* Start secure section */}
       <div
         className="first_container flex"
         style={{ padding: "30px 0", maxWidth: "1250px", margin: "20px auto" }}
       >
         <div className="company_detail w-2/3">
           <h4 className="text-[#000000a6] text-[15px] font-thin">
-            WHY SHOULD YOU BUY HEALTH INSURANCE PLAN
+            WHY RISK YOUR SAVINGS ON THE ROAD?
           </h4>
           <h2
             className="text-[#002249] text-3xl font-semibold"
             style={{ padding: "5px 0" }}
           >
-            Secure your finances and health before it's too late.
+            Secure Your Finances Before the Unexpected Happens
           </h2>
 
           <ul className="w-[85%] text-justify" style={{ marginTop: "10px" }}>
@@ -167,40 +192,40 @@ const Insurance_header = () => {
               className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">
-                Rising Medical Inflation:
+                Avoid Hefty Traffic Fines
               </span>{" "}
-              Healthcare costs are increasing by 15% every year. A simple
-              surgery today can cost lakhs tomorrow. Lock your safety net now.{" "}
+              Driving without insurance is illegal. Save yourself from traffic
+              challans starting from ₹2,000 for non-compliance.{" "}
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">
-                Lifestyle Diseases:
+                Beat Rising Repair Costs
               </span>{" "}
-              Stress and modern lifestyle have made critical illnesses common
-              even in young age. Being prepared is the only cure.
+              Spare parts and labor costs are skyrocketing. We cover the heavy
+              repair bills so you don't have to pay from your pocket.
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">
-                Protect Your Savings:
+                Protection Against Total Loss
               </span>{" "}
-              Don't let a hospital bill wipe out your hard-earned savings. Let
-              Globsure pay the bills while you keep your savings intact.
+              In case of theft or damage beyond repair, we reimburse the current
+              market value (IDV) of your vehicle.
             </li>
             <li
               style={{ padding: "5px 0" }}
               className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">
-                Quality Treatment:
+                Third-Party Liability Shield
               </span>{" "}
-              Access top private hospitals without worrying about room rents or
-              doctor fees. Get the best care, cashless.
+              If your vehicle damages someone else's property, the legal
+              compensation can be massive. We handle those payouts for you.
             </li>
           </ul>
         </div>
@@ -208,13 +233,13 @@ const Insurance_header = () => {
         <div className="img_container w-1/3 relative">
           <img
             className="rounded-lg w-full h-full object-cover"
-            src="/image/landing-page/finance2.jpg"
+            src="/image/landing-page/insurance.jpg"
             alt=""
           />
         </div>
       </div>
 
-    {/* Start benefit section */}
+      {/* Start benefit section */}
       <div
         className="first_container flex gap-4 "
         style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }}
@@ -232,7 +257,7 @@ const Insurance_header = () => {
             className="text-[#002249] text-3xl font-semibold"
             style={{ padding: "0px 5px" }}
           >
-            What are the Key Benefits to Buy a Health Insurance Plan?
+            Key Benefits of Globsure Vehicle Insurance
           </h2>
 
           <div className="" style={{ padding: "0 15px" }}>
@@ -240,7 +265,7 @@ const Insurance_header = () => {
               className="text-[#0073bd] text-lg"
               style={{ padding: "10px 0" }}
             >
-              Health Insurance buying checklist
+              Everything you need for a smooth drive.
             </h2>
             <div className="flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
               <div className="w-1/2" style={{ padding: "10px" }}>
@@ -255,15 +280,15 @@ const Insurance_header = () => {
                     className="text-[#002249] text-lg"
                     style={{ paddingLeft: "10px" }}
                   >
-                    Tax Savings (Section 80D)
+                    Cashless Garages Network
                   </h2>
                 </div>
                 <p
                   className="text-sm w-[85%] text-justify text-[#000000a6]"
                   style={{ paddingLeft: "45px" }}
                 >
-                  Save up to ₹75,000* on your taxes every year under Section 80D
-                  of the Income Tax Act.
+                  Get your vehicle repaired at over 3000+ network garages across
+                  the country without paying cash upfront.
                 </p>
               </div>
 
@@ -279,15 +304,39 @@ const Insurance_header = () => {
                     className="text-[#002249] text-lg"
                     style={{ paddingLeft: "10px" }}
                   >
-                    Cashless Hospitalization
+                    Zero Depreciation Cover
                   </h2>
                 </div>
                 <p
                   className="text-sm w-[85%] text-justify text-[#000000a6]"
                   style={{ paddingLeft: "45px" }}
                 >
-                  Avail cashless treatment at over 5000+ network hospitals. Just
-                  show your Globsure health card.
+                  Get full claim value without any deduction for depreciation on
+                  parts like plastic, fiber, and rubber.
+                </p>
+              </div>
+
+              <div className="w-1/2" style={{ padding: "10px" }}>
+                <div className="icon flex">
+                  <img
+                    className="w-8 bg-white rounded-lg shadow"
+                    style={{ padding: "5px" }}
+                    src="/svg/check.svg"
+                    alt=""
+                  />
+                  <h2
+                    className="text-[#002249] text-lg"
+                    style={{ paddingLeft: "10px" }}
+                  >
+                    24x7 Roadside Assistance
+                  </h2>
+                </div>
+                <p
+                  className="text-sm w-[85%] text-justify text-[#000000a6]"
+                  style={{ paddingLeft: "45px" }}
+                >
+                  Stuck with a flat tyre or dead battery? We provide
+                  round-the-clock breakdown support and towing services.
                 </p>
               </div>
 
@@ -310,8 +359,8 @@ const Insurance_header = () => {
                   className="text-sm w-[85%] text-justify text-[#000000a6]"
                   style={{ paddingLeft: "45px" }}
                 >
-                  For every claim-free year, we increase your Sum Insured amount
-                  as a bonus, at no extra cost.
+                  Save big on renewals! Get up to 50% discount on your premium
+                  for every claim-free year.
                 </p>
               </div>
 
@@ -327,15 +376,15 @@ const Insurance_header = () => {
                     className="text-[#002249] text-lg"
                     style={{ paddingLeft: "10px" }}
                   >
-                    Day Care Treatments
+                    Superfast Claim Settlement"
                   </h2>
                 </div>
                 <p
                   className="text-sm w-[85%] text-justify text-[#000000a6]"
                   style={{ paddingLeft: "45px" }}
                 >
-                  We cover advanced surgeries and treatments (like Cataract,
-                  Dialysis) that require less than 24 hours of hospitalization.
+                  Experience a hassle-free digital claim process. Just upload
+                  photos of the damage and get quick approvals.
                 </p>
               </div>
 
@@ -351,39 +400,15 @@ const Insurance_header = () => {
                     className="text-[#002249] text-lg"
                     style={{ paddingLeft: "10px" }}
                   >
-                    Pre & Post Hospitalization
+                    Personal Accident Cover
                   </h2>
                 </div>
                 <p
                   className="text-sm w-[85%] text-justify text-[#000000a6]"
                   style={{ paddingLeft: "45px" }}
                 >
-                  We don't just pay hospital bills. We cover medical expenses 30
-                  days before admission and 60 days after discharge.
-                </p>
-              </div>
-
-              <div className="w-1/2" style={{ padding: "10px" }}>
-                <div className="icon flex">
-                  <img
-                    className="w-8 bg-white rounded-lg shadow"
-                    style={{ padding: "5px" }}
-                    src="/svg/check.svg"
-                    alt=""
-                  />
-                  <h2
-                    className="text-[#002249] text-lg"
-                    style={{ paddingLeft: "10px" }}
-                  >
-                    Lifetime Renewability
-                  </h2>
-                </div>
-                <p
-                  className="text-sm w-[85%] text-justify text-[#000000a6]"
-                  style={{ paddingLeft: "45px" }}
-                >
-                  Once you are with us, we stay with you. Renew your policy for
-                  a lifetime without any break.
+                  We provide mandatory personal accident coverage of ₹15 Lakhs
+                  for the owner-driver in case of unfortunate events.
                 </p>
               </div>
             </div>
@@ -391,31 +416,32 @@ const Insurance_header = () => {
         </div>
       </div>
 
-    {/* Start why need section */}
+      {/* Start why need section */}
       <div
-        className="origin-section w-full flex justify-between"
+        className="origin-section w-full flex justify-between items-center"
         style={{ maxWidth: "1250px", margin: "50px auto" }}
       >
         <div className="right w-1/2 flex flex-col gap-2">
           <h4 className="text-[#002249] text-3xl font-semibold">
-            Why You Need Health Insurance Today ?
+            Why You Need Vehical Insurance Today ?
           </h4>
           <p
             className="text-[15px] text-[#000000a6] text-justify"
             style={{ padding: "10px 0" }}
           >
-            Your health is priceless, but healthcare is not. As medical costs
-            skyrocket, a single hospitalization can disrupt your financial
-            stability and future goals. Buying health insurance today ensures
-            that you are prepared for tomorrow's uncertainties. From covering
-            critical illnesses to handling daily medical expenses, our plans act
-            as a financial shield, allowing you to focus on recovery rather than
-            bills. Take the first step towards a worry-free life by locking in
-            your protection now.​
+            Owning a vehicle brings convenience and freedom, but Indian roads
+            are full of uncertainties. Whether it is a chaotic traffic jam, a
+            sudden distracted driver, or an unexpected natural calamity like a
+            flood, your vehicle is constantly exposed to risks. A single moment
+            of bad luck can lead to damages worth thousands or even lakhs,
+            draining the savings you have built for your future goals. Moreover,
+            vehicle insurance isn't just a choice—it is a legal necessity.
+            Driving without it can lead to heavy fines and legal complications.
+            Globsure Vehicle Insurance acts as your financial seatbelt.
           </p>
           <img
-            className="rounded-lg"
-            src="/image/landing-page/finance1.jpg"
+            className="rounded-lg h-80 w-full object-cover"
+            src="/image/landing-page/insurance2.jpg"
             alt=""
           />
         </div>
@@ -424,145 +450,158 @@ const Insurance_header = () => {
           style={{ paddingLeft: "60px" }}
         >
           <Icondiv
-            svg={"/svg/briefcase.svg"}
-            title={"Employer Cover Isn't Enough"}
+            svg={"/svg/car_crash.svg"}
+            title={"Rising Road Accidents"}
             desc={
-              "Corporate insurance is linked to your job. If you switch jobs or retire, you lose coverage instantly. A personal plan stays with you forever."
+              "Traffic is unpredictable. Even a minor collision can lead to expensive denting and painting costs. We cover it all."
             }
           />
 
           <Icondiv
-            svg={"/svg/glass.svg"}
-            title={"Beat the Waiting Period"}
+            svg={"/svg/warning.svg"}
+            title={"Natural Calamities"}
             desc={
-              "Specific diseases have a 2-4 year waiting period. Buying now ensures that when you actually need it later, you are already fully covered."
+              "Heavy rains, floods, or falling trees can severely damage your vehicle. Insurance covers these unpredictable natural damages."
             }
           />
 
           <Icondiv
             svg={"/svg/percentage.svg"}
-            title={"Lock Lower Premiums"}
+            title={"Mandatory by Law"}
             desc={
-              "Premiums increase drastically as you age. Buying at a young age lets you lock in comprehensive coverage at a much lower cost."
+              "It is illegal to drive without valid insurance in India. Stay compliant and avoid heavy traffic challans."
             }
           />
 
           <Icondiv
-            svg={"/svg/robot.svg"}
-            title={"Cover Modern Treatments"}
+            svg={"/svg/sheild.svg"}
+            title={"Car Theft Risk"}
             desc={
-              "Modern healthcare includes robotic surgeries and advanced therapies which are expensive. Standard plans might miss them, but we cover them."
+              "Vehicle thefts are common in cities. If your car gets stolen, we pay you the market value (IDV) to minimize your loss."
             }
           />
 
           <Icondiv
-            svg={"/svg/heart.svg"}
-            title={"Combat Lifestyle Risks"}
+            svg={"/svg/hammer.svg"}
+            title={"Third-Party Liability"}
             desc={
-              "Stress and modern lifestyle have made critical illnesses common even among the youth. Early protection is the best cure."
+              "If your car accidentally damages someone else's property, the legal claims can be huge. We handle those payouts for you."
             }
           />
         </div>
       </div>
 
-    {/* Start share details section */}
+      {/* Start share details section */}
       <div className="bg-[#0075bd0a]">
         <div
-          className="origin-section w-full flex justify-around items-center"
+          className="origin-section"
           style={{ maxWidth: "1250px", margin: "50px auto" }}
         >
-          <div className="left w-1/2 flex flex-col gap-5 justify-end">
-            <Icondiv
-              svg={"/svg/one.svg"}
-              title={"Share Details"}
-              desc={
-                "Enter basic details like age and city to generate a quote."
-              }
-            />
-
-            <Icondiv
-              svg={"/svg/two.svg"}
-              title={"Customize Plan"}
-              desc={
-                "Choose your sum insured and add optional benefits."
-              }
-            />
-
-            <Icondiv
-              svg={"/svg/three.svg"}
-              title={"Fill Proposal"}
-              desc={
-                "Complete a short health declaration form online."
-              }
-            />
-
-            <Icondiv
-              svg={"/svg/four.svg"}
-              title={"Instant Policy"}
-              desc={
-                "Make payment and download your policy immediately."
-              }
-            />
-          </div>
-          <div
-            className="w-1/3 flex flex-col justify-center"
+          <h2
+            className="text-center text-[#002249] text-3xl font-bold"
             style={{ padding: "20px 0" }}
           >
-            <div className="bg-white h-[95%] rounded-xl shadow-lg">
-              <h2
-                className="text-center text-xl text-[#002249] font-bold"
-                style={{ paddingTop: "20px" }}
-              >
-                Any Query, Just a Call Away
-              </h2>
-              <h3
-                className="text-center text-[#000000a6] border-b border-[#00000036]"
-                style={{ padding: "5px 0 10px 0" }}
-              >
-                We’re Here to Help You 24/7
-              </h3>
+            How To Buy Vehical Insurance
+          </h2>
+          <div className="w-full flex justify-around items-center">
+            <div className="left w-1/2 flex flex-col gap-15 justify-end">
+              <Icondiv
+                svg={"/svg/one.svg"}
+                title={"Enter Vehical Details"}
+                desc={
+                  "Just enter your Car/Bike registration number (e.g., DL-01-AB-1234) or select the make and model manually."
+                }
+              />
 
-              <div
-                className="form flex flex-col gap-6"
-                style={{ padding: "30px 30px", marginBottom: "40px" }}
-              >
-                <input
-                  className="border border-[#00000036] w-full rounded-lg"
-                  style={{ padding: "15px" }}
-                  type="text"
-                  placeholder="Enter Name"
-                  required
-                />
+              <Icondiv
+                svg={"/svg/two.svg"}
+                title={"Customize Your IDV"}
+                desc={"Check your vehicle's current market value (IDV). You can adjust it to get the right coverage balance."}
+              />
 
-                <input
-                  className="border border-[#00000036] w-full rounded-lg"
-                  style={{ padding: "15px" }}
-                  type="number"
-                  placeholder="Enter Phone no."
-                  required
-                />
+              <Icondiv
+                svg={"/svg/three.svg"}
+                title={"Select Add-ons"}
+                desc={"Enhance your plan by adding 'Zero Depreciation', 'Engine Protect', or 'Roadside Assistance' covers."}
+              />
 
-                <textarea
-                  rows={4}
-                  className="border border-[#00000036] w-full rounded-lg"
-                  placeholder="Write your doubts.."
-                  required
-                  style={{ padding: "10px" }}
-                ></textarea>
+              <Icondiv
+                svg={"/svg/four.svg"}
+                title={"Instant Policy"}
+                desc={"Pay premium online securely and get your policy document delivered instantly to your inbox."}
+              />
+            </div>
+            <div
+              className="w-1/3 flex flex-col justify-center"
+              style={{ padding: "20px 0" }}
+            >
+              <div className="bg-white h-[95%] rounded-xl shadow-lg">
+                <h2
+                  className="text-center text-xl text-[#002249] font-bold"
+                  style={{ paddingTop: "20px" }}
+                >
+                  Any Query, Just a Call Away
+                </h2>
+                <h3
+                  className="text-center text-[#000000a6] border-b border-[#00000036]"
+                  style={{ padding: "5px 0 10px 0" }}
+                >
+                  We’re Here to Help You 24/7
+                </h3>
 
-                <input
-                  className="bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
-                  style={{ padding: "20px" }}
-                  type="submit"
-                  value="Our team will connect you in minutes"
-                />
+                <div
+                  className="form flex flex-col gap-6"
+                  style={{ padding: "30px 30px", marginBottom: "40px" }}
+                >
+                  <input
+                    className="border border-[#00000036] w-full rounded-lg"
+                    style={{ padding: "15px" }}
+                    type="text"
+                    placeholder="Enter Name"
+                    required
+                  />
+
+                  <input
+                    className="border border-[#00000036] w-full rounded-lg"
+                    style={{ padding: "15px" }}
+                    type="number"
+                    placeholder="Enter Phone no."
+                    required
+                  />
+
+                  <textarea
+                    rows={4}
+                    className="border border-[#00000036] w-full rounded-lg"
+                    placeholder="Write your doubts.."
+                    required
+                    style={{ padding: "10px" }}
+                  ></textarea>
+
+                  <input
+                    className="bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                    style={{ padding: "20px" }}
+                    type="submit"
+                    value="Our team will connect you in minutes"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Start share accordion section */}
+      <div className="accordion max-w-[1000px]" style={{ margin: "auto" }}>
+        <h2
+          className="text-[#002249] text-3xl font-bold text-center"
+          style={{ padding: "10px 0" }}
+        >
+          Frequently Asked Questions
+        </h2>
+        <Accordion faq={accordionData} />
+      </div>
     </>
   );
 };
 
-export default Insurance_header;
+export default Vehical_content;

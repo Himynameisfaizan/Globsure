@@ -66,12 +66,48 @@ body {
 .menu li {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .menu li a{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.insurance {
+  position: relative;
+}
+
+.insurance .dropdown{
+  display: none;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* position: absolute; */
+  /* background-color: white; */
+  width: 160px;
+  z-index: 2;
+  border-radius: 2px;
+
+}
+
+.insurance .dropdown a{
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.insurance .dropdown a:hover{
+  background-color: #002249;
+  color: white;
+  border-radius: 2px;
+}
+
+.insurance:hover .dropdown{
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 160px;
+  top: 100%;
+  right: -20%;
 }
 
 .header .icon{
