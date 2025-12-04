@@ -1,20 +1,13 @@
 import React from "react";
 import "../../css/footer.css";
+import { NavLink } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
       <footer>
         <div className="footer-logo">
           <div className="logo">
-            <img
-              src="/image/logo/white_logo.png"
-              alt="logo"
-            />
-          </div>
-
-          <div className="email">
-            <i className="ri-mail-send-line"></i>
-            <h3>globsureinsurance@gamil.com</h3>
+            <img src="/image/logo/white_logo.png" alt="logo" />
           </div>
 
           <div className="number">
@@ -27,16 +20,14 @@ export const Footer = () => {
             <h3>Explore</h3>
             <ul>
               <li>
-                <a href="#">About us</a>
+                <NavLink to="/about-us">About us</NavLink>
               </li>
               <li>
-                <a href="#">Our plan</a>
+                <NavLink to="/claim">How to Claim</NavLink>
               </li>
+            
               <li>
-                <a href="#">Our work</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
+                <NavLink to="/contact-us">Contact us</NavLink>
               </li>
             </ul>
           </div>
@@ -44,16 +35,13 @@ export const Footer = () => {
             <h3>Insurance product</h3>
             <ul>
               <li>
-                <a href="#">General insurance</a>
+                <NavLink to="/general_insurance">General insurance</NavLink>
               </li>
               <li>
-                <a href="#">Health insurance</a>
+                <NavLink to="/health_insurance">Health insurance</NavLink>
               </li>
               <li>
-                <a href="#">Life insurance</a>
-              </li>
-              <li>
-                <a href="#">Vehical Insurance</a>
+                <NavLink to="/vehical_insurance">Vehical Insurance</NavLink>
               </li>
             </ul>
           </div>
@@ -67,24 +55,42 @@ export const Footer = () => {
               Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
             </h4>
             <div className="social">
-              <a href="#"><i className="ri-facebook-fill"></i></a>
-              <a href="#"><i className="ri-instagram-line"></i></a> 
-              <a href="#"><i className="ri-twitter-x-line"></i></a>
-              <a href="#"><i className="ri-linkedin-fill"></i></a> 
+              <a href="#">
+                <i className="ri-facebook-fill"></i>
+              </a>
+              <a href="#">
+                <i className="ri-instagram-line"></i>
+              </a>
+              <a href="#">
+                <i className="ri-twitter-x-line"></i>
+              </a>
+              <a href="#">
+                <i className="ri-linkedin-fill"></i>
+              </a>
             </div>
           </div>
           <div className="newsletter">
             <h3>Great insurance your solutions for life and business</h3>
             <h4>Subscripbe our newsletter</h4>
             <div className="email">
-              <input className="bg-white text-black" type="email" required placeholder="Email address" />
+              <input
+                className="bg-white text-black"
+                type="email"
+                required
+                placeholder="Email address"
+              />
               <i className="ri-send-plane-fill"></i>
             </div>
           </div>
         </div>
-        <div className="footer-copyright">
-          <i className="ri-copyright-line"></i>
-          <h3>All Copyright Reserved 2025 by Globsure.com</h3>
+        <div className="footer-copyright flex items-center justify-between">
+          <div className="flex items-center">
+            <i className="ri-copyright-line"></i>
+            <h3>All Copyright Reserved 2025 by Globsure</h3>
+          </div>
+        <div>
+          <h2 className="text-white text-lg tracking-wide">needhelp@company.com</h2>
+        </div>
         </div>
       </footer>
     </>

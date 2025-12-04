@@ -13,39 +13,116 @@ import "swiper/css/scrollbar";
 import { Autoplay, Scrollbar } from "swiper/modules";
 // import required modules
 import { EffectCards } from "swiper/modules";
+import { NavLink } from "react-router-dom";
 const text = "GLOBSURE INTERNATIONAL INSURANCE ";
 const About_section = () => {
   return (
     <>
       <div className="parent-container">
+        {/* Start plans section */}
+        <div
+          className="our-Plans"
+          style={{ maxWidth: "1250px", margin: "40px auto 0 auto" }}
+        >
+          <h5 className="text-center text-[#000000a6]">
+            QUICK, EASY AND HASSLE FREE
+          </h5>
+          <h3 className="text-center text-[#002249] text-3xl font-bold">
+            Let's Find You The Best Insurance
+          </h3>
+
+          <div
+            className="flex gap-10 justify-center"
+            style={{ padding: "40px 0" }}
+          >
+            <NavLink
+              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              to="/vehical_insurance"
+            >
+              <img
+                className="w-25 bg-[#0073bd25] rounded-full"
+                style={{ padding: "15px" }}
+                src="/svg/car.svg"
+                alt=""
+              />
+              <h3 className="text-[#002249]">Vehical Insurance</h3>
+            </NavLink>
+
+            <NavLink
+              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              to="/health_insurance"
+            >
+              <img
+                className="w-25 bg-[#0073bd25] rounded-full"
+                style={{ padding: "15px" }}
+                src="/svg/health.svg"
+                alt=""
+              />
+              <h3 className="text-[#002249]">Health Insurance</h3>
+            </NavLink>
+
+            <NavLink
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              to="/general_insurance"
+            >
+              <img
+                className="w-25 bg-[#0073bd25] rounded-full"
+                style={{ padding: "15px" }}
+                src="/svg/home.svg"
+                alt=""
+              />
+              <h3 className="text-[#002249]">General Insurance</h3>
+            </NavLink>
+
+            <NavLink
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              to="/"
+            >
+              <img
+                className="w-25 bg-[#0073bd25] rounded-full"
+                style={{ padding: "15px" }}
+                src="/svg/percentage.svg"
+                alt=""
+              />
+              <h3 className="text-[#002249]">Guaranteed Return Plan</h3>
+            </NavLink>
+
+            <NavLink
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              to="/"
+            >
+              <img
+                className="w-25 bg-[#0073bd25] rounded-full"
+                style={{ padding: "15px" }}
+                src="/svg/cash.svg"
+                alt=""
+              />
+              <h3 className="text-[#002249]">Investment Plan</h3>
+            </NavLink>
+          </div>
+        </div>
 
         <div className="about-parent">
-          <div className="childs">
-            <div className="child1">
+          <div className="childs flex items-center">
+            <div className="child1 w-1/2 h-full">
               <div className="image">
-                <img src="/image/life_bg.jpg" alt="image" />
-              </div>
-
-              <div className="btn">
-                <div className="icon">
-                  <i className="ri-verified-badge-fill"></i>
-                </div>
-                <h3>
-                  We Secure Your Dreams With{" "}
-                  <span> Unwavering Commitment.</span>
-                </h3>
+                <img
+                  className="h-140 w-[90%] rounded-lg object-cover"
+                  src="/image/about1.avif"
+                  alt="image"
+                />
               </div>
             </div>
 
-            <div className="child2">
+            <div className="child2 w-1/2">
               <div className="about-first">
                 <h4 className="text-[15px] text-[#000000a6] tracking-widest font-medium p-8">
                   ABOUT GLOBSURE INTERNATIONAL
                 </h4>
-                <h1 className="text-4xl text-[#002249] font-bold ">
+                <h1 className="text-3xl text-[#002249] font-bold ">
                   Welcome to Globsure International
                 </h1>
-                <h3 className="text-[15px] leading-5.5 font-thin text-[#000000a6]">
+                <h3 className="text-[15px] text-justify leading-5.5 font-thin text-[#000000a6]">
                   your trusted partner in insurance. With decades of expertise,
                   our mission is to help people and businesses feel secure,
                   protected, and confident about their future. Founded with a
@@ -55,36 +132,43 @@ const About_section = () => {
                 </h3>
               </div>
               <div className="about-second">
-                <h2 className="text-2xl text-[#002249] font-bold">
+                <h2 className="text-xl text-[#002249] font-bold">
                   Key Benefits
                 </h2>
                 <ul>
-                  <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                    <span>Wide Range of Policies:</span> Whether you want to
-                    protect your home, vehicle, business, or secure your health,
-                    we have the right policy for you.
+                  <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                    <span className="text-[#002249]">
+                      Wide Range of Policies:
+                    </span>{" "}
+                    Whether you want to protect your home, vehicle, business, or
+                    secure your health, we have the right policy for you.
                   </li>
-                  <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                    <span>Expert Team:</span>Our qualified agents guide you at
-                    every step, making insurance simple and transparent.
+                  <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                    <span className="text-[#002249]">Expert Team:</span>Our
+                    qualified agents guide you at every step, making insurance
+                    simple and transparent.
                   </li>
-                  <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                    <span>Simple Process:</span>We believe in hassle-free
-                    insurance with quick quotes and fast claim settlement.
+                  <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                    <span className="text-[#002249]">Simple Process:</span>We
+                    believe in hassle-free insurance with quick quotes and fast
+                    claim settlement.
                   </li>
-                  <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                    <span>Trusted by Customers:</span>Our commitment to quality
-                    and integrity has made us a preferred choice for thousands
-                    of families.
+                  <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                    <span className="text-[#002249]">
+                      Trusted by Customers:
+                    </span>
+                    Our commitment to quality and integrity has made us a
+                    preferred choice for thousands of families.
                   </li>
                 </ul>
-                <div className="button flex justify-between items-center h-[15vh]">
-                  <button
+                <div className="button flex justify-between items-center h-25">
+                  <NavLink
                     className="bg-[#002249] hover:bg-[#0073bd] text-white text-[18px] outline-0 border-0 rounded cursor-pointer 
-                transition duration-700  ease-in-out"
+                 duration-300"
+                    to="/about-us"
                   >
                     Explore More
-                  </button>
+                  </NavLink>
 
                   <div
                     className="card flex items-center border-t-[#002249] border-t-[5px] border-solid rounded shadow-[0px_0px_4px_#b87979] 
@@ -100,51 +184,12 @@ const About_section = () => {
               </div>
             </div>
           </div>
-
-          <div className="child3 mx-w-[1250px] mx-auto flex items-center justify-around h-[50vh] relative">
-            <div className="plan">
-              <div className="voucher">
-                <i className="ri-money-rupee-circle-line"></i>
-              </div>
-              <div className="content">
-                <h3>General Insurance</h3>
-                <p>
-                  Motor, property, travel, cyber, and more – we cover what
-                  matters most to you.
-                </p>
-              </div>
-            </div>
-            <div className="plan">
-              <div className="voucher">
-                <i className="ri-heart-pulse-line"></i>
-              </div>
-              <div className="content">
-                <h3>Health Insurance</h3>
-                <p>
-                  Comprehensive health plans for individuals and families to
-                  ensure best medical care when you need it.
-                </p>
-              </div>
-            </div>
-            <div className="plan">
-              <div className="voucher">
-                <i className="ri-roadster-line"></i>
-              </div>
-              <div className="content">
-                <h3>Travel insurance</h3>
-                <p>
-                  Coverage for medical emergencies, trip cancellations, and
-                  baggage loss during travel for complete protection.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div className="offering mx-w-[1300px] mx-auto min-h-[60vh]">
+        <div className="offering max-w-[1250px] mx-auto">
           <div className="part-one flex justify-center items-center flex-col h-full">
             <h4 className="text-[#00000083]">What We're Offering</h4>
-            <h2 className="text-[35px] text-center w-[50%] leading-10 text-[#002249]">
+            <h2 className="text-3xl font-bold text-center w-[50%] leading-10 text-[#002249]">
               Complete Insurance Solutions for Every Family and Business Need
             </h2>
           </div>
@@ -257,20 +302,7 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="linking bg-[#002249] flex w-[70%]  h-[20vh] relative rounded-[80px]">
-          <div className="photo w-[80%] rounded-[80px] flex items-center justify-start">
-            <h3 className="font-black text-[22px] tracking-[0.5px]">
-              Compare & get <br /> Your insurance in right way
-            </h3>
-          </div>
-          <div className="button absolute top-1/5 right-1/10">
-            <button className="bg-[#0073bd] rounded-4xl text-white hover:bg-[#002249] duration-300 cursor-pointer">
-              Get Explore
-            </button>
-          </div>
-        </div>
-
-        <div className="ranking w-full h-[50vh] flex items-center justify-around">
+        <div className="ranking w-full h-75 flex items-center justify-around">
           <div className="rank flex flex-col items-center justify-center">
             <i className="ri-file-list-3-line bg-white rounded-[50%] text-4xl border-6 duration-150 cursor-pointer"></i>
             <h3 className="text-4xl text-white font-extrabold">3.65k </h3>
@@ -296,13 +328,17 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="benefits flex items-center h-screen">
-          <div className="child1 relative">
+        <div className="benefits flex items-center h-full">
+          <div className="child1 w-1/2 relative">
             <div className="image">
-              <img src="/image/car_bg.jpg" alt="benefit" />
+              <img
+                className="h-140 w-[90%] rounded-lg object-cover"
+                src="/image/why.jpg"
+                alt="benefit"
+              />
             </div>
 
-            <div className="btn1 absolute bottom-2/10 right-16 w-[70%]">
+            <div className="btn1 absolute bottom-0 right-16  w-[70%]">
               <i className="ri-verified-badge-fill text-6xl bg-white absolute"></i>
               <h2 className="text-2xl text-white">
                 Trusted insurance <br />
@@ -311,15 +347,15 @@ const About_section = () => {
             </div>
           </div>
 
-          <div className="child2">
+          <div className="child2 w-1/2">
             <div className="about-first">
               <h4 className="text-[15px] text-[#000000a6] tracking-widest font-medium">
                 COMPANY'S BENEFIT
               </h4>
-              <h2 className="text-2xl text-[#002249] font-bold">
+              <h2 className="text-3xl text-[#002249] font-bold">
                 Why Choose Globsure
               </h2>
-              <h3 className="text-[15px] text- leading-5.5 font-thin text-[#000000a6]">
+              <h3 className="text-[15px] text-justify leading-5.5 font-thin text-[#000000a6]">
                 We know how important your loved ones and your business are to
                 you. That’s why our insurance plans are designed to give you
                 complete peace of mind—protecting your family’s future and
@@ -333,50 +369,135 @@ const About_section = () => {
                 Reliable Protection for Families and Businesses
               </h1>
               <ul>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                  <span>Wide Range of Policies:</span> Whether you want to
-                  protect your home, vehicle, business, or secure your health,
-                  we have the right policy for you.
+                <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                  <span className="text-[#002249]">
+                    Wide Range of Policies:
+                  </span>{" "}
+                  Whether you want to protect your home, vehicle, business, or
+                  secure your health, we have the right policy for you.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                  <span>Expert Team:</span>Our qualified agents guide you at
-                  every step, making insurance simple and transparent.
+                <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                  <span className="text-[#002249]">Expert Team:</span>Our
+                  qualified agents guide you at every step, making insurance
+                  simple and transparent.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                  <span>Simple Process:</span>We believe in hassle-free
-                  insurance with quick quotes and fast claim settlement.
+                <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                  <span className="text-[#002249]">Simple Process:</span>We
+                  believe in hassle-free insurance with quick quotes and fast
+                  claim settlement.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-6">
-                  <span>Trusted by Customers:</span>Our commitment to quality
-                  and integrity has made us a preferred choice for thousands of
-                  families.
+                <li className="text-[#000000a6] font-light text-[15px] leading-6">
+                  <span className="text-[#002249]">Trusted by Customers:</span>
+                  Our commitment to quality and integrity has made us a
+                  preferred choice for thousands of families.
                 </li>
               </ul>
               <div className="button">
-                <button
+                <NavLink
                   className="bg-[#002249] hover:bg-[#0073bd] text-white text-[18px] outline-0 border-0 rounded cursor-pointer 
-                transition duration-700  ease-in-out"
+                 duration-300"
+                  to="/about-us"
                 >
                   Explore More
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="member flex flex-col items-center h-[95vh]">
+        {/* Start brand slider */}
+        <div
+          className="brand-slider max-w-[1250px] overflow-hidden"
+          style={{ margin: "60px auto" }}
+        >
+          <div className="animate-slider flex flex-nowrap gap-10">
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo1.jpg"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo2.png"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo4.webp"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo6.avif"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo7.avif"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo1.jpg"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo2.png"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo4.webp"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo6.avif"
+                alt="logo1"
+              />
+            </div>
+            <div className="w-40 h-20 shrink-0">
+              <img
+                className="w-full h-full object-contain"
+                src="/image/logo7.avif"
+                alt="logo1"
+              />
+            </div>
+          </div>
+        </div>
+        {/* End brand slider */}
+
+        <div className="member flex flex-col items-center">
           <div className="part1 flex flex-col items-center">
             <h4 className="text-[#0000007c] leading-0.5">OUR TEAM MEMBERS</h4>
-            <h1 className="text-[#002249] text-4xl">
+            <h1 className="text-[#002249] text-3xl font-bold">
               Meet our professional team members
             </h1>
           </div>
-          <div className="part2 flex items-center w-full h-[80%] gap-4">
+          <div className="part2 flex items-center w-full gap-4">
             <div className="info w-[60%]">
-              <h1 className="text-[#002249] text-3xl">
+              <h1 className="text-[#002249] text-3xl font-bold">
                 Experienced & Dedicated Team Working For You
               </h1>
-              <p className="text-[15px] text- leading-5.5 font-thin text-[#000000a6]">
+              <p className="text-[15px] text-justify leading-5.5 text-[#000000a6]">
                 Our team is the backbone of Globsure International, bringing
                 together experienced professionals who truly care about your
                 protection. Every member understands the value of reliable
@@ -387,26 +508,29 @@ const About_section = () => {
               </p>
               <h3 className="text-2xl text-[#002249] font-bold">Key Points</h3>
               <ul>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                <li className="text-[#000000a6] font-light text-[15px] leading-8">
                   Industry-certified professionals with years of insurance
                   expertise.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                <li className="text-[#000000a6] font-light text-[15px] leading-8">
                   Friendly and approachable team focused on customer needs.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                <li className="text-[#000000a6] font-light text-[15px] leading-8">
                   Quick support and personalized solutions for every client.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                <li className="text-[#000000a6] font-light text-[15px] leading-8">
                   Commitment to transparency and trustworthy guidance.
                 </li>
-                <li className="text-[#000000a6] font-light list-disc text-[15px] leading-7">
+                <li className="text-[#000000a6] font-light text-[15px] leading-8">
                   Continual training to stay updated with latest insurance
                   trends. Description
                 </li>
               </ul>
             </div>
-            <div className="detail">
+            <div
+              className="detail overflow-hidden"
+              style={{ marginTop: "50px" }}
+            >
               <Swiper
                 effect={"cards"}
                 grabCursor={true}
@@ -439,7 +563,7 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="testimonals flex items-center h-[60vh]">
+        <div className="testimonals flex items-center h-100">
           <div className="part1 flex flex-col justify-center w-3/5 h-full">
             <h4 className="text-[15px] text-[#00000073]">OUR TESTIMONALS</h4>
             <h1 className="text-4xl text-[#002249] font-semibold">
@@ -597,20 +721,20 @@ const About_section = () => {
                   </h2>
                 </div>
                 <div className="form flex w-full">
-                  <div className="icons flex flex-col w-3/10">
-                    <div className="icon">
+                  <div className="icons flex flex-col w-3/10 gap-4">
+                    <div className="icon flex items-center rounded">
                       <i className="ri-home-7-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Home</h3>
                     </div>
-                    <div className="icon">
+                    <div className="icon flex items-center rounded">
                       <i className="ri-roadster-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Vehical</h3>
                     </div>
-                    <div className="icon">
+                    <div className="icon flex items-center rounded">
                       <i className="ri-heart-pulse-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Life</h3>
                     </div>
-                    <div className="icon">
+                    <div className="icon flex items-center rounded">
                       <i className="ri-briefcase-4-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Business</h3>
                     </div>
@@ -672,7 +796,7 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="blog-section">
+        <div className="blog-section h-150">
           <div className="blog-first w-full h-1/5 text-center">
             <h4 className="text-[15px] text-[#00000094] ">OUR BLOG</h4>
             <h2 className="text-4xl text-[#002249]">
@@ -837,7 +961,6 @@ const About_section = () => {
             </Swiper>
           </div>
         </div>
-        
       </div>
     </>
   );

@@ -11,9 +11,11 @@ import { Footer } from "./components/header footer/Footer";
 import Health_insurance from "./components/insurnce-page/health/Health_insurance";
 import Vehical_insurance from "./components/insurnce-page/vehical/Vehical_insurance";
 import General_inurance from "./components/insurnce-page/general/General_inurance";
+import ScrollToTop from "./components/header footer/ScrollToTop";
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Topbar />
       <Header />
       <Routes>

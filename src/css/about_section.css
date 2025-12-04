@@ -5,79 +5,19 @@
 
 .about-parent {
   width: 100%;
-  min-height: 100vh;
-  padding-top: 50px;
+  padding-top: 20px;
   max-width: 1250px;
   margin: 0 auto;
 }
 
-.about-parent .childs {
-  display: flex;
-  align-items: center;
-}
-
-/* start chiild1 from about-parent */
-
-.child1 {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  /* background-color: red; */
-}
-
-.child1 .btn {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: red; */
-  padding-top: 10px;
-}
-
-.child1 .btn .icon {
-  background-color: var(--dark-color);
-  padding: 20px 18px;
-}
-
-.child1 .btn .icon i {
-  font-size: 40px;
-  color: white;
-}
-
-.child1 .btn h3 {
-  color: var(--light-color);
-  font-size: 22px;
-  font-weight: 300;
-  padding-left: 20px;
-  letter-spacing: -1px;
-}
-
-.child1 .btn h3 span {
-  color: var(--dark-color);
-}
-
-.child1 .image img {
-  height: 80vh;
-  width: 90%;
-  object-fit: cover;
-  object-position: 90%;
-  border-radius: 10px 10px 10px 0px;
-}
-
 /* start chiild2 from about-parent */
-
-.child2 {
-  height: 100%;
-  width: 50%;
-}
 
 .child2 .about-first h1 {
   padding: 10px 0px;
 }
 
 .about-second h2 {
-  padding: 20px 0px 10px 0px;
+  padding: 5px 0px;
 }
 
 .about-second ul li {
@@ -88,8 +28,8 @@
   padding: 20px 50px 0px 0px;
 }
 
-.button button {
-  padding: 20px 50px;
+.button a {
+  padding: 15px 30px;
 }
 
 .button .card {
@@ -194,14 +134,11 @@
 
 .offering {
   max-width: 1250px;
-  margin: 0 auto;
-}
-.part-one h2 {
-  padding-top: 10px;
+  margin: 50px auto;
 }
 
 .part-two {
-  padding: 50px 30px;
+  padding: 50px 30px 0 30px;
 }
 
 .part-card:hover {
@@ -263,21 +200,6 @@
   letter-spacing: 0.3px;
 }
 
-.linking {
-  margin: auto;
-  padding: 5px;
-}
-
-.linking .photo {
-  background-image: url(/image/life1.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.linking .photo h3 {
-  padding-left: 80px;
-}
-
 .ranking {
   margin: 60px 0px;
   background-image: url(/image/health_bg.jpg);
@@ -333,54 +255,55 @@
 }
 
 .benefits .child2 .about-first h2 {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .benefits .child2 .about-second h1 {
-  padding: 15px 0px;
+  padding: 5px 0px;
 }
 
 /* End benefits section */
 
+
+/* Start animate slider */
+
+.animate-slider{
+  animation: animate-slider 18s linear infinite;
+}
+
+@keyframes animate-slider {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-40%);
+  }
+}
+
+/* End animate slider */
+
+
 /* Start member swiper slider */
 
 .member {
-  padding: 20px 0px;
   max-width: 1250px;
   margin: 0 auto;
 }
 
-.member .part1 h4 {
-  padding-top: 10px;
+.member .part1 {
+  margin-top: 10px;
 }
 
 .member .part1 h1 {
-  padding-top: 15px;
-}
-
-.member .part2 {
-  padding-top: 60px;
-}
-
-/* .member .part2 .info h1 {
-    color: var(--dark-color);
-    font-size: 35px;
-  } */
-
-.member .part2 .info h3 {
-  padding: 10px 0px;
-}
-
-.member .part2 .info ul {
-  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .member .part2 .info p {
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 .member .part2 .detail {
-  height: 90%;
+  /* height: 90%; */
   width: 40%;
   overflow-x: auto;
 }
@@ -418,6 +341,7 @@
   color: white;
   letter-spacing: 1px;
   font-weight: lighter;
+  padding: 20px;
 }
 
 /* End member swiper slider */
@@ -427,7 +351,6 @@
 .testimonals {
   max-width: 1250px;
   margin: 0 auto;
-  margin-top: -40px;
 }
 
 .testimonals .part1 h4 {
@@ -573,17 +496,9 @@
   margin-top: 50px;
 }
 
-.form .icons {
-  gap: 10px;
-}
-
 .form .icons .icon {
   background: linear-gradient(#ffffff94 40%, transparent);
-  display: flex;
-  width: 100%;
-  align-items: center;
   padding: 5px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -597,7 +512,7 @@
 
 .form .icons .icon i {
   color: white;
-  padding: 10px;
+  padding: 8px 10px;
   font-size: 14px;
 }
 
@@ -703,16 +618,13 @@
 
 .blog-section {
   width: 1200px;
-  height: 90vh;
   margin: 20px auto;
 }
-
 
 .blog-first h4 {
   letter-spacing: 1px;
   padding-top: 10px;
 }
-
 
 .blog-second {
   width: 100%;
@@ -791,7 +703,7 @@
 
 .blog-detail .info .info-one .info-icon i {
   background-color: var(--light-color);
-  padding: 5px;
+  padding: 5px 8px;
   border-radius: 50%;
   color: white;
   font-size: 14px;
