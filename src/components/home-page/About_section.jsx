@@ -728,7 +728,7 @@ const About_section = () => {
                     </div>
                     <div className="icon flex items-center rounded">
                       <i className="ri-roadster-fill bg-[#002249] rounded-[50%]"></i>
-                      <h3>Vehical</h3>
+                      <h3>Vehicle</h3>
                     </div>
                     <div className="icon flex items-center rounded">
                       <i className="ri-heart-pulse-fill bg-[#002249] rounded-[50%]"></i>

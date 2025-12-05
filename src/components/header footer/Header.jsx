@@ -62,7 +62,7 @@ export const Header = () => {
                     }
                     to="/vehical_insurance"
                   >
-                    Vehical Insurance
+                    Vehicle Insurance
                   </NavLink>
                 </div>
               </NavLink>

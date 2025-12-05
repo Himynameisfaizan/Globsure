@@ -51,7 +51,7 @@ const Homesilder = () => {
               <img src="/image/health_bg.jpg" />
             </div>
             <div className="content-detail">
-              <h2>
+              <h2 className="font-mono">
                 Globsure International <br />
                 Smart solutions for a Future proof life
                 <span
