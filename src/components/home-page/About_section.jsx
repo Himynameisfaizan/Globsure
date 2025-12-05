@@ -45,7 +45,7 @@ const About_section = () => {
                 src="/svg/car.svg"
                 alt=""
               />
-              <h3 className="text-[#002249]">Vehical Insurance</h3>
+              <h3 className="text-[#002249]">Vehicle Insurance</h3>
             </NavLink>
 
             <NavLink
