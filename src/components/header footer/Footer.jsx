@@ -41,7 +41,7 @@ export const Footer = () => {
                 <NavLink to="/health_insurance">Health insurance</NavLink>
               </li>
               <li>
-                <NavLink to="/vehical_insurance">Vehical Insurance</NavLink>
+                <NavLink to="/vehical_insurance">Vehicle Insurance</NavLink>
               </li>
             </ul>
           </div>

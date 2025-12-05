@@ -57,7 +57,7 @@ const Content_part = () => {
         </div>
         <div className="company_detail w-[50%]">
           <h4 className="text-[#000000a6] text-[15px] font-thin">
-            SIMPLE & FAST CLAIM PROCES
+            SIMPLE & FAST CLAIM PROCESS
           </h4>
           <h2
             className="text-[#002249] text-3xl font-semibold"
