@@ -60,7 +60,7 @@ export const Header = () => {
                     className={({ isActive }) =>
                       isActive ? "text-[#002249]" : undefined
                     }
-                    to="/vehical_insurance"
+                    to="/vehicle_insurance"
                   >
                     Vehicle Insurance
                   </NavLink>
@@ -99,6 +99,7 @@ export const Header = () => {
             </li>
           </ul>
         </div>
+        <div className="menu-icon hidden"><i className="ri-menu-line"></i></div>
         <div className="line"></div>
         <div className="icon">
           <i className="ri-search-eye-line"></i>

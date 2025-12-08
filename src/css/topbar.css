@@ -35,7 +35,7 @@ body {
 
 .first_bar {
   height: 100%;
-  width: 40%;
+  width: 50%;
   background-color: var(--light-color);
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ body {
 
 .second_bar {
   height: 100%;
-  width: 60%;
+  width: 50%;
   background-color: var(--dark-color);
   display: flex;
   align-items: center;

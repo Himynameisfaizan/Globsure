@@ -1,18 +1,14 @@
 import React from "react";
-import "../../css/about_section.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { Autoplay, Scrollbar, EffectCards } from "swiper/modules";
+import "../../css/about_section.css";
+import "../../css/responsive.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-cards";
 import "swiper/css/scrollbar";
 
-// import required modules
-import { Autoplay, Scrollbar } from "swiper/modules";
-// import required modules
-import { EffectCards } from "swiper/modules";
 import { NavLink } from "react-router-dom";
 const text = "GLOBSURE INTERNATIONAL INSURANCE ";
 const About_section = () => {
@@ -32,12 +28,12 @@ const About_section = () => {
           </h3>
 
           <div
-            className="flex gap-10 justify-center"
+            className="flex gap-10 justify-center flex-wrap"
             style={{ padding: "40px 0" }}
           >
             <NavLink
-              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
-              to="/vehical_insurance"
+              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/6 h-50"
+              to="/vehicle_insurance"
             >
               <img
                 className="w-25 bg-[#0073bd25] rounded-full"
@@ -49,7 +45,7 @@ const About_section = () => {
             </NavLink>
 
             <NavLink
-              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              className="flex flex-col justify-evenly rounded items-center border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/6 h-50"
               to="/health_insurance"
             >
               <img
@@ -62,7 +58,7 @@ const About_section = () => {
             </NavLink>
 
             <NavLink
-              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/6 h-50"
               to="/general_insurance"
             >
               <img
@@ -75,7 +71,7 @@ const About_section = () => {
             </NavLink>
 
             <NavLink
-              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/6 h-50"
               to="/"
             >
               <img
@@ -88,7 +84,7 @@ const About_section = () => {
             </NavLink>
 
             <NavLink
-              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/5 h-60"
+              className="flex flex-col items-center justify-evenly border border-[#0073bd15] cursor-pointer shadow hover:shadow-lg  duration-200 w-1/6 h-50"
               to="/"
             >
               <img
@@ -193,7 +189,7 @@ const About_section = () => {
               Complete Insurance Solutions for Every Family and Business Need
             </h2>
           </div>
-          <div className="part-two flex felx-row gap-[25px] w-full h-full">
+          <div className="part-two flex flex-wrap gap-[25px] w-full h-full">
             <div
               className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
@@ -796,17 +792,40 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="blog-section h-150">
+        <div
+          className="blog-section h-150 xl:w-[1250px]"
+          style={{ margin: "20px auto" }}
+        >
           <div className="blog-first w-full h-1/5 text-center">
             <h4 className="text-[15px] text-[#00000094] ">OUR BLOG</h4>
             <h2 className="text-4xl text-[#002249]">
               Latest news & articles from the blog
             </h2>
           </div>
-          <div className="blog-second">
+          <div
+            className="blog-second xl:w-[1250px] xl:h-115 max-xl:w-[950px] max-xl:h-115"
+            style={{ margin: "auto" }}
+          >
             <Swiper
               slidesPerView={3}
               modules={[Scrollbar]}
+              breakpoints={{
+                // When window width is >= 640px
+                425: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // When window width is >= 768px
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                // When window width is >= 1024px
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
               className="mySwiper blogs"
             >
               <SwiperSlide className="blogger">

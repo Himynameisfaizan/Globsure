@@ -2,7 +2,7 @@ import React from "react";
 import Icondiv from "../../about-page/Icondiv";
 import Accordion from "../health/Accordion";
 
-const Vehical_content = () => {
+const Vehicle_content = () => {
   const accordionData = [
     {
       id: "Q1",
@@ -604,4 +604,4 @@ const Vehical_content = () => {
   );
 };
 
-export default Vehical_content;
+export default Vehicle_content;

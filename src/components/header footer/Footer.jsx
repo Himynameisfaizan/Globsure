@@ -12,7 +12,7 @@ export const Footer = () => {
 
           <div className="number">
             <i className="ri-phone-line"></i>
-            <h3>+91 78986 5421</h3>
+            <h3>+91 9274741151</h3>
           </div>
         </div>
         <div className="footer-quicklink">
@@ -25,7 +25,7 @@ export const Footer = () => {
               <li>
                 <NavLink to="/claim">How to Claim</NavLink>
               </li>
-            
+
               <li>
                 <NavLink to="/contact-us">Contact us</NavLink>
               </li>
@@ -41,15 +41,16 @@ export const Footer = () => {
                 <NavLink to="/health_insurance">Health insurance</NavLink>
               </li>
               <li>
-                <NavLink to="/vehical_insurance">Vehicle Insurance</NavLink>
+                <NavLink to="/vehicle_insurance">Vehicle Insurance</NavLink>
               </li>
             </ul>
           </div>
           <div className="address">
             <h3>Contact</h3>
-            <h4>
-              Domestic city netaji subhash <br />
-              palace new delhi 110045
+            <h4 className="text-justify">
+              Office No. 1, 3rd Floor, Bhanushali Avenue, Main Market Opp. Green
+              Palace Hotel, Near Gujarat Education Society, Gandhidham – Kutch,
+              Gujarat – 370201
             </h4>
             <h4>
               Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
@@ -88,9 +89,12 @@ export const Footer = () => {
             <i className="ri-copyright-line"></i>
             <h3>All Copyright Reserved 2025 by Globsure</h3>
           </div>
-        <div>
-          <h2 className="text-white text-lg tracking-wide">needhelp@company.com</h2>
-        </div>
+          <div>
+            <h2 className="text-white tracking-wide">
+              {" "}
+              globsureinternational@gmail.com
+            </h2>
+          </div>
         </div>
       </footer>
     </>

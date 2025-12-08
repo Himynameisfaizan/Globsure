@@ -1,0 +1,183 @@
+/* Start Topbar */
+
+@media (max-width: 1250px) {
+  .topbar {
+    height: 30px;
+  }
+  .first_bar {
+    width: 55%;
+  }
+
+  .icon .location,
+  .email {
+    padding-left: 20px;
+  }
+  .location p,
+  .email p {
+    font-size: 12px;
+  }
+
+  .second_bar {
+    width: 45%;
+  }
+
+  .second_bar .info {
+    width: 70%;
+  }
+
+  .second_bar .nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .topbar {
+    height: 30px;
+  }
+  .first_bar {
+    width: 60%;
+  }
+
+  .icon .location,
+  .email {
+    padding-left: 20px;
+  }
+  .location p,
+  .email p {
+    font-size: 12px;
+  }
+
+  .second_bar {
+    width: 40%;
+  }
+
+  .second_bar .info {
+    width: 80%;
+  }
+
+  .second_bar .nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .topbar {
+    height: 30px;
+  }
+  .first_bar {
+    width: 60%;
+  }
+
+  .icon .location,
+  .email {
+    padding-left: 20px;
+  }
+  .location p,
+  .email p {
+    font-size: 12px;
+  }
+
+  .second_bar {
+    width: 40%;
+  }
+
+  .second_bar .info {
+    width: 80%;
+  }
+
+  .second_bar .nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .topbar {
+    height: 30px;
+  }
+  .first_bar {
+    width: 65%;
+  }
+
+  .icon .location,
+  .email {
+    padding-left: 20px;
+  }
+  .location p,
+  .email p {
+    font-size: 12px;
+  }
+
+  .second_bar {
+    width: 35%;
+  }
+
+  .second_bar .info {
+    width: 80%;
+  }
+
+  .second_bar .nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 950px) {
+  .topbar {
+    display: none;
+  }
+}
+
+/* Start header */
+
+@media (max-width: 1024px) {
+  .header {
+    height: 80px;
+  }
+
+  .header .logo img {
+    height: 160px;
+    width: 160px;
+  }
+
+  .menu ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .header {
+    height: 80px;
+  }
+
+  .header .logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: 450px;
+  }
+
+  .menu-icon i {
+    font-size: 22px;
+    color: #002249;
+    cursor: pointer;
+  }
+
+  
+  .header .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+   .menu-icon {
+    margin-left: 380px;
+  }
+}

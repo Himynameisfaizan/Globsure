@@ -139,7 +139,7 @@ const Homesilder = () => {
           <SwiperSlide className="hello">
             <div className="life">
               <i className="ri-car-line"></i>
-              <h2>Car insurance </h2>
+              <h2>Vehicle insurance </h2>
             </div>
           </SwiperSlide>
         </Swiper>
