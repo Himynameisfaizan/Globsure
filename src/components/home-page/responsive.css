@@ -359,7 +359,7 @@
   /* Start about parent section */
 
   .about-parent .childs {
-    max-width: 360px;
+    max-width: 300px;
     margin: auto;
     /* background-color: red; */
   }
