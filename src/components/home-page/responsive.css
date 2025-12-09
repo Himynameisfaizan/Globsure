@@ -369,7 +369,7 @@
   }
 
   .about-parent .childs .child2 .about-first h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .child2 .about-first h4 {
@@ -379,7 +379,7 @@
 
   .child2 .about-first h3 {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
   }
 
   .child2 .about-second h2 {
@@ -393,6 +393,7 @@
   .child2 .about-second ul li {
     font-size: 14px;
     line-height: 20px;
+    text-align: justify;
   }
 
   .child2 .about-second ul li span {

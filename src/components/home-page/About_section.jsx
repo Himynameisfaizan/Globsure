@@ -100,7 +100,6 @@ const About_section = () => {
 
         <div className="about-parent">
           <div className="childs flex items-center">
-          
             <div className="child1 w-1/2 h-full">
               <div className="image">
                 <img
@@ -135,24 +134,24 @@ const About_section = () => {
                 <ul>
                   <li className="text-[#000000a6] font-light text-[15px] leading-6">
                     <span className="text-[#002249]">
-                      Wide Range of Policies:
-                    </span>{" "}
+                      Wide Range of Policies:{" "}
+                    </span>
                     Whether you want to protect your home, vehicle, business, or
                     secure your health, we have the right policy for you.
                   </li>
                   <li className="text-[#000000a6] font-light text-[15px] leading-6">
-                    <span className="text-[#002249]">Expert Team:</span>Our
+                    <span className="text-[#002249]">Expert Team: </span>Our
                     qualified agents guide you at every step, making insurance
                     simple and transparent.
                   </li>
                   <li className="text-[#000000a6] font-light text-[15px] leading-6">
-                    <span className="text-[#002249]">Simple Process:</span>We
+                    <span className="text-[#002249]">Simple Process: </span>We
                     believe in hassle-free insurance with quick quotes and fast
                     claim settlement.
                   </li>
                   <li className="text-[#000000a6] font-light text-[15px] leading-6">
                     <span className="text-[#002249]">
-                      Trusted by Customers:
+                      Trusted by Customers:{" "}
                     </span>
                     Our commitment to quality and integrity has made us a
                     preferred choice for thousands of families.
