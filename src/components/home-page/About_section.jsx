@@ -171,16 +171,16 @@ const About_section = () => {
           </div>
         </div>
 
-        <div className="offering max-w-[1250px] mx-auto">
+        <div className="offering ">
           <div className="part-one flex justify-center items-center flex-col h-full">
             <h4 className="text-[#00000083]">What We're Offering</h4>
             <h2 className="text-3xl font-bold text-center w-[50%] leading-10 text-[#002249]">
               Complete Insurance Solutions for Every Family and Business Need
             </h2>
           </div>
-          <div className="part-two flex flex-wrap gap-[25px] w-full h-full">
+          <div className="part-two flex flex-wrap gap-5 w-full h-full">
             <div
-              className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+              className="part-card h-50 w-55 transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
@@ -201,7 +201,7 @@ const About_section = () => {
               </div>
             </div>
             <div
-              className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+              className="part-card h-50 w-55 transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
@@ -222,7 +222,7 @@ const About_section = () => {
               </div>
             </div>
             <div
-              className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+              className="part-card h-50 w-55 transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
@@ -243,7 +243,7 @@ const About_section = () => {
               </div>
             </div>
             <div
-              className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+              className="part-card h-50 w-55 transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
@@ -264,7 +264,7 @@ const About_section = () => {
               </div>
             </div>
             <div
-              className="part-card h-[200px] w-[250px] transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
+              className="part-card h-50 w-55 transform-3d flex border border-solid border-[#ffc0cb52] bg-white cursor-pointer
           rounded-2xl transition-all duration-1000"
             >
               <div className="front">
