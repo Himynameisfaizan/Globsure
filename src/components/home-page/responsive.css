@@ -110,13 +110,13 @@
 }
 
 .slider-content .content-detail h2 {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 40px;
 }
 
 .slider-content {
   position: relative;
-  height: 40vh;
+  height: 35vh;
 }
 
 .wrapper {
