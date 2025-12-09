@@ -58,6 +58,25 @@
   }
 
   /* End our plan section */
+
+  /* Start about parent section */
+
+  .about-parent {
+    padding-top: 20px;
+    max-width: 980px !important;
+  }
+
+  .about-parent .childs .child2 .about-first h1 {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+
+  .about-parent .childs .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End about parent section */
 }
 
 @media (max-width: 768px) {
@@ -112,6 +131,40 @@
   }
 
   /* End our plan section */
+
+  /* Start about parent section */
+
+  .about-parent .childs {
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .childs .child1,
+  .childs .child2 {
+    width: 100%;
+  }
+
+  .childs .child1 .image img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .about-parent .childs .child2 {
+    margin-top: 10px;
+  }
+
+  .about-parent .childs .child2 .about-first h1 {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+
+  .about-parent .childs .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End about parent section */
 }
 
 @media (max-width: 425px) {
@@ -180,6 +233,64 @@
   }
 
   /* End our plan section */
+
+  /* Start about parent section */
+
+  .about-parent .childs {
+    max-width: 400px;
+  }
+
+  .childs .child1,
+  .childs .child2 {
+    width: 100%;
+  }
+
+  .childs .child1 .image img {
+    height: 250px;
+  }
+
+  .about-parent .childs .child2 {
+    margin-top: 10px;
+  }
+
+  .about-parent .childs .child2 .about-first h1 {
+    font-size: 24px;
+    padding: 5px 0;
+  }
+
+  .child2 .about-first h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .child2 .about-first h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second h2 {
+    font-size: 18px;
+  }
+
+  .child2 .about-second .button {
+    padding: 0px;
+  }
+
+  .child2 .about-second ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second ul li span {
+    font-weight: bold;
+  }
+
+  .about-parent .childs .button a {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  /* End about parent section */
 }
 
 @media (max-width: 375px) {
@@ -243,6 +354,57 @@
   }
 
   /* End our plan section */
+
+  
+  /* Start about parent section */
+
+  .about-parent .childs {
+    max-width: 360px;
+    margin: auto;
+    /* background-color: red; */
+  }
+
+  .childs .child1 .image img {
+    height: 250px;
+  }
+
+  .about-parent .childs .child2 .about-first h1 {
+    font-size: 22px;
+  }
+
+  .child2 .about-first h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .child2 .about-first h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second h2 {
+    font-size: 18px;
+  }
+
+  .child2 .about-second .button {
+    padding: 0px;
+  }
+  
+  .child2 .about-second ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second ul li span {
+    font-weight: bold;
+  }
+
+  .about-parent .childs .button a {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  /* End about parent section */
 }
 
 @media (max-width: 320px) {
@@ -274,7 +436,7 @@
   }
 
   /* End Hero section homeSlider */
-  
+
   /* Start our plan section */
 
   .parent-container .our-Plans {

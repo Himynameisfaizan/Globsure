@@ -100,6 +100,7 @@ const About_section = () => {
 
         <div className="about-parent">
           <div className="childs flex items-center">
+          
             <div className="child1 w-1/2 h-full">
               <div className="image">
                 <img
@@ -112,7 +113,7 @@ const About_section = () => {
 
             <div className="child2 w-1/2">
               <div className="about-first">
-                <h4 className="text-[15px] text-[#000000a6] tracking-widest font-medium p-8">
+                <h4 className="text-[15px] text-[#000000a6] tracking-widest font-medium">
                   ABOUT GLOBSURE INTERNATIONAL
                 </h4>
                 <h1 className="text-3xl text-[#002249] font-bold ">
@@ -165,17 +166,6 @@ const About_section = () => {
                   >
                     Explore More
                   </NavLink>
-
-                  <div
-                    className="card flex items-center border-t-[#002249] border-t-[5px] border-solid rounded shadow-[0px_0px_4px_#b87979] 
-                   duration-200 flex-col mr-[100px]"
-                  >
-                    <i className="ri-hand-heart-line text-[30px] text-[#002249]"></i>
-                    <span className="text-[15px] text-[#002249]">
-                      Trusted By <br />
-                      Customer
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>

@@ -11,6 +11,7 @@
 }
 
 
+
 /* start chiild2 from about-parent */
 
 .child2 .about-first h1 {
@@ -31,15 +32,6 @@
 
 .button a {
   padding: 15px 30px;
-}
-
-.button .card {
-  padding: 25px 20px;
-  margin-right: 100px;
-}
-
-.button .card:hover {
-  margin-top: -10px;
 }
 
 /* start chiild3 from about-parent */
