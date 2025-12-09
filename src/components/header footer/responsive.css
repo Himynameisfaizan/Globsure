@@ -145,7 +145,7 @@
 
 @media (max-width: 950px) {
   .header {
-    height: 80px;
+    height: 60px;
   }
 
   .header .logo {
@@ -155,17 +155,23 @@
     align-items: center;
   }
 
+   .header .logo img{
+    width: 120px;
+   }
+
   .menu {
     display: none;
   }
 
   .menu-icon {
-    display: block;
+    display: flex;
     margin-left: 450px;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu-icon i {
-    font-size: 22px;
+    font-size: 20px;
     color: #002249;
     cursor: pointer;
   }
@@ -174,10 +180,22 @@
   .header .icon {
     display: none;
   }
+  .menu-container{
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
-   .menu-icon {
+  .menu-icon {
     margin-left: 380px;
   }
+}
+
+
+
+@media (max-width: 425px) {
+  .menu-icon {
+    margin-left: 150px;
+  }
+
 }

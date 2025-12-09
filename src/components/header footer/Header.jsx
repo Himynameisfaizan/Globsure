@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/header.css";
 import { NavLink, Link } from "react-router-dom";
 export const Header = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="header">
+      <div className="header relative">
         <div className="logo">
           <Link to="/">
             <img
@@ -26,46 +28,34 @@ export const Header = () => {
               </NavLink>
             </li>
 
-            <li className="insurance text-[#000000a6] hover:text-[#002249] duration-300 text-lg">
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "text-[#002249]" : undefined
-                }
-                to="/health_insurance"
-              >
-                <div className="main flex items-center">
-                  Insurance <i className="ri-arrow-drop-down-line text-xl"></i>
-                </div>
+            <li className="group relative insurance text-[#000000a6] hover:text-[#002249] duration-300 text-lg cursor-pointer">
+              <div className="main flex items-center">
+                Insurance <i className="ri-arrow-drop-down-line text-xl"></i>
+              </div>
 
-                <div className="dropdown">
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "text-[#002249]" : undefined
-                    }
-                    to="/general_insurance"
-                  >
-                    General Insurance
-                  </NavLink>
+              {/* Dropdown Content */}
+              <div className="dropdown absolute top-full left-0 bg-white shadow-lg rounded p-2 hidden group-hover:block w-48 z-20">
+                <NavLink
+                  className="block p-2 hover:bg-gray-100 text-sm"
+                  to="/general_insurance"
+                >
+                  General Insurance
+                </NavLink>
 
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "text-[#002249]" : undefined
-                    }
-                    to="/health_insurance"
-                  >
-                    Health Insurance
-                  </NavLink>
+                <NavLink
+                  className="block p-2 hover:bg-gray-100 text-sm"
+                  to="/health_insurance"
+                >
+                  Health Insurance
+                </NavLink>
 
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? "text-[#002249]" : undefined
-                    }
-                    to="/vehicle_insurance"
-                  >
-                    Vehicle Insurance
-                  </NavLink>
-                </div>
-              </NavLink>
+                <NavLink
+                  className="block p-2 hover:bg-gray-100 text-sm"
+                  to="/vehicle_insurance"
+                >
+                  Vehicle Insurance
+                </NavLink>
+              </div>
             </li>
             <li className="text-[#000000a6] hover:text-[#002249] duration-300 text-lg">
               <NavLink
@@ -99,12 +89,27 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="menu-icon hidden"><i className="ri-menu-line"></i></div>
+        <div className="hamburger" onClick={()=> setIsOpen(!isOpen)}>
+          <div className="menu-icon hidden relative">
+            <i className={`ri-menu-line absolute transition-all ease-in-out duration-200 ${isOpen ? 'opacity-0 rotate-90 scale-0 ' : 'opacity-100 rotate-0 scale-100'} `}></i>
+            <i className={`ri-close-large-line transition-all ease-in-out duration-200 ${isOpen ? 'opacity-100 rotate-0 scale-100 ' : 'opacity-0 -rotate-90 scale-0'}`}></i>
+          </div>
+        </div>
         <div className="line"></div>
         <div className="icon">
           <i className="ri-search-eye-line"></i>
           <i className="ri-user-3-line"></i>
         </div>
+      </div>
+
+      <div className={`menu-container hidden scale-0 absolute top-15 right-10 w-40 rounded bg-[#00000046] backdrop-blur-sm shadow-lg border border-[#00000017] z-10 list-none transition-all ease-in-out duration-200 origin-top-right ${isOpen ? 'scale-100' : 'scale-0'} `}>
+        <NavLink className="" to="/"><li className="rounded-t text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>Home</li></NavLink>
+        <NavLink className="" to="/about-us"><li className="text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>About Us </li></NavLink>
+        <NavLink className="" to="/health_insurance"><li className="text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>Health Insurance</li></NavLink>
+        <NavLink className="" to="/vehicle_insurance"><li className="text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>Vehicle Insurance</li></NavLink>
+        <NavLink className="" to="/general_insurance"><li className="text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>General Insurance</li></NavLink>
+        <NavLink className="" to="/claim"><li className="rounded-b text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>How to file claim</li></NavLink>
+        <NavLink className="" to="/contact-us"><li className="rounded-b text-[12px] text-white hover:bg-[#ffffff70] hover:text-[#002249] duration-200"  style={{padding:"10px"}}>Contact Us</li></NavLink>
       </div>
     </>
   );

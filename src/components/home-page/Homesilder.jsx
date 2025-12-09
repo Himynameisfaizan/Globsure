@@ -10,6 +10,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/effect-creative";
 import "swiper/css/thumbs";
 import "../../css/homeslider.css";
+import './responsive.css'
 import {
   EffectFade,
   FreeMode,
@@ -46,7 +47,7 @@ const Homesilder = () => {
           ]}
           className="mySwiper2"
         >
-          <SwiperSlide className="slider-content">
+          <SwiperSlide className="slider-content h-full w-full">
             <div className="img">
               <img src="/image/health_bg.jpg" />
             </div>
@@ -120,7 +121,7 @@ const Homesilder = () => {
           freeMode={true}
           watchSlidesProgress={true}
           modules={[FreeMode, Navigation, Thumbs]}
-          className="mySwiper1"
+          className="mySwiper1 navigation"
         >
           <SwiperSlide className="hello">
             <div className="health">
