@@ -23,12 +23,12 @@ const About_section = () => {
           <h5 className="text-center text-[#000000a6]">
             QUICK, EASY AND HASSLE FREE
           </h5>
-          <h3 className="text-center text-[#002249] text-3xl font-bold">
+          <h3 className="heading text-center text-[#002249] text-3xl font-bold">
             Let's Find You The Best Insurance
           </h3>
 
           <div
-            className="flex gap-10 justify-center flex-wrap"
+            className="icon-container flex gap-10 justify-center flex-wrap"
             style={{ padding: "40px 0" }}
           >
             <NavLink

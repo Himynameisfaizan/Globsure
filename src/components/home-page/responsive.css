@@ -1,160 +1,304 @@
 @media (max-width: 1024px) {
+  /* Start Hero section homeSlider */
 
-.slider-content .content-detail {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-  /* background-color: red; */
-  width: 65%;
-  z-index: 1;
+  .slider-content .content-detail {
+    top: 15%;
+    left: 5%;
+    width: 65%;
+  }
+
+  .slider-content .content-detail h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .slider-content {
+    position: relative;
+  }
+
+  .slider-content .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* End Hero section homeSlider */
+
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 980px !important;
+  }
+
+  .parent-container .our-Plans h5 {
+    font-size: 15px;
+  }
+
+  .parent-container .our-Plans .heading {
+    font-size: 25px;
+  }
+
+  .parent-container .our-Plans .icon-container {
+    gap: 20px;
+  }
+
+  .parent-container .our-Plans .icon-container a {
+    height: 180px;
+    width: 18%;
+  }
+
+  .parent-container .our-Plans .icon-container a img {
+    width: 80px;
+  }
+
+  .parent-container .our-Plans .icon-container a h3 {
+    font-size: 15px;
+    flex-wrap: wrap;
+    /* padding: 0 10px; */
+    text-align: center;
+  }
+
+  /* End our plan section */
 }
-
-.slider-content .content-detail h2 {
-  font-size: 60px;
-  color: white;
-  line-height: 70px;
-  letter-spacing: -1px;
-}
-
-
-.slider-content {
-  position: relative;
-}
-
-.slider-content .img {
-  width: 100%;
-  height: 100%;
-}
-
-}
-
 
 @media (max-width: 768px) {
+  /* Start Hero section homeSlider */
 
-.slider-content .content-detail {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  /* background-color: red; */
-  width: 80%;
-  z-index: 1;
-}
+  .slider-content .content-detail {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    /* background-color: red; */
+    width: 80%;
+    z-index: 1;
+  }
 
-.slider-content .content-detail h2 {
-  font-size: 50px;
-  color: white;
-  line-height: 60px;
-  letter-spacing: -1px;
-}
+  .slider-content .content-detail h2 {
+    font-size: 50px;
+    color: white;
+    line-height: 60px;
+    letter-spacing: -1px;
+  }
 
-.parent .navigation{
+  .parent .navigation {
     display: none;
+  }
+
+  .slider-content {
+    position: relative;
+    height: 80vh;
+  }
+
+  .slider-content .img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* end Hero section homeSlider */
+
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 700px !important;
+    /* background-color: red; */
+  }
+
+  .parent-container .our-Plans .icon-container {
+    gap: 45px;
+  }
+
+  .parent-container .our-Plans .icon-container a {
+    height: 180px;
+    width: 28%;
+  }
+
+  /* End our plan section */
 }
-
-
-.slider-content {
-  position: relative;
-  height: 80vh;
-}
-
-.slider-content .img img {
-  width: 100%;
-  height: 100%;
-}
-
-}
-
 
 @media (max-width: 425px) {
+  /* Start Hero section homeSlider */
 
-.slider-content .content-detail {
-  top: 20%;
-  left: 2%;
-  width: 100%;
+  .slider-content .content-detail {
+    top: 20%;
+    left: 2%;
+    width: 100%;
+  }
+
+  .slider-content .content-detail h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .slider-content {
+    position: relative;
+    height: 60vh;
+  }
+
+  .slider-content .img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    height: 6vh;
+    padding: 0 20px;
+  }
+
+  .wrapper h1 {
+    font-size: 12px;
+  }
+
+  /* end Hero section homeSlider */
+
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 400px !important;
+    margin: 20px auto 0 auto !important;
+  }
+
+  .parent-container .our-Plans h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .icon-container {
+    gap: 20px;
+    padding: 20px 0 !important;
+  }
+
+  .parent-container .our-Plans .icon-container a {
+    height: 180px;
+    width: 40%;
+  }
+
+  .parent-container .our-Plans .icon-container a h3 {
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .heading {
+    font-size: 22px;
+  }
+
+  /* End our plan section */
 }
-
-.slider-content .content-detail h2 {
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.slider-content {
-  position: relative;
-  height: 60vh;
-}
-
-.slider-content .img img{
-  width: 100%;
-  height: 100%;
-}
-
-
-.wrapper {
-  height: 6vh;
-  padding: 0 20px;
-}
-
-.wrapper h1 {
-  font-size: 12px;
-}
-
-}
-
 
 @media (max-width: 375px) {
+  /* Start Hero section homeSlider */
 
-.slider-content .content-detail {
-  top: 20%;
-  left: 2%;
-  width: 100%;
+  .slider-content .content-detail {
+    top: 20%;
+    left: 2%;
+    width: 100%;
+  }
+
+  .slider-content .content-detail h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .slider-content {
+    position: relative;
+    height: 30vh;
+  }
+
+  .wrapper {
+    height: 5vh;
+  }
+
+  .wrapper h1 {
+    font-size: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  /* End Hero section homeSlider */
+
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 400px !important;
+    margin: 20px auto 0 auto !important;
+  }
+
+  .parent-container .our-Plans h5 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .heading {
+    font-size: 20px;
+  }
+
+  .parent-container .our-Plans .icon-container {
+    gap: 20px;
+    padding: 20px 0 !important;
+  }
+
+  .parent-container .our-Plans .icon-container a {
+    height: 150px;
+    width: 40%;
+  }
+
+  .parent-container .our-Plans .icon-container a h3 {
+    font-weight: bold;
+  }
+
+  /* End our plan section */
 }
-
-.slider-content .content-detail h2 {
-  font-size: 28px;
-  line-height: 40px;
-}
-
-.slider-content {
-  position: relative;
-  height: 30vh;
-}
-
-.wrapper {
-  height: 5vh;
-}
-
-.wrapper h1 {
-  font-size: 8px;
-  letter-spacing: 0.2px;
-}
-
-}
-
 
 @media (max-width: 320px) {
-.slider-content .content-detail {
-  top: 20%;
-  left: 2%;
-  width: 100%;
-}
+  /* Start Hero section homeSlider */
 
-.slider-content .content-detail h2 {
-  font-size: 25px;
-  line-height: 40px;
-}
+  .slider-content .content-detail {
+    top: 20%;
+    left: 2%;
+    width: 100%;
+  }
 
-.slider-content {
-  position: relative;
-  height: 30vh;
-}
+  .slider-content .content-detail h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
 
-.wrapper {
-  height: 5vh;
-}
+  .slider-content {
+    position: relative;
+    height: 30vh;
+  }
 
-.wrapper h1 {
-  font-size: 8px;
-  letter-spacing: 0.2px;
-}
+  .wrapper {
+    height: 5vh;
+  }
 
+  .wrapper h1 {
+    font-size: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  /* End Hero section homeSlider */
+  
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 400px !important;
+    margin: 20px auto 0 auto !important;
+  }
+
+  .parent-container .our-Plans h5 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .heading {
+    font-size: 18px;
+  }
+
+  .parent-container .our-Plans .icon-container a img {
+    width: 70px;
+  }
+
+  .parent-container .our-Plans .icon-container a h3 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /* End our plan section */
 }
