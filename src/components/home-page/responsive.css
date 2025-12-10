@@ -80,6 +80,20 @@
 
   /* Start about offering section */
 
+  .offering {
+    max-width: 980px !important;
+    margin: 30px auto !important;
+  }
+
+  .offering .part-one h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .offering .part-two {
+    padding: 20px 20px 0px 20px;
+  }
+
   /* End about offering section */
 }
 
@@ -169,6 +183,26 @@
   }
 
   /* End about parent section */
+
+  /* Start about offering section */
+
+  .offering {
+    max-width: 700px !important;
+    margin: 20px auto !important;
+    /* background-color: red; */
+  }
+
+  .offering .part-one h2 {
+    font-size: 22px;
+    line-height: 30px;
+    width: 70%;
+  }
+
+  .offering .part-two {
+    padding: 20px 0 0 0;
+  }
+
+  /* End about offering section */
 }
 
 @media (max-width: 425px) {
@@ -295,6 +329,54 @@
   }
 
   /* End about parent section */
+
+  /* Start about offering section */
+
+  .offering {
+    max-width: 400px !important;
+    margin: 20px auto !important;
+    /* background-color: red; */
+  }
+
+  .offering .part-one h2 {
+    font-size: 20px;
+    line-height: 25px;
+    width: 90%;
+  }
+
+  .offering .part-one h4 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .offering .part-two {
+    padding: 20px 0 0 0;
+  }
+
+  .offering .part-two .part-card {
+    height: 180px;
+    width: 180px;
+  }
+
+  .offering .part-two .part-card .front h3,
+  .offering .part-two .part-card .back h3 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .offering .part-two .part-card .front i,
+  .offering .part-two .part-card .back i {
+    font-size: 30px;
+  }
+
+  .offering .part-two .part-card .front p,
+  .offering .part-two .part-card .back p {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  /* End about offering section */
 }
 
 @media (max-width: 375px) {
@@ -409,6 +491,36 @@
   }
 
   /* End about parent section */
+
+  /* Start about offering section */
+
+  .offering {
+    max-width: 340px !important;
+    margin: 0px auto !important;
+  }
+
+  .offering .part-one h2 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 90%;
+  }
+
+  .offering .part-one h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .offering .part-two .part-card {
+    height: 200px;
+    width: 160px;
+  }
+
+  .offering .part-two .part-card .front h3,
+  .offering .part-two .part-card .back h3 {
+    font-size: 16px;
+  }
+
+  /* End about offering section */
 }
 
 @media (max-width: 320px) {
@@ -518,4 +630,52 @@
   }
 
   /* End about parent section */
+  
+  /* Start about offering section */
+
+  .offering {
+    max-width: 340px !important;
+    margin: 0px auto !important;
+    /* background-color: red; */
+  }
+
+  .offering .part-one h2 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 90%;
+  }
+
+  .offering .part-one h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .offering .part-two {
+    padding: 20px 0 0 0;
+  }
+
+  .offering .part-two .part-card {
+    height: 220px;
+    width: 150px;
+  }
+
+  .offering .part-two .part-card .front h3,
+  .offering .part-two .part-card .back h3 {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .offering .part-two .part-card .front i,
+  .offering .part-two .part-card .back i {
+    font-size: 30px;
+  }
+
+  .offering .part-two .part-card .front p,
+  .offering .part-two .part-card .back p {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  /* End about offering section */
 }
