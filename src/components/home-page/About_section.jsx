@@ -694,7 +694,7 @@ const About_section = () => {
         </div>
 
         <div className="contact">
-          <div className="svg">
+          <div className="svg"> 
             <div className="contact_detail">
               <div className="part1">
                 <div className="info">
@@ -772,7 +772,7 @@ const About_section = () => {
                 <i className="ri-parent-fill"></i>
               </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg id="svg-clip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
                 fill="#eaeaf3"
                 d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,96C840,85,960,139,1080,154.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
