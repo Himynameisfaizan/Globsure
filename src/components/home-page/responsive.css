@@ -109,6 +109,50 @@
   }
 
   /* End ranking section */
+
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 980px !important;
+    /* background-color: red; */
+  }
+
+  .benefits .child1 .btn1 {
+    right: 49px;
+    background-color: var(--light-color);
+    padding: 15px 10px !important;
+    width: 60%;
+  }
+
+  .benefits .child1 .btn1 i {
+    padding: 15px 10px !important;
+    top: -15% !important;
+    border-top: 5px solid var(--dark-color);
+    color: var(--dark-color);
+    font-size: 50px;
+  }
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 100px !important;
+    font-size: 20px;
+    /* font-weight: bold; */
+    letter-spacing: 0.5px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 25px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 25px;
+  }
+
+  .benefits .child2 .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End benefit section */
 }
 
 @media (max-width: 768px) {
@@ -236,6 +280,60 @@
   }
 
   /* End ranking section */
+
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 700px !important;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+
+  .benefits .child1 {
+    width: 100%;
+  }
+
+  .benefits .child2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .benefits .child1 .image img {
+    width: 100% !important;
+    height: 400px;
+  }
+
+  .benefits .child1 .btn1 {
+    right: 0%;
+    padding: 15px 10px !important;
+    width: 40%;
+  }
+
+  .benefits .child1 .btn1 i {
+    padding: 15px 10px !important;
+    top: -15% !important;
+    font-size: 40px;
+  }
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 90px !important;
+    font-size: 18px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 25px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 25px;
+  }
+
+  .benefits .child2 .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End benefit section */
 }
 
 @media (max-width: 425px) {
@@ -410,7 +508,7 @@
   }
 
   /* End about offering section */
-  
+
   /* Start ranking section */
   .ranking {
     height: 160px;
@@ -437,6 +535,78 @@
   }
 
   /* End ranking section */
+
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 400px !important;
+    /* background-color: red; */
+  }
+
+  .benefits .child1 {
+    width: 100%;
+  }
+
+  .benefits .child2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .benefits .child1 .image img {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .benefits .child1 .btn1 {
+    right: 0%;
+    padding: 15px 10px !important;
+    width: 70%;
+  }
+
+  .benefits .child1 .btn1 i {
+    padding: 15px 10px !important;
+    top: -15% !important;
+    font-size: 40px;
+  }
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 90px !important;
+    font-size: 18px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 24px;
+  }
+
+  .benefits .child2 .about-first h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 20px;
+    padding: 2px 0 !important;
+  }
+
+  .benefits .child2 .about-second ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .benefits .child2 .about-second ul li span {
+    font-weight: bold;
+  }
+
+   .benefits .child2 .button{
+     margin-top: 20px;
+
+   }
+  .benefits .child2 .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End benefit section */
 }
 
 @media (max-width: 375px) {
@@ -582,7 +752,6 @@
 
   /* End about offering section */
 
-  
   /* Start ranking section */
   .ranking {
     height: 140px;
@@ -609,6 +778,59 @@
   }
 
   /* End ranking section */
+
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 340px !important;
+    /* background-color: red; */
+  }
+
+  .benefits .child1 {
+    width: 100%;
+  }
+
+  .benefits .child2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .benefits .child1 .image img {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .benefits .child1 .btn1 {
+    right: 0%;
+    padding: 15px 10px !important;
+    width: 75%;
+  }
+
+  .benefits .child1 .btn1 i {
+    padding: 15px 10px !important;
+    top: -15% !important;
+    font-size: 40px;
+  }
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 80px !important;
+    font-size: 16px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 22px;
+  }
+
+  .benefits .child2 .about-first h4 {
+    font-size: 12px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 18px;
+    padding: 2px 0 !important;
+  }
+
+  /* End benefit section */
 }
 
 @media (max-width: 320px) {
@@ -644,7 +866,7 @@
   /* Start our plan section */
 
   .parent-container .our-Plans {
-    max-width: 400px !important;
+    max-width: 300px !important;
     margin: 20px auto 0 auto !important;
   }
 
@@ -671,9 +893,8 @@
   /* Start about parent section */
 
   .about-parent .childs {
-    max-width: 340px;
+    max-width: 300px;
     margin: auto;
-    /* background-color: red; */
   }
 
   .childs .child1 .image img {
@@ -722,7 +943,7 @@
   /* Start about offering section */
 
   .offering {
-    max-width: 340px !important;
+    max-width: 300px !important;
     margin: 0px auto !important;
     /* background-color: red; */
   }
@@ -743,8 +964,8 @@
   }
 
   .offering .part-two .part-card {
-    height: 220px;
-    width: 150px;
+    height: 240px;
+    width: 140px;
   }
 
   .offering .part-two .part-card .front h3,
@@ -767,7 +988,6 @@
 
   /* End about offering section */
 
-  
   /* Start ranking section */
   .ranking {
     height: 120px;
@@ -794,4 +1014,39 @@
   }
 
   /* End ranking section */
+
+  
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 300px !important;
+    /* background-color: red; */
+  }
+
+  .benefits .child1 .btn1 {
+    right: 0%;
+    padding: 15px 10px !important;
+    width: 85%;
+  }
+
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 80px !important;
+    font-size: 15px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 20px;
+  }
+
+  .benefits .child2 .about-first h4 {
+    font-size: 12px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 16px;
+    padding-top: 10px !important;
+  }
+
+  /* End benefit section */
 }
