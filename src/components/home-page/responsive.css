@@ -1270,6 +1270,10 @@
   
   /* Start contact section */
 
+  .contact, .contact .contact_detail{
+    height: 75vh !important;
+  }
+
   .contact_detail .part1 .info h2 {
     font-size: 20px;
     line-height: 20px;
