@@ -185,6 +185,21 @@
   }
 
   /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 980px !important;
+  }
+
+  .testimonals .part1 h1 {
+    font-size: 30px;
+  }
+
+  .testimonals .part2 {
+    height: 55% !important;
+  }
+  /* End Testimonals */
 }
 
 @media (max-width: 768px) {
@@ -421,6 +436,27 @@
   }
 
   /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 700px !important;
+    flex-direction: column;
+    height: 500px !important;
+  }
+  .testimonals .part1 {
+    width: 100%;
+  }
+  .testimonals .part1 h1 {
+    font-size: 25px;
+  }
+
+  .testimonals .part2 {
+    height: 65% !important;
+    width: 100% !important;
+  }
+
+  /* End Testimonals */
 }
 
 @media (max-width: 425px) {
@@ -749,6 +785,44 @@
   }
 
   /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 400px !important;
+    flex-direction: column;
+    height: 400px !important;
+    margin: 40px auto !important;
+  }
+
+  .testimonals .part1 h1 {
+    font-size: 20px;
+  }
+
+  .testimonal-content .para p {
+    width: 85% !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+  }
+
+  .testimonal-content .detail {
+    margin-top: 10px;
+  }
+
+  .testimonal-content .detail .img img {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .testimonal-content .detail .info h2 {
+    font-size: 18px !important;
+  }
+
+  .testimonal-content .detail .info p {
+    color: #002249a6;
+    font-size: 14px;
+  }
+  /* End Testimonals */
 }
 
 @media (max-width: 375px) {
@@ -1017,6 +1091,34 @@
   }
 
   /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 340px !important;
+    margin: 20px auto !important;
+  }
+
+  .testimonals .part1 h1 {
+    font-size: 18px;
+  }
+
+  .testimonal-content .para p {
+    width: 88% !important;
+    text-align: justify;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  .testimonal-content .detail .info h2 {
+    font-size: 16px !important;
+  }
+
+  .testimonal-content .detail .info p {
+    color: #002249a6;
+    font-size: 14px;
+  }
+  /* End Testimonals */
 }
 
 @media (max-width: 320px) {
@@ -1291,4 +1393,30 @@
   }
 
   /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 300px !important;
+    margin: 20px auto !important;
+  }
+
+  .testimonals .part1 h1 {
+    font-size: 18px;
+  }
+
+  .testimonal-content .para p {
+    width: 90% !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+  }
+
+  .testimonal-content .detail .info h2 {
+    font-size: 16px !important;
+  }
+
+  .testimonal-content .detail .info p {
+    font-size: 13px !important;
+  }
+  /* End Testimonals */
 }
