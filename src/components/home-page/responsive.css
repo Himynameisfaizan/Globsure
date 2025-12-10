@@ -99,6 +99,7 @@
   /* Start ranking section */
   .ranking {
     height: 250px;
+    margin: 30px 0 !important;
   }
   .ranking .rank i {
     font-size: 30px;
@@ -135,7 +136,6 @@
   .benefits .child1 .btn1 h2 {
     margin-left: 100px !important;
     font-size: 20px;
-    /* font-weight: bold; */
     letter-spacing: 0.5px;
   }
 
@@ -153,6 +153,38 @@
   }
 
   /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 980px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 980px !important;
+  }
+
+  .member .part1 h1 {
+    font-size: 25px;
+  }
+  .member .part1 {
+    margin-top: 0 !important;
+  }
+
+  .member .part2 {
+    margin-top: 10px;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 25px;
+  }
+
+  /* End Members section */
 }
 
 @media (max-width: 768px) {
@@ -162,7 +194,6 @@
     position: absolute;
     top: 20%;
     left: 5%;
-    /* background-color: red; */
     width: 80%;
     z-index: 1;
   }
@@ -194,7 +225,6 @@
 
   .parent-container .our-Plans {
     max-width: 700px !important;
-    /* background-color: red; */
   }
 
   .parent-container .our-Plans .icon-container {
@@ -247,7 +277,6 @@
   .offering {
     max-width: 700px !important;
     margin: 20px auto !important;
-    /* background-color: red; */
   }
 
   .offering .part-one h2 {
@@ -265,6 +294,7 @@
   /* Start ranking section */
   .ranking {
     height: 200px;
+    margin: 30px 0 !important;
   }
   .ranking .rank i {
     font-size: 26px;
@@ -286,7 +316,6 @@
   .benefits {
     max-width: 700px !important;
     flex-direction: column;
-    /* background-color: red; */
   }
 
   .benefits .child1 {
@@ -334,6 +363,64 @@
   }
 
   /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 700px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 730px !important;
+    /* background-color: red; */
+  }
+
+  .member .part1 h1 {
+    font-size: 24px;
+  }
+  .member .part1 {
+    margin-top: 0 !important;
+  }
+
+  .member .part2 {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .member .part2 .info {
+    width: 100%;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 22px;
+  }
+
+  .member .part2 .info h3 {
+    font-size: 20px;
+    padding: 0 !important;
+  }
+
+  .member .part2 .detail {
+    width: 40% !important;
+    margin: 0px !important;
+  }
+
+  .member .part2 .detail .second {
+    width: 90% !important;
+    height: 100%;
+  }
+
+  .member .part2 .detail .second .slide .detail {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  /* End Members section */
 }
 
 @media (max-width: 425px) {
@@ -466,7 +553,6 @@
   .offering {
     max-width: 400px !important;
     margin: 0px auto !important;
-    /* background-color: red; */
   }
 
   .offering .part-one h2 {
@@ -512,6 +598,7 @@
   /* Start ranking section */
   .ranking {
     height: 160px;
+    margin: 30px 0 !important;
   }
 
   .ranking .rank i {
@@ -540,7 +627,6 @@
 
   .benefits {
     max-width: 400px !important;
-    /* background-color: red; */
   }
 
   .benefits .child1 {
@@ -597,16 +683,72 @@
     font-weight: bold;
   }
 
-   .benefits .child2 .button{
-     margin-top: 20px;
-
-   }
+  .benefits .child2 .button {
+    margin-top: 20px;
+  }
   .benefits .child2 .button a {
     padding: 15px 30px;
     font-size: 15px;
   }
 
   /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 400px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 400px !important;
+  }
+
+  .member .part1 h1 {
+    font-size: 22px;
+  }
+
+  .member .part1 h4 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 18px;
+  }
+
+  .member .part2 .info h3 {
+    font-size: 18px;
+    padding: 0 !important;
+  }
+
+  .member .part2 .info p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .member .part2 .info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .member .part2 .info ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .member .part2 .detail {
+    width: 70% !important;
+  }
+
+  /* End Members section */
 }
 
 @media (max-width: 375px) {
@@ -676,7 +818,6 @@
   .about-parent .childs {
     max-width: 340px;
     margin: auto;
-    /* background-color: red; */
   }
 
   .childs .child1 .image img {
@@ -755,6 +896,7 @@
   /* Start ranking section */
   .ranking {
     height: 140px;
+    margin: 30px 0 !important;
   }
 
   .ranking .rank i {
@@ -783,7 +925,6 @@
 
   .benefits {
     max-width: 340px !important;
-    /* background-color: red; */
   }
 
   .benefits .child1 {
@@ -831,6 +972,51 @@
   }
 
   /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 340px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 340px !important;
+  }
+
+  .member .part1 h1 {
+    font-size: 18px;
+  }
+
+  .member .part1 h4 {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 15px;
+  }
+
+  .member .part2 .info h3 {
+    font-size: 15px;
+    padding: 0 !important;
+  }
+
+  .member .part2 .info ul {
+    gap: 5px;
+  }
+
+  .member .part2 .detail {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+
+  /* End Members section */
 }
 
 @media (max-width: 320px) {
@@ -989,8 +1175,10 @@
   /* End about offering section */
 
   /* Start ranking section */
+
   .ranking {
     height: 120px;
+    margin: 20px 0 !important;
   }
 
   .ranking .rank i {
@@ -1015,12 +1203,10 @@
 
   /* End ranking section */
 
-  
   /* Start benefit section */
 
   .benefits {
     max-width: 300px !important;
-    /* background-color: red; */
   }
 
   .benefits .child1 .btn1 {
@@ -1028,7 +1214,6 @@
     padding: 15px 10px !important;
     width: 85%;
   }
-
 
   .benefits .child1 .btn1 h2 {
     margin-left: 80px !important;
@@ -1049,4 +1234,61 @@
   }
 
   /* End benefit section */
+
+  /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 300px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 300px !important;
+  }
+
+  .member .part1 h1 {
+    font-size: 16px;
+  }
+
+  .member .part1 h4 {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 14px;
+  }
+
+  .member .part2 .info h3 {
+    font-size: 14px;
+    padding: 0 !important;
+  }
+
+  .member .part2 .info p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .member .part2 .info ul {
+    gap: 5px;
+  }
+
+  .member .part2 .info ul li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .member .part2 .detail {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+
+  /* End Members section */
 }
