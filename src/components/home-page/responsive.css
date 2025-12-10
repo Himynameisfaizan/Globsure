@@ -1492,6 +1492,7 @@
 
   .blog-section {
     width: 340px;
+    margin: 0px auto !important;
   }
   
   .blog-second .blogger .img {
@@ -1499,7 +1500,7 @@
   }
   
     .blog-section .blog-first h2{
-     font-size: 22px;
+     font-size: 20px;
      font-weight: bold;
     }
   
@@ -1507,46 +1508,6 @@
     width: 85% !important;
     height: 40% !important;
     bottom: 15% !important;
-  }
-
-  .blogger .blog-detail .date span {
-    width: 100px;
-    left: -50% !important;
-  }
-
-  .blogger .blog-detail .info {
-    width: 100%;
-    padding: 0px 10px;
-  }
-
-  .blog-detail .info .info-one .info-icon {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .blog-detail .info .info-one .info-icon i {
-    padding: 2px 4px !important;
-    font-size: 12px;
-  }
-
-  .blog-detail .info .info-one .info-icon p {
-    padding-left: 0px;
-    font-size: 12px;
-  }
-
-  .blog-detail .info .info-two {
-    padding: 0 0px 0 5px !important;
-  }
-
-  .blog-detail .info .info-two h2 {
-    font-size: 22px !important;
-    padding-top: 2px;
-    letter-spacing: 1px;
-    line-height: 28px !important;
-  }
-
-  .blog-detail .info .info-three {
-    padding: 10px 15px 0px 5px !important;
   }
 
   /* End blog section */
@@ -1850,4 +1811,29 @@
     font-size: 13px !important;
   }
   /* End Testimonals */
+
+  
+  /* Start blog section */
+
+  .blog-section {
+    width: 300px;
+    margin: 0px auto !important;
+  }
+  
+  .blog-second .blogger .img {
+    height: 60%;
+  }
+  
+    .blog-section .blog-first h2{
+     font-size: 20px;
+     font-weight: bold;
+    }
+  
+  .blogs .blogger .blog-detail {
+    width: 85% !important;
+    height: 40% !important;
+    bottom: 15% !important;
+  }
+
+  /* End blog section */
 }

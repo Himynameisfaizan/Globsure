@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar, EffectCards } from "swiper/modules";
 import "../../css/about_section.css";
-import "../../css/responsive.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

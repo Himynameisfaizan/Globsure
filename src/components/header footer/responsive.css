@@ -129,6 +129,8 @@
 /* Start header */
 
 @media (max-width: 1024px) {
+  /* Start header section */
+
   .header {
     height: 80px;
   }
@@ -141,6 +143,8 @@
   .menu ul {
     width: 100%;
   }
+
+  /* End header section */
 }
 
 @media (max-width: 950px) {
@@ -155,9 +159,9 @@
     align-items: center;
   }
 
-   .header .logo img{
+  .header .logo img {
     width: 120px;
-   }
+  }
 
   .menu {
     display: none;
@@ -176,11 +180,10 @@
     cursor: pointer;
   }
 
-  
   .header .icon {
     display: none;
   }
-  .menu-container{
+  .menu-container {
     display: block;
   }
 }
@@ -191,11 +194,48 @@
   }
 }
 
-
-
 @media (max-width: 425px) {
   .menu-icon {
     margin-left: 150px;
   }
 
+  /* Start footer section */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px !important;
+    gap: 50px;
+  }
+
+  .footer-logo .logo {
+    width: 50% !important;
+    display: flex;
+  }
+
+  .footer-logo .logo img {
+    height: 60px;
+    width: 100% !important;
+  }
+
+  .footer-logo .number {
+    width: 50% !important;
+  }
+
+  .footer-quicklink{
+    flex-direction: column;
+    gap: 25px;
+    width: 100% !important;
+  }
+
+  .footer-quicklink .explore , .insurance, .address, .newsletter{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .footer-copyright{
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* End footer section */
 }
