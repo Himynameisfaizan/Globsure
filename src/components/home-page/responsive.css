@@ -1271,7 +1271,7 @@
   /* Start contact section */
 
   .contact, .contact .contact_detail{
-    height: 75vh !important;
+    height: 65vh !important;
   }
 
   .contact_detail .part1 .info h2 {
