@@ -694,7 +694,7 @@ const About_section = () => {
         </div>
 
         <div className="contact">
-          <div className="svg"> 
+          <div className="svg">
             <div className="contact_detail">
               <div className="part1">
                 <div className="info">
@@ -772,7 +772,11 @@ const About_section = () => {
                 <i className="ri-parent-fill"></i>
               </div>
             </div>
-            <svg id="svg-clip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg
+              id="svg-clip"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
               <path
                 fill="#eaeaf3"
                 d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,96C840,85,960,139,1080,154.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
@@ -782,34 +786,39 @@ const About_section = () => {
         </div>
 
         <div
-          className="blog-section h-150 xl:w-[1250px]"
+          className="blog-section h-150 max-w-[1250px]"
           style={{ margin: "20px auto" }}
         >
           <div className="blog-first w-full h-1/5 text-center">
             <h4 className="text-[15px] text-[#00000094] ">OUR BLOG</h4>
-            <h2 className="text-4xl text-[#002249]">
+            <h2 className="text-3xl text-[#002249]">
               Latest news & articles from the blog
             </h2>
           </div>
           <div
-            className="blog-second xl:w-[1250px] xl:h-115 max-xl:w-[950px] max-xl:h-115"
+            className="blog-second h-115"
             style={{ margin: "auto" }}
           >
             <Swiper
-              slidesPerView={3}
+              slidesPerView={1}
+              spaceBetween={10}
               modules={[Scrollbar]}
               breakpoints={{
-                // When window width is >= 640px
+                // Jab screen 640px se badi ho (Large Mobile / Small Tablet)
                 425: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                640: {
                   slidesPerView: 2,
                   spaceBetween: 20,
                 },
-                // When window width is >= 768px
+                // Jab screen 768px se badi ho (Tablet / iPad)
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   spaceBetween: 40,
                 },
-                // When window width is >= 1024px
+                // Jab screen 1024px se badi ho (Desktop / Laptop)
                 1024: {
                   slidesPerView: 3,
                   spaceBetween: 50,
