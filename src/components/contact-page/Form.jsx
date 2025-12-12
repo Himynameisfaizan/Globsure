@@ -7,7 +7,7 @@ const Form = () => {
         <div className="massage w-2/5 h-full ">
           <div className="massage-texting">
             <h4 className="text-[#00000075]">Contact with us</h4>
-            <h1 className="text-5xl  leading-13 text-[#002249] font-normal">
+            <h1 className="text-4xl  leading-8 text-[#002249] font-normal">
               Write a message or call anytime
             </h1>
           </div>
