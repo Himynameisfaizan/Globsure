@@ -102,7 +102,7 @@ const First_section = () => {
           <h2 className="text-[#000000a6] text-[15px] text-center">
             GLOBSURE INTERNATIONAL SECURE WITH GLOBSURE
           </h2>
-          <h1 className="text-[#002249] text-5xl font-semibold text-center leading-14" style={{padding:'10px 0'}}>
+          <h1 className="text-[#002249] text-4xl font-semibold text-center leading-10" style={{padding:'10px 0'}}>
           Meet the Leaders and  <br /> Talent Behind Our Brand
           </h1>
         </div>

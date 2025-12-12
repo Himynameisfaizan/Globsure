@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './responsive.css'
 const Card = ({image, teamName, teamPosition}) => {
   return (
     <>
 
 
-    <div className="card w-70 h-80 rounded-lg flex flex-col justify-center items-center gap-5 shadow border-[#0073bd1f] border border-solid hover:shadow-xl duration-200 cursor-pointer bg-[#ffffff]" style={{margin:'30px 0'}}>
+    <div className="card w-70 h-80 rounded-lg flex flex-col justify-center items-center gap-5 shadow border-[#0073bd1f] border border-solid hover:shadow-xl duration-200 cursor-pointer bg-[#ffffff]" style={{margin:'30px auto'}}>
         <div className="img h-[60%] w-[70%] flex items-center justify-center">
             <img className='h-full w-full rounded-full object-cover' src={image} alt="" />
         </div>

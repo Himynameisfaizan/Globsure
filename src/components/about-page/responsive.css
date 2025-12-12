@@ -48,6 +48,36 @@
   }
 
   /* End origin section */
+
+  /* Start team section */
+  .team_section {
+    max-width: 980px !important;
+  }
+
+  .team_section .meet h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .card {
+    width: 200px;
+    height: 260px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .card .content h1 {
+    font-size: 18px;
+  }
+
+  .card .content h4 {
+    font-size: 15px;
+  }
+
+  /* End team section */
 }
 
 @media (max-width: 768px) {
@@ -141,6 +171,40 @@
   }
 
   /* End origin section */
+
+  /* Start team section */
+  .team_section {
+    max-width: 700px !important;
+  }
+
+  .team_section .meet h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .team_section .meet h2 {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 140px;
+    height: 200px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 85%;
+  }
+
+  .card .content h1 {
+    font-size: 16px;
+  }
+
+  .card .content h4 {
+    font-size: 14px;
+  }
+
+  /* End team section */
 }
 
 @media (max-width: 425px) {
@@ -239,6 +303,45 @@
   }
 
   /* End origin section */
+
+  /* Start team section */
+  .team_section {
+    max-width: 400px !important;
+  }
+
+  .team_section .meet h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .team_section .meet h2 {
+    font-size: 12px;
+  }
+
+  .team_section .team-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 180px;
+    height: 250px;
+    margin: 0px auto !important;
+  }
+
+  .card img {
+    width: 100%;
+    height: 85%;
+  }
+
+  .card .content h1 {
+    font-size: 16px;
+  }
+
+  .card .content h4 {
+    font-size: 14px;
+  }
+
+  /* End team section */
 }
 
 @media (max-width: 375px) {
@@ -310,6 +413,45 @@
   }
 
   /* End origin section */
+
+  /* Start team section */
+  .team_section {
+    max-width: 340px !important;
+  }
+
+  .team_section .meet h1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .team_section .meet h2 {
+    font-size: 12px;
+  }
+
+  .team_section .team-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 160px;
+    height: 200px;
+    margin: 0px auto !important;
+  }
+
+  .card img {
+    width: 100%;
+    height: 95%;
+  }
+
+  .card .content h1 {
+    font-size: 15px;
+  }
+
+  .card .content h4 {
+    font-size: 12px;
+  }
+
+  /* End team section */
 }
 
 @media (max-width: 320px) {
@@ -353,7 +495,6 @@
   }
   /* End first container page section */
 
-  
   /* start origin section */
 
   .origin-section {
@@ -373,6 +514,44 @@
     margin-top: 10px;
   }
 
-
   /* End origin section */
+  
+  /* Start team section */
+  .team_section {
+    max-width: 300px !important;
+  }
+
+  .team_section .meet h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .team_section .meet h2 {
+    font-size: 10px;
+  }
+
+  .team_section .team-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 140px;
+    height: 180px;
+    margin: 0px auto !important;
+  }
+
+  .card img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .card .content h1 {
+    font-size: 15px;
+  }
+
+  .card .content h4 {
+    font-size: 12px;
+  }
+
+  /* End team section */
 }
