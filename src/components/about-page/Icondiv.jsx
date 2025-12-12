@@ -1,8 +1,9 @@
 import React from 'react'
+import './responsive.css'
 const Icondiv = ({svg, title, desc}) => {
   return (
    <>
-    <div className='flex gap-5 w-full'>
+    <div className='icon-div flex gap-5 w-full'>
         <img className='h-12 object-cover rounded-2xl shadow-md cursor-pointer' style={{padding:'6px'}} src={svg} alt="svg" />
         <div className="content w-[80%]">
             <h3 className='text-xl font-semibold text-[#002249]'>{title}</h3>

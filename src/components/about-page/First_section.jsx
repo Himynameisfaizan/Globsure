@@ -6,7 +6,7 @@ import './responsive.css'
 const First_section = () => {
   return (
     <>
-      <div className="first_container flex justify-between" style={{ padding: "50px 0", maxWidth: "1250px", margin: "auto" }}>
+      <div className="first_container flex justify-between" style={{ padding: "50px 0", maxWidth: "1250px", margin: "auto" }}>  
         <div className="img_container w-[50%] relative">
           <img
             className="rounded-lg w-[85%] h-full object-cover"
