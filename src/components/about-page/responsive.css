@@ -1,0 +1,196 @@
+@media (max-width: 1024px) {
+  /* start first container page section */
+  .first_container {
+    max-width: 980px !important;
+  }
+
+  .first_container .img_container img {
+    width: 90%;
+  }
+
+  .company_detail h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .company_detail p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .company_detail h4 {
+    font-size: 16px;
+  }
+
+  .company_detail ul li {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .company_detail ul li span {
+    font-size: 15px;
+  }
+  /* End first container page section */
+
+  /* start form section */
+
+  /* End form section */
+}
+
+@media (max-width: 768px) {
+  /* start first container page section */
+  .first_container {
+    max-width: 740px !important;
+    padding: 20px 0 !important;
+  }
+
+  .first_container .img_container img {
+    width: 95%;
+  }
+
+  .company_detail h2 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .company_detail h5 {
+    font-size: 14px;
+  }
+
+  .company_detail p {
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px 0 !important;
+  }
+
+  .company_detail h4 {
+    font-size: 15px;
+  }
+
+  .company_detail ul li {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .company_detail ul li span {
+    font-size: 15px;
+  }
+  /* End first container page section */
+
+  /* start form section */
+
+  /* End form section */
+}
+
+@media (max-width: 425px) {
+  /* start first container page section */
+  .first_container {
+    max-width: 400px !important;
+    flex-direction: column;
+  }
+
+  .img_container, .company_detail{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .first_container .img_container img {
+    width: 100%;
+  }
+
+  .company_detail h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .company_detail h5 {
+    font-size: 12px;
+  }
+
+  .company_detail p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 5px 0 !important;
+  }
+
+  .company_detail h4 {
+    font-size: 15px;
+  }
+
+  .company_detail ul li {
+    font-size: 12px;
+    text-align: justify;
+    padding: 2px 0 !important;
+  }
+
+  .company_detail ul li span {
+    font-size: 14px;
+  }
+  /* End first container page section */
+
+  /* start form section */
+
+  /* End form section */
+}
+
+@media (max-width: 375px) {
+/* start first container page section */
+  .first_container {
+    max-width: 340px !important;
+  }
+
+  .company_detail h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .company_detail h5 {
+    font-size: 10px;
+  }
+
+  .company_detail h4 {
+    font-size: 14px;
+  }
+
+  /* End first container page section */
+}
+
+@media (max-width: 320px) {
+/* start first container page section */
+  .first_container {
+    max-width: 300px !important;
+  }
+
+  .img_container, .company_detail{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .company_detail h2 {
+    font-size: 16px;
+  }
+
+  .company_detail h5 {
+    font-size: 10px;
+  }
+
+  .company_detail p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 5px 0 !important;
+  }
+
+  .company_detail h4 {
+    font-size: 14px;
+  }
+
+  .company_detail ul li {
+    font-size: 12px;
+    text-align: justify;
+    padding: 2px 0 !important;
+  }
+
+  .company_detail ul li span {
+    font-size: 14px;
+  }
+  /* End first container page section */
+}

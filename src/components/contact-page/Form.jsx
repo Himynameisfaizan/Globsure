@@ -86,7 +86,7 @@ const Form = () => {
 
       <div className="map w-full h-full">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80f6412e1169300!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1633000000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17461.00207609134!2d70.11784901784672!3d23.070595974184613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950b98c3352f395%3A0x56c67e2f31352e23!2sGreen%20Palace%20The%20Restaurant!5e0!3m2!1sen!2sin!4v1765521535104!5m2!1sen!2sin"
           width="100%"
           height="450"
           allowFullScreen=""

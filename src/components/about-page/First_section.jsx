@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Icondiv from "./Icondiv";
+import './responsive.css'
 
 const First_section = () => {
   return (
@@ -14,10 +15,10 @@ const First_section = () => {
           />
         </div>
         <div className="company_detail w-[50%]">
-          <h4 className="text-[#000000a6] text-[15px] font-thin">
+          <h5 className="text-[#000000a6] text-[15px] font-thin">
             ABOUT THE GLOBSURE INTERNATIONAL
-          </h4>
-          <h2 className="text-[#002249] text-4xl font-semibold leading-11">
+          </h5>
+          <h2 className="text-[#002249] text-3xl font-semibold leading-11">
             Insurance Made Simple, Honest, Helpful
           </h2>
           <p
@@ -36,7 +37,7 @@ const First_section = () => {
           <ul>
             <li
               style={{ padding: "5px 0" }}
-              className="text-[#000000a6] text-[15px] list-disc"
+              className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">
                 Trust & Integrity:
@@ -46,7 +47,7 @@ const First_section = () => {
             </li>
             <li
               style={{ padding: "5px 0" }}
-              className="text-[#000000a6] text-[15px] list-disc"
+              className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">Customer Focus:</span>{" "}
               Your needs come first. We listen, understand, and deliver
@@ -54,14 +55,14 @@ const First_section = () => {
             </li>
             <li
               style={{ padding: "5px 0" }}
-              className="text-[#000000a6] text-[15px] list-disc"
+              className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">Simplicity:</span> We
               make insurance easy to understand and hassle-free to manage.
             </li>
             <li
               style={{ padding: "5px 0" }}
-              className="text-[#000000a6] text-[15px] list-disc"
+              className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">Innovation:</span> We
               embrace new ideas and technology to improve our services and
@@ -69,7 +70,7 @@ const First_section = () => {
             </li>
             <li
               style={{ padding: "5px 0" }}
-              className="text-[#000000a6] text-[15px] list-disc"
+              className="text-[#000000a6] text-[15px]"
             >
               <span className="text-[#002249] text-base">Community: </span>We
               are committed to supporting and protecting the communities we
