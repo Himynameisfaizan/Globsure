@@ -1,7 +1,7 @@
 import React from "react";
 import Icondiv from "../../about-page/Icondiv";
 import Accordion from "./Accordion";
-import './responsive.css'
+import "./responsive.css";
 
 const Health_content = () => {
   const accordionData = [
@@ -441,11 +441,7 @@ const Health_content = () => {
             bills. Take the first step towards a worry-free life by locking in
             your protection now.​
           </p>
-          <img
-            className="rounded-lg"
-            src="/image/health3.jpg"
-            alt=""
-          />
+          <img className="rounded-lg" src="/image/health3.jpg" alt="" />
         </div>
         <div
           className="left w-1/2 flex flex-col gap-5 justify-end"
@@ -496,17 +492,17 @@ const Health_content = () => {
       {/* Start share details section */}
       <div className="bg-[#0075bd0a]">
         <div
-          className="origin-section"
+          className="share-section"
           style={{ maxWidth: "1250px", margin: "50px auto" }}
         >
-          <h2
+          <h1
             className="text-center text-[#002249] text-3xl font-bold"
             style={{ padding: "20px 0" }}
           >
             How To Buy Health Insurance
-          </h2>
-          <div className="w-full flex justify-around items-center">
-            <div className="left w-1/2 flex flex-col gap-15 justify-end">
+          </h1>
+          <div className="share-container w-full flex justify-around items-center">
+            <div className="share-first left w-1/2 flex flex-col gap-15 justify-end">
               <Icondiv
                 svg={"/svg/one.svg"}
                 title={"Share Details"}
@@ -534,10 +530,10 @@ const Health_content = () => {
               />
             </div>
             <div
-              className="w-1/3 flex flex-col justify-center"
+              className="second-section w-1/3 flex flex-col justify-center"
               style={{ padding: "20px 0" }}
             >
-              <div className="bg-white h-[95%] rounded-xl shadow-lg">
+              <div className="form-section bg-white h-[95%] rounded-xl shadow-lg">
                 <h2
                   className="text-center text-xl text-[#002249] font-bold"
                   style={{ paddingTop: "20px" }}
@@ -580,7 +576,7 @@ const Health_content = () => {
                   ></textarea>
 
                   <input
-                    className="bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                    className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
                     style={{ padding: "20px" }}
                     type="submit"
                     value="Our team will connect you in minutes"
