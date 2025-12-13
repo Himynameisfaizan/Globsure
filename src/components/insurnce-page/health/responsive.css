@@ -90,6 +90,30 @@
   }
 
   /* End Share section */
+
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 800px !important;
+  }
+
+  .accordion-section {
+    padding: 12px !important;
+  }
+
+  .accordion h2 {
+    font-size: 25px;
+  }
+
+  .accordion .h2 {
+    font-size: 16px;
+  }
+
+  .accordion .para {
+    font-size: 15px;
+  }
+
+  /* End accordion section  */
 }
 
 @media (max-width: 768px) {
@@ -225,6 +249,31 @@
   }
 
   /* End Share section */
+
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 650px !important;
+  }
+
+  .accordion-section {
+    padding: 10px !important;
+    gap: 10px;
+  }
+
+  .accordion h2 {
+    font-size: 22px;
+  }
+
+  .accordion .h2 {
+    font-size: 15px;
+  }
+
+  .accordion .para {
+    font-size: 14px;
+  }
+
+  /* End accordion section  */
 }
 
 @media (max-width: 425px) {
@@ -366,6 +415,31 @@
   }
 
   /* End Share section */
+
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 400px !important;
+  }
+
+  .accordion-section {
+    padding: 8px !important;
+    gap: 10px;
+  }
+
+  .accordion h2 {
+    font-size: 20px;
+  }
+
+  .accordion .h2 {
+    font-size: 14px;
+  }
+
+  .accordion .para {
+    font-size: 13px;
+  }
+
+  /* End accordion section  */
 }
 
 @media (max-width: 375px) {
@@ -475,6 +549,31 @@
   }
 
   /* End Share section */
+
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 350px !important;
+  }
+
+  .accordion-section {
+    padding: 8px !important;
+    gap: 8px;
+  }
+
+  .accordion h2 {
+    font-size: 20px;
+  }
+
+  .accordion .h2 {
+    font-size: 13px;
+  }
+
+  .accordion .para {
+    font-size: 12px;
+  }
+
+  /* End accordion section  */
 }
 
 @media (max-width: 320px) {
@@ -586,4 +685,30 @@
   }
 
   /* End Share section */
+
+  
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 300px !important;
+  }
+
+  .accordion-section {
+    padding: 8px !important;
+    gap: 5px;
+  }
+
+  .accordion h2 {
+    font-size: 18px;
+  }
+
+  .accordion .h2 {
+    font-size: 12px;
+  }
+
+  .accordion .para {
+    font-size: 10px;
+  }
+
+  /* End accordion section  */
 }
