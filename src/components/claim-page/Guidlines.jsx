@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style/guidline.css";
+import './style/responsive.css';
 
 const Guidlines = ({ ClaimData }) => {
   const [activeTab, setActiveTab] = useState("1");
@@ -7,7 +8,7 @@ const Guidlines = ({ ClaimData }) => {
     <>
       <div>
         <div
-          className="flex items-center justify-evenly"
+          className="guidline-container flex items-center justify-evenly"
           style={{ marginTop: "40px" }}
         >
           {ClaimData.map((item) => {
@@ -30,7 +31,7 @@ const Guidlines = ({ ClaimData }) => {
         </div>
 
         <div
-          className="bg-blue-50 border-2 border-[#0073bda6] rounded-lg"
+          className="content-container bg-blue-50 border-2 border-[#0073bda6] rounded-lg"
           style={{ padding: "30px", margin: "50px auto", maxWidth: "1100px" }}
         >
           {ClaimData.map((content) => {

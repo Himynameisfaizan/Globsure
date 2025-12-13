@@ -1,5 +1,6 @@
 import React from "react";
 import Guidlines from "./Guidlines";
+import './style/responsive.css'
 
 const Content_part = () => {
   const ClaimGuidlines = [
@@ -127,18 +128,18 @@ const Content_part = () => {
         <Guidlines ClaimData={ClaimGuidlines} />
       </div>
 
-      <div className="" style={{ maxWidth: "1250px", margin: "auto" }}>
+      <div className="pdf-section" style={{ maxWidth: "1250px", margin: "auto" }}>
         <h2 className="text-[#000000a6] text-center">Download Claim Forms</h2>
         <h2
           className="text-[#002249] text-3xl font-semibold w-155 text-center"
-          style={{ margin: "auto", padding: "5px 0" }}
+          style={{ margin: "0 auto", padding: "5px 0" }}
         >
           Download the relevant claim form, fill it out physically, and mail it
           to our registered office or upload it via email
         </h2>
 
         <div
-          className="flex items-center justify-around"
+          className="pdf-table flex items-center justify-around"
           style={{ margin: "30px 0" }}
         >
           <div className="w-1/3">
