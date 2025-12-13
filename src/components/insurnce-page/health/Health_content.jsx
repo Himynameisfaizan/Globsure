@@ -244,10 +244,10 @@ const Health_content = () => {
 
       {/* Start benefit section */}
       <div
-        className="first_container flex items-center gap-4 "
+        className="benefit_first_container flex items-center gap-4 "
         style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }}
       >
-        <div className="img_container w-1/3 flex items-center">
+        <div className="benefit_img_container w-1/3 flex items-center">
           <img
             className="rounded-lg w-full h-110 object-cover object-center"
             src="/image/health1.jpg"
@@ -263,15 +263,15 @@ const Health_content = () => {
             What are the Key Benefits to Buy a Health Insurance Plan?
           </h2>
 
-          <div className="" style={{ padding: "0 15px" }}>
-            <h2
+          <div className="icon-container" style={{ padding: "0 15px" }}>
+            <h3
               className="text-[#0073bd] text-lg"
               style={{ padding: "10px 0" }}
             >
               Health Insurance buying checklist
-            </h2>
-            <div className="flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
-              <div className="w-1/2" style={{ padding: "10px" }}>
+            </h3>
+            <div className="icons-section flex items-center flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -295,7 +295,7 @@ const Health_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -319,7 +319,7 @@ const Health_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -343,7 +343,7 @@ const Health_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -367,7 +367,7 @@ const Health_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -391,7 +391,7 @@ const Health_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"

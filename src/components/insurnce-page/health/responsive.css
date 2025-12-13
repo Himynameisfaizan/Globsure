@@ -54,6 +54,26 @@
   }
 
   /* End header section */
+
+  /* Start first container section  */
+
+  .first_container ul {
+    width: 95%;
+  }
+
+  /* End first container section  */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 980px !important;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 20px;
+  }
+
+  /* End benefit container section  */
 }
 
 @media (max-width: 768px) {
@@ -119,17 +139,72 @@
   }
 
   /* End header section */
+
+  /* Start first container section  */
+
+  .first_container ul {
+    width: 95%;
+  }
+
+  /* End first container section  */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 720px !important;
+    flex-direction: column;
+  }
+
+  .benefit_img_container,
+  .company_detail {
+    width: 100%;
+  }
+
+  .benefit_img_container img {
+    height: 300px;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 20px;
+  }
+
+  .benefit_first_container .company_detail .icon-container h3 {
+    font-size: 16px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    img {
+    width: 30px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    h2 {
+    font-size: 16px;
+  }
+
+  /* End benefit container section  */
 }
 
 @media (max-width: 425px) {
- /* Start header section */
+  /* Start header section */
 
   .header-section {
     max-width: 400px !important;
     flex-direction: column;
   }
 
-  .header-section .first-section, .header-section .second-section{
+  .header-section .first-section,
+  .header-section .second-section {
     width: 100%;
   }
 
@@ -160,7 +235,7 @@
     line-height: 14px;
   }
 
-  .header-section .second-section{
+  .header-section .second-section {
     margin-top: 15px;
   }
 
@@ -170,10 +245,74 @@
   }
 
   /* End header section */
+
+  /* Start first container section  */
+
+  .first_container ul {
+    width: 100%;
+  }
+
+  /* End first container section  */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 400px !important;
+    padding: 0 !important;
+  }
+
+  .benefit_img_container img {
+    height: 200px;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 18px;
+  }
+
+  .benefit_first_container .company_detail .icon-container {
+    padding: 0 !important;
+  }
+
+  .benefit_first_container .company_detail .icon-container h3 {
+    font-size: 16px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    img {
+    width: 30px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* End benefit container section  */
 }
 
 @media (max-width: 375px) {
- /* Start header section */
+  /* Start header section */
 
   .header-section {
     max-width: 340px !important;
@@ -206,6 +345,63 @@
   }
 
   /* End header section */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 340px !important;
+    padding: 0 !important;
+  }
+
+  .benefit_img_container img {
+    height: 180px;
+  }
+
+  .benefit_first_container .company_detail .icon-container {
+    padding: 0 !important;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 16px;
+  }
+
+  .benefit_first_container .company_detail .icon-container h3 {
+    font-size: 16px;
+    padding: 5px 0 !important;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    img {
+    width: 30px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* End benefit container section  */
 }
 
 @media (max-width: 320px) {
@@ -248,4 +444,57 @@
   }
 
   /* End header section */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 300px !important;
+  }
+
+  .benefit_img_container img {
+    height: 160px;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .benefit_first_container .company_detail .icon-container h3 {
+    font-size: 14px;
+    padding: 5px 0 !important;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    img {
+    width: 30px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    p {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  /* End benefit container section  */
 }

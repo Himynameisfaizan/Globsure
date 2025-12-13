@@ -1,6 +1,7 @@
 import React from "react";
 import Icondiv from "../../about-page/Icondiv";
 import Accordion from "../health/Accordion";
+import '../health/responsive.css'
 
 const Vehicle_content = () => {
   const accordionData = [
@@ -36,10 +37,10 @@ const Vehicle_content = () => {
       {/* Start header section */}
       <div className="bg-[#0075bd0a] w-full">
         <div
-          className="w-full flex"
+          className="header-section w-full flex"
           style={{ maxWidth: "1250px", margin: "auto" }}
         >
-          <div className="w-2/3">
+          <div className="first-section w-2/3">
             <h2
               className="text-3xl text-[#002249] font-semibold tracking-wide"
               style={{ padding: "20px 0 10px 0" }}
@@ -69,9 +70,9 @@ const Vehicle_content = () => {
               Key Highlights
             </h2>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="icons-container flex flex-wrap gap-4">
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-12" src="/svg/car.svg" alt="" />
@@ -81,7 +82,7 @@ const Vehicle_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-12" src="/svg/refund.svg" alt="" />
@@ -92,7 +93,7 @@ const Vehicle_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-10" src="/svg/cash.svg" alt="" />
@@ -102,7 +103,7 @@ const Vehicle_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-10" src="/svg/100.svg" alt="" />
@@ -113,10 +114,10 @@ const Vehicle_content = () => {
             </div>
           </div>
           <div
-            className="w-1/3 flex flex-col justify-center"
+            className="second-section w-1/3 flex flex-col justify-center"
             style={{ padding: "20px 0" }}
           >
-            <div className="bg-white h-[90%] rounded-xl shadow-lg">
+            <div className="form-section bg-white h-[90%] rounded-xl shadow-lg">
               <h2
                 className="text-center text-xl text-[#002249] font-bold"
                 style={{ paddingTop: "20px" }}
@@ -159,7 +160,7 @@ const Vehicle_content = () => {
                 ></textarea>
 
                 <input
-                  className="bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                  className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
                   style={{ padding: "20px" }}
                   type="submit"
                   value="Our team will connect you in minutes"
@@ -241,10 +242,10 @@ const Vehicle_content = () => {
 
       {/* Start benefit section */}
       <div
-        className="first_container flex gap-4 "
+        className="benefit_first_container flex gap-4 "
         style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }}
       >
-        <div className="img_container w-1/3 flex items-center">
+        <div className="benefit_img_container w-1/3 flex items-center">
           <img
             className="rounded-lg w-full h-full object-cover"
             src="/image/car_bg2.jpg"
@@ -260,15 +261,15 @@ const Vehicle_content = () => {
             Key Benefits of Globsure Vehicle Insurance
           </h2>
 
-          <div className="" style={{ padding: "0 15px" }}>
+          <div className="icon-container" style={{ padding: "0 15px" }}>
             <h2
               className="text-[#0073bd] text-lg"
               style={{ padding: "10px 0" }}
             >
               Everything you need for a smooth drive.
             </h2>
-            <div className="flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
-              <div className="w-1/2" style={{ padding: "10px" }}>
+            <div className="icons-section flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -292,7 +293,7 @@ const Vehicle_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -316,7 +317,7 @@ const Vehicle_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -340,7 +341,7 @@ const Vehicle_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -364,7 +365,7 @@ const Vehicle_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -388,7 +389,7 @@ const Vehicle_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"

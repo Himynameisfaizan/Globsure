@@ -123,9 +123,9 @@ const General_content = () => {
             className="second-section w-1/3 flex flex-col justify-center"
             style={{ padding: "20px 0" }}
           >
-            <div className="bg-white h-[95%] rounded-xl shadow-lg">
+            <div className="form-section bg-white h-[95%] rounded-xl shadow-lg">
               <h2
-                className="form-section text-center text-xl text-[#002249] font-bold"
+                className="text-center text-xl text-[#002249] font-bold"
                 style={{ paddingTop: "20px" }}
               >
                 Expert Support, Just a Call Away
@@ -254,10 +254,10 @@ const General_content = () => {
 
       {/* Start benefit section */}
       <div
-        className="first_container flex gap-4 "
+        className="benefit_first_container flex gap-4 "
         style={{ padding: "30px 0", maxWidth: "1250px", margin: "auto" }}
       >
-        <div className="img_container w-1/3 flex items-center">
+        <div className="benefit_img_container w-1/3 flex items-center">
           <img
             className="rounded-lg w-full h-full object-cover"
             src="/image/general_home.jpg"
@@ -273,15 +273,15 @@ const General_content = () => {
             What Are the Key Benefits of Globsure General Insurance?
           </h2>
 
-          <div className="" style={{ padding: "0 15px" }}>
+          <div className="icon-container" style={{ padding: "0 15px" }}>
             <h2
               className="text-[#0073bd] text-lg"
               style={{ padding: "10px 0" }}
             >
               General Insurance buying checklist
             </h2>
-            <div className="flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
-              <div className="w-1/2" style={{ padding: "10px" }}>
+            <div className="icons-section flex flex-wrap bg-[#0073bd0a] rounded-lg shadow-lg">
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -306,7 +306,7 @@ const General_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -330,7 +330,7 @@ const General_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -354,7 +354,7 @@ const General_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -378,7 +378,7 @@ const General_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
@@ -402,7 +402,7 @@ const General_content = () => {
                 </p>
               </div>
 
-              <div className="w-1/2" style={{ padding: "10px" }}>
+              <div className="icons w-1/2" style={{ padding: "10px" }}>
                 <div className="icon flex">
                   <img
                     className="w-8 bg-white rounded-lg shadow"
