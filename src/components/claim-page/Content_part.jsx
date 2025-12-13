@@ -129,9 +129,9 @@ const Content_part = () => {
       </div>
 
       <div className="pdf-section" style={{ maxWidth: "1250px", margin: "auto" }}>
-        <h2 className="text-[#000000a6] text-center">Download Claim Forms</h2>
+        <h3 className="text-[#000000a6] text-center">Download Claim Forms</h3>
         <h2
-          className="text-[#002249] text-3xl font-semibold w-155 text-center"
+          className="h2 text-[#002249] text-3xl font-semibold w-155 text-center"
           style={{ margin: "0 auto", padding: "5px 0" }}
         >
           Download the relevant claim form, fill it out physically, and mail it
@@ -142,9 +142,9 @@ const Content_part = () => {
           className="pdf-table flex items-center justify-around"
           style={{ margin: "30px 0" }}
         >
-          <div className="w-1/3">
+          <div className="first w-1/3">
             <h2
-              className="bg-[#0073bd26] text-lg text-[#002249]"
+              className="title bg-[#0073bd26] text-lg text-[#002249]"
               style={{ padding: "20px" }}
             >
               Claims Insurance
@@ -171,47 +171,47 @@ const Content_part = () => {
               <img className="w-15" src="/svg/general.svg" alt="" />
             </h2>
           </div>
-          <div className="w-2/3">
+          <div className="second w-2/3">
             <h2
-              className="bg-[#0073bd26] text-lg text-[#002249] border-l border-[#00224962] text-center"
+              className="title bg-[#0073bd26] text-lg text-[#002249] border-l border-[#00224962] text-center"
               style={{ padding: "20px" }}
             >
               Download Form
             </h2>
             <h2
-              className="bg-[#0073bd16] text-[#000000a6] border-l border-t border-b border-[#00224962] flex items-center justify-center gap-5"
+              className="hello bg-[#0073bd16] text-[#000000a6] border-l border-t border-b border-[#00224962] flex items-center justify-center gap-5"
               style={{ padding: "20px" }}
             >
               {" "}
               <a href="#">
                 <img
-                  className="w-10"
+                  className="w-10 img"
                   src="/svg/pdf.svg"
                   alt="vehical insurance form"
                 />
               </a>{" "}
             </h2>
             <h2
-              className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
+              className="hello bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
               style={{ padding: "20px" }}
             >
               {" "}
               <a href="#">
                 <img
-                  className="w-10"
+                  className="w-10 img"
                   src="/svg/pdf.svg"
                   alt="Health insurance form"
                 />
               </a>
             </h2>
             <h2
-              className="bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
+              className="hello bg-[#0073bd16] text-[#000000a6] border-l border-b border-[#00224962] flex items-center justify-center gap-5"
               style={{ padding: "20px" }}
             >
               {" "}
               <a href="#">
                 <img
-                  className="w-10"
+                  className="w-10 img"
                   src="/svg/pdf.svg"
                   alt="general insurance form"
                 />

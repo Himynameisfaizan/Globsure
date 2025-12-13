@@ -18,6 +18,23 @@
   }
 
   /* End guidlines section */
+
+  /* Start pdf section */
+
+  .pdf-section {
+    max-width: 980px !important;
+  }
+
+  .pdf-section .h2 {
+    width: 680px;
+    font-size: 25px;
+  }
+
+  .pdf-section .pdf-table {
+    max-width: 980px !important;
+  }
+
+  /* End pdf section */
 }
 
 @media (max-width: 768px) {
@@ -25,7 +42,6 @@
 
   .guidlines {
     max-width: 750px !important;
-    /* background-color: red; */
   }
 
   .guidlines h1 {
@@ -46,7 +62,6 @@
 
   .guidlines .content-container {
     max-width: 700px !important;
-    /* background-color: red; */
     margin: 20px auto !important;
     padding: 20px !important;
   }
@@ -61,6 +76,48 @@
   }
 
   /* End guidlines section */
+
+  /* Start pdf section */
+
+  .pdf-section {
+    max-width: 750px !important;
+  }
+
+  .pdf-section .h2 {
+    width: 600px;
+    font-size: 22px;
+  }
+
+  .pdf-section h3 {
+    font-size: 15px;
+  }
+
+  .pdf-section .pdf-table {
+    max-width: 750px !important;
+  }
+
+  .pdf-section .pdf-table .first .title,
+  .pdf-section .pdf-table .second .title {
+    font-size: 16px;
+  }
+
+  .pdf-section .pdf-table .first h2 {
+    font-size: 14px;
+  }
+
+  .pdf-section .pdf-table .first img {
+    width: 35px;
+  }
+
+  .pdf-section .pdf-table .second .hello {
+    padding: 20px !important;
+  }
+
+  .pdf-section .pdf-table .second .img {
+    width: 15px !important;
+  }
+
+  /* End pdf section */
 }
 
 @media (max-width: 425px) {
@@ -68,7 +125,6 @@
 
   .guidlines {
     max-width: 400px !important;
-    /* background-color: red; */
   }
 
   .guidline-container {
@@ -115,17 +171,49 @@
 
   .pdf-section {
     max-width: 400px !important;
-    background-color: red;
   }
 
-  .pdf-section h2 {
+  .pdf-section .h2 {
     width: 400px;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .pdf-section h3 {
+    font-size: 14px;
   }
 
   .pdf-section .pdf-table {
-    max-width: 0px !important;
+    max-width: 400px !important;
   }
+
+  .pdf-table .first,
+  .pdf-table .second {
+    width: 50%;
+  }
+
+  .pdf-section .pdf-table .first .title,
+  .pdf-section .pdf-table .second .title {
+    font-size: 14px;
+  }
+
+  .pdf-section .pdf-table .first h2 {
+    font-size: 12px;
+    gap: 15px;
+  }
+
+  .pdf-section .pdf-table .first img {
+    width: 35px;
+  }
+
+  .pdf-section .pdf-table .second .hello {
+    padding: 20px !important;
+  }
+
+  .pdf-section .pdf-table .second .img {
+    width: 15px !important;
+  }
+
+  /* End pdf section */
 }
 
 @media (max-width: 375px) {
@@ -180,17 +268,22 @@
 
   .pdf-section {
     max-width: 340px !important;
-    background-color: red;
   }
 
-  .pdf-section h2 {
+  .pdf-section .h2 {
     width: 340px;
-    font-size: 25px;
+    font-size: 18px;
   }
 
-  .pdf-section .pdf-table {
-    max-width: 0px !important;
+  .pdf-section h3 {
+    font-size: 12px;
   }
+
+  .pdf-section .pdf-table .second .img {
+    width: 16px !important;
+  }
+
+  /* End pdf section */
 }
 
 @media (max-width: 320px) {
@@ -198,7 +291,7 @@
 
   .guidlines {
     max-width: 300px !important;
-    margin:0px auto !important;
+    margin: 0px auto !important;
   }
 
   .guidline-container {
@@ -231,19 +324,27 @@
 
   /* End guidlines section */
 
+
   /* Start pdf section */
 
   .pdf-section {
     max-width: 300px !important;
-    background-color: red;
   }
 
-  .pdf-section h2 {
+  .pdf-section .h2 {
     width: 300px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .pdf-section .pdf-table {
-    max-width: 0px !important;
+    max-width: 300px !important;
+    margin: 10px 0 !important;
   }
+
+  .pdf-section .pdf-table .first .title,
+  .pdf-section .pdf-table .second .title {
+    font-size: 12px;
+  }
+
+  /* End pdf section */
 }
