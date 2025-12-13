@@ -1,0 +1,251 @@
+@media (max-width: 1024px) {
+  /* Start header section */
+
+  .header-section {
+    max-width: 980px !important;
+    /* background-color: red; */
+  }
+
+  .header-section .first-section h2 {
+    font-size: 25px;
+    padding: 10px 0 !important;
+  }
+
+  .header-section .first-section p {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .icons-container .icon {
+    width: 300px;
+  }
+
+  .icons-container .icon img {
+    width: 40px;
+  }
+
+  .icons-container .icon p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .header-section .second-section {
+    padding: 0 !important;
+  }
+
+  .second-section .form-section h2 {
+    padding: 10px 0 !important;
+    font-size: 18px;
+  }
+
+  .second-section .form-section h3 {
+    font-size: 15px;
+    padding: 0px 0 10px 0 !important;
+  }
+
+  .second-section .form-section .form input {
+    font-size: 15px;
+    padding: 10px !important;
+  }
+
+  .second-section .form-section .form .btn {
+    padding: 15px !important;
+    font-size: 14px;
+  }
+
+  /* End header section */
+}
+
+@media (max-width: 768px) {
+  /* Start header section */
+
+  .header-section {
+    max-width: 720px !important;
+  }
+
+  .header-section .first-section h2 {
+    font-size: 22px;
+    padding: 10px 0 !important;
+  }
+
+  .header-section .first-section p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .header-section .first-section h3 {
+    font-size: 16px;
+  }
+
+  .icons-container .icon {
+    width: 220px;
+  }
+
+  .icons-container .icon img {
+    width: 30px;
+  }
+
+  .icons-container .icon p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .second-section .form-section {
+    height: 80%;
+  }
+  .second-section .form-section h2 {
+    padding: 10px 0 !important;
+    font-size: 16px;
+  }
+
+  .second-section .form-section h3 {
+    font-size: 14px;
+    padding: 0px 0 10px 0 !important;
+  }
+
+  .second-section .form-section .form {
+    padding: 15px !important;
+  }
+
+  .second-section .form-section .form input,
+  .second-section .form-section .form textarea {
+    font-size: 14px;
+    padding: 10px !important;
+  }
+
+  .second-section .form-section .form .btn {
+    padding: 15px !important;
+    font-size: 10px;
+  }
+
+  /* End header section */
+}
+
+@media (max-width: 425px) {
+ /* Start header section */
+
+  .header-section {
+    max-width: 400px !important;
+    flex-direction: column;
+  }
+
+  .header-section .first-section, .header-section .second-section{
+    width: 100%;
+  }
+
+  .header-section .first-section h2 {
+    font-size: 20px;
+    padding: 10px 0 !important;
+  }
+
+  .header-section .first-section p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .header-section .first-section h3 {
+    font-size: 15px;
+  }
+
+  .icons-container .icon {
+    width: 180px;
+  }
+
+  .icons-container .icon img {
+    width: 30px;
+  }
+
+  .icons-container .icon p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .header-section .second-section{
+    margin-top: 15px;
+  }
+
+  .second-section .form-section .form .btn {
+    padding: 15px !important;
+    font-size: 12px;
+  }
+
+  /* End header section */
+}
+
+@media (max-width: 375px) {
+ /* Start header section */
+
+  .header-section {
+    max-width: 340px !important;
+  }
+
+  .header-section .first-section h2 {
+    font-size: 16px;
+    padding: 5px 0 !important;
+  }
+
+  .header-section .first-section p {
+    font-size: 12px;
+  }
+
+  .header-section .first-section h3 {
+    font-size: 15px;
+  }
+
+  .icons-container .icon {
+    width: 100%;
+  }
+
+  .icons-container .icon img {
+    width: 30px;
+  }
+
+  .icons-container .icon p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  /* End header section */
+}
+
+@media (max-width: 320px) {
+  /* Start header section */
+
+  .header-section {
+    max-width: 300px !important;
+  }
+
+  .header-section .first-section h2 {
+    font-size: 15px;
+    padding: 5px 0 !important;
+  }
+
+  .header-section .first-section p {
+    font-size: 10px;
+  }
+
+  .header-section .first-section h3 {
+    font-size: 14px;
+  }
+
+  .icons-container .icon {
+    width: 100%;
+  }
+
+  .icons-container .icon img {
+    width: 30px;
+  }
+
+  .icons-container .icon p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .second-section .form-section .form input,
+  .second-section .form-section .form textarea {
+    font-size: 12px;
+    padding: 10px !important;
+  }
+
+  /* End header section */
+}

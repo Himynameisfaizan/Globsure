@@ -1,6 +1,7 @@
 import React from "react";
 import Icondiv from "../../about-page/Icondiv";
 import Accordion from "./Accordion";
+import './responsive.css'
 
 const Health_content = () => {
   const accordionData = [
@@ -35,10 +36,10 @@ const Health_content = () => {
       {/* Start header section */}
       <div className="bg-[#0075bd0a] w-full">
         <div
-          className="w-full flex"
+          className="header-section w-full flex"
           style={{ maxWidth: "1250px", margin: "auto" }}
         >
-          <div className="w-2/3">
+          <div className="first-section w-2/3">
             <h2
               className="text-3xl text-[#002249] font-semibold tracking-wide"
               style={{ padding: "20px 0" }}
@@ -59,16 +60,16 @@ const Health_content = () => {
               peace of mind.
             </p>
 
-            <h2
+            <h3
               className="text-xl text-[#002249] font-semibold"
               style={{ padding: "20px 0" }}
             >
               Key Highlights
-            </h2>
+            </h3>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="icons-container flex flex-wrap gap-4">
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-12" src="/svg/cash.svg" alt="" />
@@ -78,7 +79,7 @@ const Health_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-12" src="/svg/refund.svg" alt="" />
@@ -88,7 +89,7 @@ const Health_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-10" src="/svg/100.svg" alt="" />
@@ -98,7 +99,7 @@ const Health_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-10" src="/svg/checkup.svg" alt="" />
@@ -106,7 +107,7 @@ const Health_content = () => {
               </div>
 
               <div
-                className="flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
+                className="icon flex items-center bg-white rounded-lg gap-6 w-90 shadow hover:shadow-lg hover:cursor-pointer duration-200"
                 style={{ padding: "10px 15px" }}
               >
                 <img className="w-10" src="/svg/tax.svg" alt="" />
@@ -115,10 +116,10 @@ const Health_content = () => {
             </div>
           </div>
           <div
-            className="w-1/3 flex flex-col justify-center"
+            className="second-section w-1/3 flex flex-col justify-center"
             style={{ padding: "20px 0" }}
           >
-            <div className="bg-white h-[95%] rounded-xl shadow-lg">
+            <div className="form-section bg-white h-[95%] rounded-xl shadow-lg">
               <h2
                 className="text-center text-xl text-[#002249] font-bold"
                 style={{ paddingTop: "20px" }}
@@ -161,7 +162,7 @@ const Health_content = () => {
                 ></textarea>
 
                 <input
-                  className="bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                  className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
                   style={{ padding: "20px" }}
                   type="submit"
                   value="Our team will connect you in minutes"
