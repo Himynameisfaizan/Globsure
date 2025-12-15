@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Icondiv from "../../about-page/Icondiv";
 import Accordion from "./Accordion";
 import "./responsive.css";
@@ -31,6 +31,53 @@ const Health_content = () => {
       answer: `Yes, under Section 80D of the Income Tax Act, you can claim tax deductions up to ₹25,000 for yourself/family and up to ₹50,000 for senior citizen parents.`,
     },
   ];
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "", // 'Doubts' ko message variable mein store kar rahe hain
+  });
+
+  const [status, setStatus] = useState({ loading: false, msg: "", type: "" });
+
+  // Handle Input Change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle Submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, msg: "", type: "" });
+
+    try {
+      // 👇 APNA LOCALHOST URL YAHAN CHECK KAR LENA
+      const response = await fetch(
+        "http://localhost/phpMailer/globsure-api/index.php",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...formData, type: "quote" }), // 👈 TYPE "QUOTE" BHEJA
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setStatus({
+          loading: false,
+          msg: "Request Sent! We'll call you shortly.",
+          type: "success",
+        });
+        setFormData({ name: "", phone: "", message: "" }); // Clear form
+      } else {
+        setStatus({ loading: false, msg: result.message, type: "error" });
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus({ loading: false, msg: "Connection Error.", type: "error" });
+    }
+  };
   return (
     <>
       {/* Start header section */}
@@ -133,40 +180,79 @@ const Health_content = () => {
                 We’re Here to Help You 24/7
               </h3>
 
-              <div
-                className="form flex flex-col gap-6"
-                style={{ padding: "30px 30px", marginBottom: "40px" }}
-              >
-                <input
-                  className="border border-[#00000036] w-full rounded-lg"
-                  style={{ padding: "15px" }}
-                  type="text"
-                  placeholder="Enter Name"
-                  required
-                />
+              <div style={{ padding: "30px 30px", marginBottom: "40px" }}>
+                <form
+                  className="form flex flex-col gap-6"
+                  onSubmit={handleSubmit}
+                  action=""
+                >
+                  <input
+                    className="border border-[#00000036] w-full rounded-lg"
+                    style={{ padding: "15px" }}
+                    type="text"
+                    placeholder="Enter Name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
 
-                <input
-                  className="border border-[#00000036] w-full rounded-lg"
-                  style={{ padding: "15px" }}
-                  type="number"
-                  placeholder="Enter Phone no."
-                  required
-                />
+                  <input
+                    className="border border-[#00000036] w-full rounded-lg"
+                    style={{ padding: "15px" }}
+                    type="email"
+                    placeholder="Enter email address"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
 
-                <textarea
-                  rows={4}
-                  className="border border-[#00000036] w-full rounded-lg"
-                  placeholder="Write your doubts.."
-                  required
-                  style={{ padding: "10px" }}
-                ></textarea>
+                  <input
+                    className="border border-[#00000036] w-full rounded-lg"
+                    style={{ padding: "15px" }}
+                    type="number"
+                    placeholder="Enter phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
 
-                <input
-                  className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
-                  style={{ padding: "20px" }}
-                  type="submit"
-                  value="Our team will connect you in minutes"
-                />
+                  <textarea
+                    rows={4}
+                    className="border border-[#00000036] w-full rounded-lg"
+                    placeholder="Write your doubts.."
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    style={{ padding: "10px" }}
+                  ></textarea>
+
+                  {status.msg && (
+                    <p
+                      className={`text-center text-sm ${
+                        status.type === "success"
+                          ? "text-green-600"
+                          : "text-red-600"
+                      }`}
+                    >
+                      {status.msg}
+                    </p>
+                  )}
+
+                  <input
+                    className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                    style={{ padding: "20px" }}
+                    type="submit"
+                    value={
+                      status.loading
+                        ? "sending..."
+                        : "Our team will connect you in minutes"
+                    }
+                  />
+                </form>
               </div>
             </div>
           </div>
@@ -547,40 +633,79 @@ const Health_content = () => {
                   We’re Here to Help You 24/7
                 </h3>
 
-                <div
-                  className="form flex flex-col gap-6"
-                  style={{ padding: "30px 30px", marginBottom: "40px" }}
-                >
-                  <input
-                    className="border border-[#00000036] w-full rounded-lg"
-                    style={{ padding: "15px" }}
-                    type="text"
-                    placeholder="Enter Name"
-                    required
-                  />
+                <div style={{ padding: "30px 30px", marginBottom: "40px" }}>
+                  <form
+                    className="form flex flex-col gap-6"
+                    onSubmit={handleSubmit}
+                    action=""
+                  >
+                    <input
+                      className="border border-[#00000036] w-full rounded-lg"
+                      style={{ padding: "15px" }}
+                      type="text"
+                      placeholder="Enter Name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                    />
 
-                  <input
-                    className="border border-[#00000036] w-full rounded-lg"
-                    style={{ padding: "15px" }}
-                    type="number"
-                    placeholder="Enter Phone no."
-                    required
-                  />
+                    <input
+                      className="border border-[#00000036] w-full rounded-lg"
+                      style={{ padding: "15px" }}
+                      type="email"
+                      placeholder="Enter enter email address"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
 
-                  <textarea
-                    rows={4}
-                    className="border border-[#00000036] w-full rounded-lg"
-                    placeholder="Write your doubts.."
-                    required
-                    style={{ padding: "10px" }}
-                  ></textarea>
+                    <input
+                      className="border border-[#00000036] w-full rounded-lg"
+                      style={{ padding: "15px" }}
+                      type="number"
+                      placeholder="Enter phone no."
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                    />
 
-                  <input
-                    className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
-                    style={{ padding: "20px" }}
-                    type="submit"
-                    value="Our team will connect you in minutes"
-                  />
+                    <textarea
+                      rows={4}
+                      className="border border-[#00000036] w-full rounded-lg"
+                      placeholder="Write your doubts.."
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      style={{ padding: "10px" }}
+                    ></textarea>
+
+                    {status.msg && (
+                      <p
+                        className={`text-center text-sm ${
+                          status.type === "success"
+                            ? "text-green-600"
+                            : "text-red-600"
+                        }`}
+                      >
+                        {status.msg}
+                      </p>
+                    )}
+
+                    <input
+                      className="btn bg-[#002249] rounded-lg text-white cursor-pointer hover:bg-[#0073bd] duration-300"
+                      style={{ padding: "20px" }}
+                      type="submit"
+                      value={
+                        status.loading
+                          ? "sending..."
+                          : "Our team will connect you in minutes"
+                      }
+                    />
+                  </form>
                 </div>
               </div>
             </div>

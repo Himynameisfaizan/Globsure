@@ -1,7 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../css/footer.css";
 import { NavLink } from "react-router-dom";
 export const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState({ loading: false, msg: "", type: "" });
+
+  // 2. Submit Handler
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault(); // Reload rokna
+    setStatus({ loading: true, msg: "", type: "" });
+
+    try {
+      // 👇 APNA LOCALHOST URL YAHAN CHECK KAR LENA
+      const response = await fetch(
+        "http://localhost/phpMailer/globsure-api/index.php",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: email,
+            type: "newsletter", // 👈 YE SABSE ZAROORI HAI
+          }),
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setStatus({
+          loading: false,
+          msg: "Subscribed Successfully!",
+          type: "success",
+        });
+        setEmail(""); // Input clear kar do
+
+        // 3 second baad message hata do
+        setTimeout(
+          () => setStatus({ loading: false, msg: "", type: "" }),
+          3000
+        );
+      } else {
+        setStatus({
+          loading: false,
+          msg: "Subscription failed.",
+          type: "error",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus({ loading: false, msg: "Error.", type: "error" });
+    }
+  };
+
   return (
     <>
       <footer>
@@ -73,15 +123,36 @@ export const Footer = () => {
           <div className="newsletter">
             <h3>Great insurance your solutions for life and business</h3>
             <h4>Subscripbe our newsletter</h4>
-            <div className="email">
+            <form className="email" onSubmit={handleNewsletterSubmit} action="">
               <input
                 className="bg-white text-black"
                 type="email"
                 required
                 placeholder="Email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <i className="ri-send-plane-fill"></i>
-            </div>
+              <button
+                type="submit"
+                disabled={status.loading}
+                className="bg-transparent border-none cursor-pointer text-[#002249] hover:text-[#0073bd]"
+              >
+                {status.loading ? (
+                  <span className="text-xs font-bold">...</span>
+                ) : (
+                  <i className="ri-send-plane-fill text-xl"></i>
+                )}
+              </button>
+            </form>
+            {status.msg && (
+              <p
+                className={`mt-2 text-sm ${
+                  status.type === "success" ? "text-green-400" : "text-red-400"
+                }`}
+              >
+                {status.msg}
+              </p>
+            )}
           </div>
         </div>
         <div className="footer-copyright flex items-center justify-between">
