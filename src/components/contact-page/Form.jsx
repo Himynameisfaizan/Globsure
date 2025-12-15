@@ -19,7 +19,7 @@ const Form = () => {
               </div>
               <div className="information">
                 <h5 className="text-[#0073bd] text-base font-light">Email</h5>
-                <h1 className="text-lg  text-[#002249]">info@globsure.com</h1>
+                <h1 className="text-lg  text-[#002249]">globsureinternational@gmail.com</h1>
               </div>
             </div>
 
@@ -29,7 +29,7 @@ const Form = () => {
               </div>
               <div className="information">
                 <h5 className="text-[#0073bd] text-base">Phone no.</h5>
-                <h1 className="text-lg  text-[#002249]">+91 78452 - 54218</h1>
+                <h1 className="text-lg  text-[#002249]">+91 9274741151</h1>
               </div>
             </div>
 
@@ -40,7 +40,7 @@ const Form = () => {
               <div className="information">
                 <h5 className="text-[#0073bd] text-base">Office visit</h5>
                 <h1 className="text-lg  text-[#002249]">
-                  Y/21 Greater noida 410026
+                  3rd Floor, Bhanushali Avenue, Kutch, Gujarat – 370201
                 </h1>
               </div>
             </div>

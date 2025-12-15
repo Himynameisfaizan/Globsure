@@ -442,6 +442,140 @@
   /* End accordion section  */
 }
 
+@media (max-width: 400px) {
+  /* Start header section */
+
+  .header-section {
+    max-width: 380px !important;
+  }
+
+  .header-section .first-section h2 {
+    font-size: 16px;
+    padding: 5px 0 !important;
+  }
+
+  .header-section .first-section p {
+    font-size: 12px;
+  }
+
+  .header-section .first-section h3 {
+    font-size: 15px;
+  }
+
+  .icons-container .icon {
+    width: 100%;
+  }
+
+  .icons-container .icon img {
+    width: 30px;
+  }
+
+  .icons-container .icon p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  /* End header section */
+
+  /* Start benefit container section  */
+
+  .benefit_first_container {
+    max-width: 380px !important;
+    padding: 0 !important;
+  }
+
+  .benefit_img_container img {
+    height: 180px;
+  }
+
+  .benefit_first_container .company_detail .icon-container {
+    padding: 0 !important;
+  }
+
+  .benefit_first_container .company_detail h2 {
+    font-size: 16px;
+  }
+
+  .benefit_first_container .company_detail .icon-container h3 {
+    font-size: 16px;
+    padding: 5px 0 !important;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    img {
+    width: 30px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    .icon
+    h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .benefit_first_container
+    .company_detail
+    .icon-container
+    .icons-section
+    .icons
+    p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* End benefit container section  */
+
+  /* Start Share section */
+
+  .share-section {
+    max-width: 380px !important;
+  }
+
+  .share-section h1 {
+    font-size: 18px;
+  }
+
+  .share-section .share-container .share-first {
+    gap: 20px;
+  }
+
+  /* End Share section */
+
+  /* Start accordion section  */
+
+  .accordion {
+    max-width: 380px !important;
+  }
+
+  .accordion-section {
+    padding: 8px !important;
+    gap: 8px;
+  }
+
+  .accordion h2 {
+    font-size: 20px;
+  }
+
+  .accordion .h2 {
+    font-size: 13px;
+  }
+
+  .accordion .para {
+    font-size: 12px;
+  }
+
+  /* End accordion section  */
+}
+
 @media (max-width: 375px) {
   /* Start header section */
 

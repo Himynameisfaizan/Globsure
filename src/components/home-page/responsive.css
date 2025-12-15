@@ -1,3 +1,57 @@
+@media (max-width:1515px) {
+  
+  /* Start contact section */
+
+.contact_detail .part2 .circle {
+  height: 160px;
+  width: 160px;
+  background-color: var(--dark-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  animation: rotate 15s linear infinite;
+  z-index: 1;
+}
+
+.contact_detail .part2 .circle span {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform-origin: 50% 0%;
+  font-size: 14px;
+  color: white;
+  padding: 55px 60px;
+}
+
+.contact_detail .part2 i {
+  position: absolute;
+  top: 47% !important;
+  right: 20% !important;
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+}
+
+  /* End contact section */
+}
+@media (max-width:1440px) {
+  
+  /* Start contact section */
+
+.contact .svg .contact_detail{
+  width: 75% !important;
+}
+
+.contact_detail .part1{
+  width: 62% !important;
+}
+.contact .svg svg {
+  right: 5% !important;
+}
+  /* End contact section */
+}
+
 @media (max-width: 1024px) {
   /* Start Hero section homeSlider */
 
@@ -1152,6 +1206,505 @@
   /* End blog section */
 }
 
+@media (max-width: 400px) {
+  /* Start Hero section homeSlider */
+
+  .slider-content .content-detail {
+    top: 20%;
+    left: 2%;
+    width: 100%;
+  }
+
+  .slider-content .content-detail h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .slider-content {
+    position: relative;
+    height: 40vh;
+  }
+
+  .slider-content .img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper {
+    height: 6vh;
+    padding: 0 10px;
+  }
+
+  .wrapper h1 {
+    font-size: 11px;
+  }
+
+  /* end Hero section homeSlider */
+
+  /* Start our plan section */
+
+  .parent-container .our-Plans {
+    max-width: 390px !important;
+    margin: 20px auto 0 auto !important;
+    /* background-color: red; */
+  }
+
+  .parent-container .our-Plans h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .icon-container {
+    gap: 20px;
+    padding: 20px 0 !important;
+  }
+
+  .parent-container .our-Plans .icon-container a {
+    height: 180px;
+    width: 40%;
+  }
+
+  .parent-container .our-Plans .icon-container a h3 {
+    font-weight: bold;
+  }
+
+  .parent-container .our-Plans .heading {
+    font-size: 22px;
+  }
+
+  /* End our plan section */
+
+  /* Start about parent section */
+
+  .about-parent .childs {
+    max-width: 380px;
+  }
+
+  .childs .child1,
+  .childs .child2 {
+    width: 100%;
+  }
+
+  .childs .child1 .image img {
+    height: 220px;
+  }
+
+  .about-parent .childs .child2 {
+    margin-top: 10px;
+  }
+
+  .about-parent .childs .child2 .about-first h1 {
+    font-size: 22px;
+    padding: 5px 0;
+  }
+
+  .child2 .about-first h4 {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .child2 .about-first h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second h2 {
+    font-size: 18px;
+  }
+
+  .child2 .about-second .button {
+    padding: 0px;
+  }
+
+  .child2 .about-second ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .child2 .about-second ul li span {
+    font-weight: bold;
+  }
+
+  .about-parent .childs .button a {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+  /* End about parent section */
+
+  /* Start about offering section */
+
+  .offering {
+    max-width: 380px !important;
+    margin: 0px auto !important;
+  }
+
+  .offering .part-one h2 {
+    font-size: 20px;
+    line-height: 25px;
+    width: 90%;
+  }
+
+  .offering .part-one h4 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .offering .part-two {
+    padding: 20px 0 0 0;
+  }
+
+  .offering .part-two .part-card {
+    height: 180px;
+    width: 180px;
+  }
+
+  .offering .part-two .part-card .front h3,
+  .offering .part-two .part-card .back h3 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .offering .part-two .part-card .front i,
+  .offering .part-two .part-card .back i {
+    font-size: 30px;
+  }
+
+  .offering .part-two .part-card .front p,
+  .offering .part-two .part-card .back p {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+
+  /* End about offering section */
+
+  /* Start ranking section */
+  .ranking {
+    height: 160px;
+    margin: 30px 0 !important;
+  }
+
+  .ranking .rank i {
+    font-size: 22px;
+    padding: 10px;
+    border: 4px solid #0073bd;
+  }
+
+  .ranking .rank i:hover {
+    font-size: 22px;
+    padding: 10px;
+    border: 4px solid #0073bd;
+  }
+
+  .ranking .rank h3 {
+    font-size: 16px;
+  }
+
+  .ranking .rank p {
+    font-size: 12px;
+  }
+
+  /* End ranking section */
+
+  /* Start benefit section */
+
+  .benefits {
+    max-width: 380px !important;
+  }
+
+  .benefits .child1 {
+    width: 100%;
+  }
+
+  .benefits .child2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .benefits .child1 .image img {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  .benefits .child1 .btn1 {
+    right: 0%;
+    padding: 15px 10px !important;
+    width: 70%;
+  }
+
+  .benefits .child1 .btn1 i {
+    padding: 15px 10px !important;
+    top: -15% !important;
+    font-size: 40px;
+  }
+
+  .benefits .child1 .btn1 h2 {
+    margin-left: 80px !important;
+    font-size: 18px;
+  }
+
+  .benefits .child2 .about-first h2 {
+    font-size: 22px;
+  }
+
+  .benefits .child2 .about-first h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .benefits .child2 .about-second h1 {
+    font-size: 20px;
+    padding: 5px 0 !important;
+  }
+
+  .benefits .child2 .about-second ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .benefits .child2 .about-second ul li span {
+    font-weight: bold;
+  }
+
+  .benefits .child2 .button {
+    margin-top: 20px;
+  }
+  .benefits .child2 .button a {
+    padding: 15px 30px;
+    font-size: 15px;
+  }
+
+  /* End benefit section */
+
+  /* Start brand slider */
+
+  .brand-slider {
+    max-width: 380px !important;
+    margin: 50px auto !important;
+  }
+
+  /* End brand slider */
+
+  /* Start Members section */
+
+  .member {
+    max-width: 380px !important;
+  }
+
+  .member .part1 h1 {
+    font-size: 22px;
+  }
+
+  .member .part1 h4 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .member .part2 .info h1 {
+    font-size: 18px;
+  }
+
+  .member .part2 .info h3 {
+    font-size: 18px;
+    padding: 0 !important;
+  }
+
+  .member .part2 .info p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .member .part2 .info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .member .part2 .info ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .member .part2 .detail {
+    width: 80% !important;
+  }
+
+  /* End Members section */
+
+  /* Start Testimonals */
+
+  .testimonals {
+    max-width: 380px !important;
+    flex-direction: column;
+    height: 400px !important;
+    margin: 40px auto !important;
+  }
+
+  .testimonals .part1 h1 {
+    font-size: 20px;
+  }
+
+  .testimonal-content .para p {
+    width: 85% !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+  }
+
+  .testimonal-content .detail {
+    margin-top: 10px;
+  }
+
+  .testimonal-content .detail .img img {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .testimonal-content .detail .info h2 {
+    font-size: 18px !important;
+  }
+
+  .testimonal-content .detail .info p {
+    color: #002249a6;
+    font-size: 14px;
+  }
+  /* End Testimonals */
+
+  /* Start contact section */
+
+  .contact .contact_detail {
+    width: 100% !important;
+  }
+
+  .contact_detail .part1 {
+    padding: 30px 10px !important;
+  }
+
+  .contact_detail .part1 .info h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .form .icons .icon i {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
+
+  .form .icons .icon h3 {
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  .contact_detail .part1 .info h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 5px 0 !important;
+  }
+
+  .contact_detail .part1 .form {
+    margin-top: 30px !important;
+  }
+
+  .form .share .input {
+    padding: 15px !important;
+    font-size: 14px;
+  }
+
+  .form .share .submit {
+    padding: 10px 15px !important;
+    width: 55% !important;
+  }
+
+  .form .share {
+    width: 70% !important;
+    padding-left: 40px !important;
+  }
+
+  .contact_detail .part2 .circle,
+  .contact_detail .part2 i {
+    display: none;
+  }
+  .contact_detail .part1 .form .icons {
+    gap: 10px;
+  }
+
+  .contact .svg #svg-clip {
+    display: none;
+  }
+
+  /* End contact section */
+
+  /* Start blog section */
+
+  .blog-section {
+    width: 380px;
+  }
+  
+   .blog-second {
+    padding-left: 25px;
+   }
+  .blog-second .blogger .img {
+    height: 60%;
+  }
+  
+    .blog-section .blog-first h2{
+     font-size: 22px;
+     font-weight: bold;
+    }
+  
+  .blogs .blogger .blog-detail {
+    width: 85% !important;
+    height: 40% !important;
+    bottom: 15% !important;
+  }
+
+  .blogger .blog-detail .date span {
+    width: 100px;
+    left: -50% !important;
+  }
+
+  .blogger .blog-detail .info {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .blog-detail .info .info-one .info-icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .blog-detail .info .info-one .info-icon i {
+    padding: 2px 4px !important;
+    font-size: 12px;
+  }
+
+  .blog-detail .info .info-one .info-icon p {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+
+  .blog-detail .info .info-two {
+    padding: 0 0px 0 5px !important;
+  }
+
+  .blog-detail .info .info-two h2 {
+    font-size: 22px !important;
+    padding-top: 2px;
+    letter-spacing: 1px;
+    line-height: 28px !important;
+  }
+
+  .blog-detail .info .info-three {
+    padding: 10px 15px 0px 5px !important;
+  }
+
+  /* End blog section */
+}
+
 @media (max-width: 375px) {
   /* Start Hero section homeSlider */
 
@@ -1176,7 +1729,7 @@
   }
 
   .wrapper h1 {
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.2px;
   }
 

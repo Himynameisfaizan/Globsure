@@ -486,8 +486,8 @@
 
 .contact_detail .part2 i {
   position: absolute;
-  top: 49%;
-  right: 21%;
+  top: 48% !important;
+  right: 21% !important;
   color: white;
   font-size: 40px;
   z-index: 1;

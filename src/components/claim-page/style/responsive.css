@@ -216,6 +216,76 @@
   /* End pdf section */
 }
 
+@media (max-width: 400px) {
+  /* Start guidlines section */
+
+  .guidlines {
+    max-width: 380px !important;
+    /* background-color: red; */
+  }
+
+  .guidline-container {
+    margin-top: 20px !important;
+  }
+
+  .guidlines h1 {
+    font-size: 16px;
+  }
+
+  .guidlines h2 {
+    font-size: 10px;
+  }
+
+  .guidlines .icon {
+    width: 32%;
+  }
+  .guidlines .icon img {
+    width: 55px;
+  }
+
+  .guidlines .icon h1 {
+    font-size: 10px;
+  }
+
+  .guidlines .content-container {
+    max-width: 380px !important;
+    margin: 10px auto !important;
+    padding: 10px !important;
+  }
+
+  .content h2 {
+    font-size: 14px;
+  }
+
+  .content ul li {
+    font-size: 10px;
+    padding: 2px 0 !important;
+  }
+
+  /* End guidlines section */
+
+  /* Start pdf section */
+
+  .pdf-section {
+    max-width: 380px !important;
+  }
+
+  .pdf-section .h2 {
+    width: 340px;
+    font-size: 18px;
+  }
+
+  .pdf-section h3 {
+    font-size: 12px;
+  }
+
+  .pdf-section .pdf-table .second .img {
+    width: 15.5px !important;
+  }
+
+  /* End pdf section */
+}
+
 @media (max-width: 375px) {
   /* Start guidlines section */
 

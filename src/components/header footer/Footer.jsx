@@ -53,7 +53,7 @@ export const Footer = () => {
               Gujarat – 370201
             </h4>
             <h4>
-              Mon -Fri 10:00 to 6:00 <br /> Sunday Closed
+              Mon -Fri 9:30 to 6:00 <br /> Sunday Closed
             </h4>
             <div className="social">
               <a href="#">
