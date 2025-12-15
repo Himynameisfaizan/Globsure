@@ -1222,7 +1222,7 @@
 
   .slider-content {
     position: relative;
-    height: 40vh;
+    height: 35vh;
   }
 
   .slider-content .img img {
@@ -1277,7 +1277,9 @@
   /* Start about parent section */
 
   .about-parent .childs {
-    max-width: 380px;
+    /* max-width: 380px; */
+    padding: 0px 10px !important;
+    /* background-color: red; */
   }
 
   .childs .child1,
@@ -1335,8 +1337,9 @@
   /* Start about offering section */
 
   .offering {
-    max-width: 380px !important;
+    /* max-width: 380px !important; */
     margin: 0px auto !important;
+    padding: 0 10px !important;
   }
 
   .offering .part-one h2 {
@@ -1355,8 +1358,8 @@
   }
 
   .offering .part-two .part-card {
-    height: 180px;
-    width: 180px;
+    height: 200px;
+    width: 160px;
   }
 
   .offering .part-two .part-card .front h3,
@@ -1410,7 +1413,8 @@
   /* Start benefit section */
 
   .benefits {
-    max-width: 380px !important;
+    /* max-width: 380px !important; */
+    padding: 0 10px !important;
   }
 
   .benefits .child1 {
@@ -1480,7 +1484,8 @@
   /* Start brand slider */
 
   .brand-slider {
-    max-width: 380px !important;
+    /* max-width: 380px !important; */
+    padding: 0 10px !important;
     margin: 50px auto !important;
   }
 
@@ -1489,7 +1494,9 @@
   /* Start Members section */
 
   .member {
-    max-width: 380px !important;
+    /* max-width: 380px !important; */
+    padding: 0 10px !important;
+
   }
 
   .member .part1 h1 {
@@ -1537,7 +1544,8 @@
   /* Start Testimonals */
 
   .testimonals {
-    max-width: 380px !important;
+    /* max-width: 380px !important; */
+    padding: 0 10px !important;
     flex-direction: column;
     height: 400px !important;
     margin: 40px auto !important;
@@ -1641,7 +1649,7 @@
   /* Start blog section */
 
   .blog-section {
-    width: 380px;
+    width: 360px;
   }
   
    .blog-second {
@@ -1772,6 +1780,7 @@
   .about-parent .childs {
     max-width: 340px;
     margin: auto;
+    padding: 0 !important;
   }
 
   .childs .child1 .image img {
