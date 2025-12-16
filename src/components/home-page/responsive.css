@@ -1,54 +1,52 @@
-@media (max-width:1515px) {
-  
+@media (max-width: 1515px) {
   /* Start contact section */
 
-.contact_detail .part2 .circle {
-  height: 160px;
-  width: 160px;
-  background-color: var(--dark-color);
-  border-radius: 50%;
-  position: absolute;
-  top: 40%;
-  right: 15%;
-  animation: rotate 15s linear infinite;
-  z-index: 1;
-}
+  .contact_detail .part2 .circle {
+    height: 160px;
+    width: 160px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    animation: rotate 15s linear infinite;
+    z-index: 1;
+  }
 
-.contact_detail .part2 .circle span {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform-origin: 50% 0%;
-  font-size: 14px;
-  color: white;
-  padding: 55px 60px;
-}
+  .contact_detail .part2 .circle span {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform-origin: 50% 0%;
+    font-size: 14px;
+    color: white;
+    padding: 55px 60px;
+  }
 
-.contact_detail .part2 i {
-  position: absolute;
-  top: 47% !important;
-  right: 20% !important;
-  color: white;
-  font-size: 40px;
-  z-index: 1;
-}
+  .contact_detail .part2 i {
+    position: absolute;
+    top: 47% !important;
+    right: 20% !important;
+    color: white;
+    font-size: 40px;
+    z-index: 1;
+  }
 
   /* End contact section */
 }
-@media (max-width:1440px) {
-  
+@media (max-width: 1440px) {
   /* Start contact section */
 
-.contact .svg .contact_detail{
-  width: 75% !important;
-}
+  .contact .svg .contact_detail {
+    width: 75% !important;
+  }
 
-.contact_detail .part1{
-  width: 62% !important;
-}
-.contact .svg svg {
-  right: 5% !important;
-}
+  .contact_detail .part1 {
+    width: 62% !important;
+  }
+  .contact .svg svg {
+    right: 5% !important;
+  }
   /* End contact section */
 }
 
@@ -608,7 +606,7 @@
     height: 84.4vh !important;
   }
 
- .contact .svg .contact_detail {
+  .contact .svg .contact_detail {
     margin: 30px 0;
     width: 100% !important;
     height: 84.4vh !important;
@@ -1127,7 +1125,6 @@
     padding-left: 40px !important;
   }
 
-
   /* End contact section */
 
   /* Start blog section */
@@ -1135,16 +1132,16 @@
   .blog-section {
     width: 400px;
   }
-  
+
   .blog-second .blogger .img {
     height: 60%;
   }
-  
-    .blog-section .blog-first h2{
-     font-size: 22px;
-     font-weight: bold;
-    }
-  
+
+  .blog-section .blog-first h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   .blogs .blogger .blog-detail {
     width: 85% !important;
     height: 40% !important;
@@ -1483,7 +1480,6 @@
   .member {
     /* max-width: 380px !important; */
     padding: 0 10px !important;
-
   }
 
   .member .part1 h1 {
@@ -1615,8 +1611,8 @@
   }
 
   .form .share {
-    width: 70% !important;
-    padding-left: 40px !important;
+    width: 100% !important;
+    padding-left: 20px !important;
   }
 
   .contact_detail .part2 .circle,
@@ -1638,19 +1634,19 @@
   .blog-section {
     width: 360px;
   }
-  
-   .blog-second {
+
+  .blog-second {
     padding-left: 25px;
-   }
+  }
   .blog-second .blogger .img {
     height: 60%;
   }
-  
-    .blog-section .blog-first h2{
-     font-size: 22px;
-     font-weight: bold;
-    }
-  
+
+  .blog-section .blog-first h2 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   .blogs .blogger .blog-detail {
     width: 85% !important;
     height: 40% !important;
@@ -1702,7 +1698,6 @@
 
 @media (max-width: 375px) {
   /* Start Hero section homeSlider */
-
   .slider-content .content-detail {
     top: 20%;
     left: 2%;
@@ -1727,13 +1722,12 @@
     font-size: 10px;
     letter-spacing: 0.2px;
   }
-
-  /* End Hero section homeSlider */
+  /* end Hero section homeSlider */
 
   /* Start our plan section */
 
   .parent-container .our-Plans {
-    max-width: 400px !important;
+    max-width: 340px !important;
     margin: 20px auto 0 auto !important;
   }
 
@@ -1752,18 +1746,18 @@
   }
 
   .parent-container .our-Plans .icon-container a {
-    height: 180px;
-    width: 45%;
+    height: 160px;
+    width: 40%;
   }
 
   .parent-container .our-Plans .icon-container a h3 {
+    font-size: 12px;
     font-weight: bold;
   }
 
   /* End our plan section */
 
   /* Start about parent section */
-
   .about-parent .childs {
     max-width: 340px;
     margin: auto;
@@ -1810,19 +1804,18 @@
     padding: 12px 22px;
     font-size: 15px;
   }
-
   /* End about parent section */
 
   /* Start about offering section */
 
   .offering {
-    max-width: 340px !important;
+    max-width: 400px !important;
     margin: 0px auto !important;
   }
 
   .offering .part-one h2 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 25px;
     width: 90%;
   }
 
@@ -1831,18 +1824,35 @@
     font-weight: bold;
   }
 
-  .offering .part-two .part-card {
-    height: 200px;
-    width: 150px;
+  .offering .part-two {
+    padding: 20px 0 0 0;
   }
 
-  .offering .part-two .part-card .front{
+  .offering .part-two .part-card {
+    height: 200px;
+    width: 160px;
+  }
+
+  .offering .part-two .part-card .front {
     padding: 10px 8px !important;
   }
 
   .offering .part-two .part-card .front h3,
   .offering .part-two .part-card .back h3 {
     font-size: 16px;
+    padding: 0;
+  }
+
+  .offering .part-two .part-card .front i,
+  .offering .part-two .part-card .back i {
+    font-size: 30px;
+  }
+
+  .offering .part-two .part-card .front p,
+  .offering .part-two .part-card .back p {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
   }
 
   /* End about offering section */
@@ -1876,7 +1886,6 @@
   /* End ranking section */
 
   /* Start benefit section */
-
   .benefits {
     max-width: 340px !important;
   }
@@ -1908,7 +1917,7 @@
   }
 
   .benefits .child1 .btn1 h2 {
-    margin-left: 80px !important;
+    margin-left: 70px !important;
     font-size: 16px;
   }
 
@@ -1933,11 +1942,10 @@
     max-width: 340px !important;
     margin: 50px auto !important;
   }
-  
+
   /* End brand slider */
-  
+
   /* Start Members section */
-  
   .member {
     max-width: 340px !important;
   }
@@ -1969,11 +1977,9 @@
     width: 100% !important;
     margin: 0px !important;
   }
-
   /* End Members section */
 
   /* Start Testimonals */
-
   .testimonals {
     max-width: 340px !important;
     margin: 20px auto !important;
@@ -2002,18 +2008,39 @@
 
   /* Start contact section */
 
-  .contact{
-    background-color: red !important;
-    width: 310px !important;
-  }
-  .contact,
   .contact .contact_detail {
-    height: 60vh !important;
+    width: 100% !important;
+  }
+
+  .contact_detail .part1 {
+    padding: 30px 10px !important;
+  }
+
+  .contact_detail .part1 .info h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .form .icons .icon i {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
+
+  .form .icons .icon h3 {
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    letter-spacing: 0.8px !important;
   }
 
   .contact_detail .part1 .info h2 {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 5px 0 !important;
+  }
+
+  .contact_detail .part1 .form {
+    margin-top: 30px !important;
   }
 
   .form .share .input {
@@ -2023,50 +2050,36 @@
 
   .form .share .submit {
     padding: 10px 15px !important;
-    width: 55% !important;
+    width: 75% !important;
   }
 
   .form .share {
-    width: 70% !important;
-    padding-left: 40px !important;
-  }
-
-  .contact_detail .part2 .circle,
-  .contact_detail .part2 i {
-    display: none;
-  }
-  .contact_detail .part1 .form .icons {
-    gap: 10px;
-  }
-
-  .contact .svg #svg-clip {
-    display: none;
+    width: 90% !important;
+    padding-left: 20px !important;
   }
 
   /* End contact section */
-  
-  /* Start blog section */
 
+  /* Start blog section */
   .blog-section {
     width: 340px;
     margin: 0px auto !important;
   }
-  
+
   .blog-second .blogger .img {
     height: 60%;
   }
-  
-    .blog-section .blog-first h2{
-     font-size: 20px;
-     font-weight: bold;
-    }
-  
+
+  .blog-section .blog-first h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   .blogs .blogger .blog-detail {
     width: 85% !important;
     height: 40% !important;
     bottom: 15% !important;
   }
-
   /* End blog section */
 }
 
@@ -2369,23 +2382,22 @@
   }
   /* End Testimonals */
 
-  
   /* Start blog section */
 
   .blog-section {
     width: 300px;
     margin: 0px auto !important;
   }
-  
+
   .blog-second .blogger .img {
     height: 60%;
   }
-  
-    .blog-section .blog-first h2{
-     font-size: 20px;
-     font-weight: bold;
-    }
-  
+
+  .blog-section .blog-first h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   .blogs .blogger .blog-detail {
     width: 85% !important;
     height: 40% !important;
