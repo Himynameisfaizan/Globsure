@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar, EffectCards } from "swiper/modules";
 import "../../css/about_section.css";
@@ -9,8 +9,61 @@ import "swiper/css/effect-cards";
 import "swiper/css/scrollbar";
 
 import { NavLink } from "react-router-dom";
-const text = "GLOBSURE INTERNATIONAL INSURANCE ";
 const About_section = () => {
+  const text = "GLOBSURE INTERNATIONAL INSURANCE ";
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    insuranceType: "",
+  });
+
+  const [status, setStatus] = useState({ loading: false, msg: "", type: "" });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, msg: "", type: "" });
+
+    try {
+      const response = await fetch(
+        "http://localhost/phpMailer/globsure-api/index.php",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.fullName,
+            email: formData.email,
+            phone: "Not Provided",
+            message: `Selected Plan: ${formData.insuranceType}`,
+            type: "quote",
+          }),
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        setStatus({
+          loading: false,
+          msg: "Quote Request Sent!",
+          type: "success",
+        });
+        setFormData({ fullName: "", email: "", insuranceType: "" }); // Form clear
+        setTimeout(
+          () => setStatus({ loading: false, msg: "", type: "" }),
+          3000
+        );
+      } else {
+        setStatus({ loading: false, msg: result.message, type: "error" });
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus({ loading: false, msg: "Server Error.", type: "error" });
+    }
+  };
   return (
     <>
       <div className="parent-container">
@@ -707,50 +760,79 @@ const About_section = () => {
                 <div className="form flex w-full">
                   <div className="icons flex flex-col w-3/10 gap-4">
                     <div className="icon flex items-center rounded">
-                      <i className="ri-home-7-fill bg-[#002249] rounded-[50%]"></i>
-                      <h3>Home</h3>
-                    </div>
-                    <div className="icon flex items-center rounded">
                       <i className="ri-roadster-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Vehicle</h3>
                     </div>
                     <div className="icon flex items-center rounded">
                       <i className="ri-heart-pulse-fill bg-[#002249] rounded-[50%]"></i>
-                      <h3>Life</h3>
+                      <h3>Health</h3>
                     </div>
                     <div className="icon flex items-center rounded">
                       <i className="ri-briefcase-4-fill bg-[#002249] rounded-[50%]"></i>
                       <h3>Business</h3>
                     </div>
                   </div>
-                  <div className="share">
-                    <input
-                      className="input"
-                      type="text"
-                      required
-                      placeholder="Full name"
-                    />
-                    <br />
-                    <input
-                      className="input"
-                      type="email"
-                      required
-                      placeholder="Email address"
-                    />
-                    <br />
-                    <select className="input">
-                      <option>Select insurance type</option>
-                      <option>Health insurance</option>
-                      <option>General insurance</option>
-                      <option>Life insurance </option>
-                      <option>Medical insurance</option>
-                    </select>
-                    <br />
-                    <input
-                      className="submit"
-                      type="submit"
-                      value={"Get Quoute"}
-                    />
+                  <div>
+                    <form className="share" onSubmit={handleSubmit} action="">
+                      <input
+                        className="input"
+                        type="text"
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
+                        required
+                        placeholder="Full name"
+                      />
+                      <br />
+                      <input
+                        className="input"
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        placeholder="Email address"
+                      />
+                      <br />
+                      <select
+                        className="input"
+                        name="insuranceType"
+                        value={formData.insuranceType}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="" disabled>
+                          Select insurance type
+                        </option>
+                        <option value="Health Insurance">
+                          Health insurance
+                        </option>
+                        <option value="General Insurance">
+                          General insurance
+                        </option>
+                        <option value="Vehicle Insurance">
+                          Vehicle insurance
+                        </option>
+                      </select>
+                      <br />
+                      {status.msg && (
+                        <p
+                          className={`text-sm text-center mb-2 ${
+                            status.type === "success"
+                              ? "text-green-600"
+                              : "text-red-600"
+                          }`}
+                        >
+                          {status.msg}
+                        </p>
+                      )}
+                      <input
+                        className="submit"
+                        type="submit"
+                        value={status.loading ? 'Sending message...' : 'Get Quote'}
+                        disabled={status.loading}
+                      />
+                    </form>
                   </div>
                 </div>
               </div>
@@ -794,10 +876,7 @@ const About_section = () => {
               Latest news & articles from the blog
             </h2>
           </div>
-          <div
-            className="blog-second h-115"
-            style={{ margin: "auto" }}
-          >
+          <div className="blog-second h-115" style={{ margin: "auto" }}>
             <Swiper
               slidesPerView={1}
               spaceBetween={10}
