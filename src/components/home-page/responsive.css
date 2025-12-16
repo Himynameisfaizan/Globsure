@@ -2195,7 +2195,6 @@
   .offering {
     max-width: 300px !important;
     margin: 0px auto !important;
-    /* background-color: red; */
   }
 
   .offering .part-one h2 {
@@ -2215,7 +2214,11 @@
 
   .offering .part-two .part-card {
     height: 240px;
-    width: 140px;
+    width: 130px;
+  }
+
+  .offering .part-two .part-card .front{
+    padding: 10px 8px !important;
   }
 
   .offering .part-two .part-card .front h3,
@@ -2381,6 +2384,66 @@
     font-size: 13px !important;
   }
   /* End Testimonals */
+
+  
+  /* Start contact section */
+
+  .contact .contact_detail {
+    width: 100% !important;
+  }
+
+  .contact_detail .part1 {
+    padding: 30px 10px !important;
+  }
+
+  .contact_detail .part1 .info h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .form .icons .icon i {
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
+
+  .form .icons .icon h3 {
+    font-size: 14px !important;
+    padding-left: 10px !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  .contact_detail .part1 .info h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 5px 0 !important;
+  }
+
+  .contact_detail .part1 .form {
+    margin-top: 30px !important;
+  }
+
+   .contact_detail .part1 .form .icon{
+    display: none;
+   }
+
+  .form .share .input {
+    padding: 15px !important;
+    font-size: 14px;
+  }
+
+  .form .share .submit {
+    padding: 10px 15px !important;
+    width: 75% !important;
+  }
+
+  .form .share {
+    width: 100% !important;
+    padding-left: 0px !important;
+  }
+
+  /* End contact section */
+
 
   /* Start blog section */
 
