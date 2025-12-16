@@ -608,8 +608,9 @@
     height: 84.4vh !important;
   }
 
-  .contact_detail {
+ .contact .svg .contact_detail {
     margin: 30px 0;
+    width: 100% !important;
     height: 84.4vh !important;
   }
   .contact_detail .part1 {
@@ -645,9 +646,7 @@
   }
 
   .contact .svg #svg-clip {
-    top: 32%;
-    right: -10%;
-    height: 30.8vh;
+    display: none;
   }
 
   /* End contact section */
@@ -1120,25 +1119,14 @@
 
   .form .share .submit {
     padding: 10px 15px !important;
-    width: 55% !important;
+    width: 75% !important;
   }
 
   .form .share {
-    width: 70% !important;
+    width: 100% !important;
     padding-left: 40px !important;
   }
 
-  .contact_detail .part2 .circle,
-  .contact_detail .part2 i {
-    display: none;
-  }
-  .contact_detail .part1 .form .icons {
-    gap: 10px;
-  }
-
-  .contact .svg #svg-clip {
-    display: none;
-  }
 
   /* End contact section */
 
@@ -1244,9 +1232,8 @@
   /* Start our plan section */
 
   .parent-container .our-Plans {
-    max-width: 390px !important;
+    max-width: 350px !important;
     margin: 20px auto 0 auto !important;
-    /* background-color: red; */
   }
 
   .parent-container .our-Plans h5 {
@@ -1337,7 +1324,7 @@
   /* Start about offering section */
 
   .offering {
-    /* max-width: 380px !important; */
+    max-width: 380px !important;
     margin: 0px auto !important;
     padding: 0 10px !important;
   }
@@ -1846,7 +1833,11 @@
 
   .offering .part-two .part-card {
     height: 200px;
-    width: 160px;
+    width: 150px;
+  }
+
+  .offering .part-two .part-card .front{
+    padding: 10px 8px !important;
   }
 
   .offering .part-two .part-card .front h3,
@@ -1942,11 +1933,11 @@
     max-width: 340px !important;
     margin: 50px auto !important;
   }
-
+  
   /* End brand slider */
-
+  
   /* Start Members section */
-
+  
   .member {
     max-width: 340px !important;
   }
@@ -2011,6 +2002,10 @@
 
   /* Start contact section */
 
+  .contact{
+    background-color: red !important;
+    width: 310px !important;
+  }
   .contact,
   .contact .contact_detail {
     height: 60vh !important;
