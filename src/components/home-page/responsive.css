@@ -2010,7 +2010,7 @@
 
   .contact{
     /* height: 50vh !important; */
-    height: 50vh  !important;
+    height: 65vh  !important;
   }
   .contact .contact_detail {
     width: 100% !important;
@@ -2019,7 +2019,7 @@
   
   .contact_detail .part1, .contact_detail .part2 {
     padding: 30px 10px !important;
-    height: 50vh  !important;
+    height: 65vh  !important;
   }
 
   .contact_detail .part1 .info h4 {
