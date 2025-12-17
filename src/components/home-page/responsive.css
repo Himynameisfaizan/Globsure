@@ -1564,13 +1564,18 @@
   /* End Testimonals */
 
   /* Start contact section */
-
+.contact{
+    /* height: 50vh !important; */
+    height: 65vh  !important;
+  }
   .contact .contact_detail {
     width: 100% !important;
+    
   }
-
-  .contact_detail .part1 {
+  
+  .contact_detail .part1, .contact_detail .part2 {
     padding: 30px 10px !important;
+    height: 65vh  !important;
   }
 
   .contact_detail .part1 .info h4 {
@@ -1596,6 +1601,10 @@
     padding: 5px 0 !important;
   }
 
+   .contact_detail .part1 .form .icon{
+    display: none;
+   }
+
   .contact_detail .part1 .form {
     margin-top: 30px !important;
   }
@@ -1607,25 +1616,15 @@
 
   .form .share .submit {
     padding: 10px 15px !important;
-    width: 55% !important;
+    width: 75% !important;
   }
 
   .form .share {
     width: 100% !important;
-    padding-left: 20px !important;
+    padding-left: 40px !important;
   }
 
-  .contact_detail .part2 .circle,
-  .contact_detail .part2 i {
-    display: none;
-  }
-  .contact_detail .part1 .form .icons {
-    gap: 10px;
-  }
-
-  .contact .svg #svg-clip {
-    display: none;
-  }
+  /* End contact section */
 
   /* End contact section */
 
