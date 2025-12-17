@@ -10,6 +10,59 @@ import "swiper/css/scrollbar";
 
 import { NavLink } from "react-router-dom";
 const About_section = () => {
+  const blogs = [
+    {
+      id: 1,
+      date: "10 DEC 2025",
+      author: "Admin",
+      title: "Why Health Insurance is Essential in 2025",
+      excerpt:
+        "Rising medical costs can drain your savings. Learn why health insurance is a necessity, not a luxury, in today's times.",
+      link: "/blog/health-insurance-essential",
+      image: "/image/office-team/office.avif",
+    },
+    {
+      id: 2,
+      date: "12 DEC 2025",
+      author: "Admin",
+      title: "5 Mistakes to Avoid When Buying Car Insurance",
+      excerpt:
+        "Don't just look for cheap premiums. Read why checking coverage and hidden clauses is crucial before buying a policy.",
+      link: "/blog/car-insurance-mistakes",
+      image: "/image/office-team/office1.avif",
+    },
+    {
+      id: 3,
+      date: "14 DEC 2025",
+      author: "Admin",
+      title: "Term Insurance vs. Life Insurance: Right Choice?",
+      excerpt:
+        "Confused between the two? We explain in simple terms which plan is best suited for your family's financial security.",
+      link: "/blog/term-vs-life-insurance",
+      image: "/image/office-team/office2.jpg",
+    },
+    {
+      id: 4,
+      date: "15 DEC 2025",
+      author: "Admin",
+      title: "How to File an Insurance Claim Without Hassle",
+      excerpt:
+        "Avoid claim rejections. Follow this step-by-step guide to get your insurance claim approved quickly and easily.",
+      link: "/blog/how-to-claim",
+      image: "/image/office-team/office3.jpg",
+    },
+    {
+      id: 5,
+      date: "16 DEC 2025",
+      author: "Admin",
+      title: "Retirement Planning: The Power of Starting Early",
+      excerpt:
+        "Secure your old age. Discover how starting with small investments today can lead to financial freedom in the future.",
+      link: "/blog/retirement-planning",
+      image: "/image/office-team/office4.jpg",
+    },
+  ];
+
   const text = "GLOBSURE INTERNATIONAL INSURANCE ";
   const [formData, setFormData] = useState({
     fullName: "",
@@ -638,9 +691,9 @@ const About_section = () => {
                       <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Illum vitae ipsam amet quam dolor labore sint repellat
-                      similique optio eum!
+                      I thought claiming insurance would be difficult, but their
+                      team made the process very smooth and fast. Truly the best
+                      service!
                     </p>
                   </div>
                   <div className="detail">
@@ -648,8 +701,8 @@ const About_section = () => {
                       <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
-                      <h2>Dinesh Patel</h2>
-                      <p>Manager</p>
+                      <h2>Rajesh Kumar</h2>
+                      <p>Business Owner</p>
                     </div>
                   </div>
                 </div>
@@ -667,9 +720,9 @@ const About_section = () => {
                       <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Illum vitae ipsam amet quam dolor labore sint repellat
-                      similique optio eum!
+                      I purchased a health plan for my family. The plans are
+                      affordable and all benefits are clear. I feel secure about
+                      the future now.
                     </p>
                   </div>
                   <div className="detail">
@@ -677,8 +730,8 @@ const About_section = () => {
                       <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
-                      <h2>Rahul Pandey</h2>
-                      <p>Manager</p>
+                      <h2>Anjali Mehta</h2>
+                      <p>HR Professional</p>
                     </div>
                   </div>
                 </div>
@@ -696,9 +749,9 @@ const About_section = () => {
                       <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Illum vitae ipsam amet quam dolor labore sint repellat
-                      similique optio eum!
+                      Customer support is excellent! They cleared all my doubts
+                      and suggested the best policy that fit perfectly within my
+                      budget.
                     </p>
                   </div>
                   <div className="detail">
@@ -706,8 +759,8 @@ const About_section = () => {
                       <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
-                      <h2>Hitesh Kumar</h2>
-                      <p>Manager</p>
+                      <h2>Vikram Singh</h2>
+                      <p>Software Engineer</p>
                     </div>
                   </div>
                 </div>
@@ -725,9 +778,9 @@ const About_section = () => {
                       <i className="ri-star-s-fill"></i>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Illum vitae ipsam amet quam dolor labore sint repellat
-                      similique optio eum!
+                      A trustworthy company. Their policies are transparent with
+                      absolutely no hidden charges. The claim settlement ratio
+                      is also impressive.
                     </p>
                   </div>
                   <div className="detail">
@@ -735,8 +788,8 @@ const About_section = () => {
                       <img src="/image/man.avif" alt="" />
                     </div>
                     <div className="info">
-                      <h2>Manish Sharma</h2>
-                      <p>Manager</p>
+                      <h2>Pooja gupta</h2>
+                      <p>homemaker</p>
                     </div>
                   </div>
                 </div>
@@ -829,7 +882,9 @@ const About_section = () => {
                       <input
                         className="submit"
                         type="submit"
-                        value={status.loading ? 'Sending message...' : 'Get Quote'}
+                        value={
+                          status.loading ? "Sending message..." : "Get Quote"
+                        }
                         disabled={status.loading}
                       />
                     </form>
@@ -904,155 +959,39 @@ const About_section = () => {
               }}
               className="mySwiper blogs"
             >
-              <SwiperSlide className="blogger">
-                <div className="img">
-                  <img src="/image/man.avif" alt="image blog" />
-                </div>
-                <div className="blog-detail">
-                  <div className="date">
-                    <span>7 NOV 2025</span>
-                  </div>
-                  <div className="info">
-                    <div className="info-one">
-                      <div className="info-icon">
-                        <i className="ri-user-line"></i>
-                        <p>By user</p>
-                      </div>
-                      <div className="info-icon">
-                        <i className="ri-question-answer-line"></i>
-                        <p>0 Comments</p>
-                      </div>
+              {blogs.map((data) => {
+                return (
+                  <SwiperSlide className="blogger" key={data.id}>
+                    <div className="img">
+                      <img src={data.image} alt="image blog" />
                     </div>
-                    <div className="info-two">
-                      <h2>Protect Your Future with Smart Insurance Choices</h2>
-                    </div>
-                    <div className="info-three">
-                      <h4>Read More</h4>
-                      <i className="ri-arrow-right-long-fill"></i>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="blogger">
-                <div className="img">
-                  <img src="/image/man.avif" alt="image blog" />
-                </div>
-                <div className="blog-detail">
-                  <div className="date">
-                    <span>7 NOV 2025</span>
-                  </div>
-                  <div className="info">
-                    <div className="info-one">
-                      <div className="info-icon">
-                        <i className="ri-user-line"></i>
-                        <p>By user</p>
+                    <div className="blog-detail">
+                      <div className="date">
+                        <span>{data.date}</span>
                       </div>
-                      <div className="info-icon">
-                        <i className="ri-question-answer-line"></i>
-                        <p>0 Comments</p>
+                      <div className="info">
+                        <div className="info-one">
+                          <div className="info-icon">
+                            <i className="ri-user-line"></i>
+                            <p>By {data.author}</p>
+                          </div>
+                          <div className="info-icon">
+                            <i className="ri-question-answer-line"></i>
+                            <p>0 Comments</p>
+                          </div>
+                        </div>
+                        <div className="info-two">
+                          <h2>{data.title}</h2>
+                        </div>
+                        <div className="info-three">
+                          <h4>Read More</h4>
+                          <i className="ri-arrow-right-long-fill"></i>
+                        </div>
                       </div>
                     </div>
-                    <div className="info-two">
-                      <h2>Protect Your Future with Smart Insurance Choices</h2>
-                    </div>
-                    <div className="info-three">
-                      <h4>Read More</h4>
-                      <i className="ri-arrow-right-long-fill"></i>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="blogger">
-                <div className="img">
-                  <img src="/image/man.avif" alt="image blog" />
-                </div>
-                <div className="blog-detail">
-                  <div className="date">
-                    <span>7 NOV 2025</span>
-                  </div>
-                  <div className="info">
-                    <div className="info-one">
-                      <div className="info-icon">
-                        <i className="ri-user-line"></i>
-                        <p>By user</p>
-                      </div>
-                      <div className="info-icon">
-                        <i className="ri-question-answer-line"></i>
-                        <p>0 Comments</p>
-                      </div>
-                    </div>
-                    <div className="info-two">
-                      <h2>Protect Your Future with Smart Insurance Choices</h2>
-                    </div>
-                    <div className="info-three">
-                      <h4>Read More</h4>
-                      <i className="ri-arrow-right-long-fill"></i>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="blogger">
-                <div className="img">
-                  <img src="/image/man.avif" alt="image blog" />
-                </div>
-                <div className="blog-detail">
-                  <div className="date">
-                    <span>7 NOV 2025</span>
-                  </div>
-                  <div className="info">
-                    <div className="info-one">
-                      <div className="info-icon">
-                        <i className="ri-user-line"></i>
-                        <p>By user</p>
-                      </div>
-                      <div className="info-icon">
-                        <i className="ri-question-answer-line"></i>
-                        <p>0 Comments</p>
-                      </div>
-                    </div>
-                    <div className="info-two">
-                      <h2>Protect Your Future with Smart Insurance Choices</h2>
-                    </div>
-                    <div className="info-three">
-                      <h4>Read More</h4>
-                      <i className="ri-arrow-right-long-fill"></i>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="blogger">
-                <div className="img">
-                  <img src="/image/man.avif" alt="image blog" />
-                </div>
-                <div className="blog-detail">
-                  <div className="date">
-                    <span>7 NOV 2025</span>
-                  </div>
-                  <div className="info">
-                    <div className="info-one">
-                      <div className="info-icon">
-                        <i className="ri-user-line"></i>
-                        <p>By user</p>
-                      </div>
-                      <div className="info-icon">
-                        <i className="ri-question-answer-line"></i>
-                        <p>0 Comments</p>
-                      </div>
-                    </div>
-                    <div className="info-two">
-                      <h2>Protect Your Future with Smart Insurance Choices</h2>
-                    </div>
-                    <div className="info-three">
-                      <h4>Read More</h4>
-                      <i className="ri-arrow-right-long-fill"></i>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </div>
         </div>

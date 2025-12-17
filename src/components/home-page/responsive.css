@@ -1133,6 +1133,12 @@
     width: 400px;
   }
 
+  
+  .blog-second .blogger{
+    margin-left: 5px !important;
+  }
+
+
   .blog-second .blogger .img {
     height: 60%;
   }
@@ -1389,7 +1395,7 @@
   }
 
   .ranking .rank p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   /* End ranking section */
@@ -1428,7 +1434,7 @@
   }
 
   .benefits .child1 .btn1 h2 {
-    margin-left: 80px !important;
+    margin-left: 70px !important;
     font-size: 18px;
   }
 
@@ -1634,9 +1640,7 @@
     width: 360px;
   }
 
-  .blog-second {
-    padding-left: 25px;
-  }
+
   .blog-second .blogger .img {
     height: 60%;
   }
@@ -2086,8 +2090,8 @@
 
   .blogs .blogger .blog-detail {
     width: 85% !important;
-    height: 40% !important;
-    bottom: 15% !important;
+    height: 50% !important;
+    bottom: 5% !important;
   }
   /* End blog section */
 }
