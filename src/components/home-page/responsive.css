@@ -2008,12 +2008,8 @@
 
   /* Start contact section */
 
-  .contact{
-    display: none;
-  }
   .contact .contact_detail {
     width: 100% !important;
-    display: none !important;
   }
 
   .contact_detail .part1 {
@@ -2043,6 +2039,10 @@
     padding: 5px 0 !important;
   }
 
+   .contact_detail .part1 .form .icon{
+    display: none;
+   }
+
   .contact_detail .part1 .form {
     margin-top: 30px !important;
   }
@@ -2058,8 +2058,8 @@
   }
 
   .form .share {
-    width: 90% !important;
-    padding-left: 20px !important;
+    width: 100% !important;
+    padding-left: 0px !important;
   }
 
   /* End contact section */
