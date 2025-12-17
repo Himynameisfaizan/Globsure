@@ -53,7 +53,7 @@ const Vehicle_content = () => {
     try {
       // 👇 APNA LOCALHOST URL YAHAN CHECK KAR LENA
       const response = await fetch(
-        "http://localhost/phpMailer/globsure-api/index.php",
+        "https://globsure.grey8art.com/globsure-api/mail.php",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

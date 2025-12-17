@@ -26,7 +26,7 @@ const Form = () => {
       // API Call using Fetch
       // 👇 IMPORTANT: Yahan apne localhost PHP file ka sahi path daalo
       const response = await fetch(
-        "http://localhost/phpMailer/globsure-api/index.php",
+        "https://globsure.grey8art.com/globsure-api/mail.php",
         {
           method: "POST",
           headers: {

@@ -31,9 +31,9 @@ footer {
   display: flex;
 }
 
-.footer-logo .logo img {
+.footer-logo .logo a img {
   height: 60px;
-  width: 60%;
+  width: 100%;
   object-fit: contain;
 }
 

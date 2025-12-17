@@ -13,7 +13,7 @@ export const Footer = () => {
     try {
       // 👇 APNA LOCALHOST URL YAHAN CHECK KAR LENA
       const response = await fetch(
-        "http://localhost/phpMailer/globsure-api/index.php",
+        "https://globsure.grey8art.com/globsure-api/mail.php",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -57,7 +57,7 @@ export const Footer = () => {
       <footer>
         <div className="footer-logo">
           <div className="logo">
-            <img src="/image/logo/white_logo.png" alt="logo" />
+           <NavLink to="/"> <img src="/image/logo/white_logo.png" alt="logo" /></NavLink>
           </div>
 
           <div className="number">
