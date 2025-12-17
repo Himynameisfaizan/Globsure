@@ -2008,8 +2008,12 @@
 
   /* Start contact section */
 
+  .contact{
+    display: none;
+  }
   .contact .contact_detail {
     width: 100% !important;
+    display: none !important;
   }
 
   .contact_detail .part1 {
