@@ -1560,12 +1560,21 @@
   }
 
   .testimonal-content .detail .info h2 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .testimonal-content .detail .info p {
     color: #002249a6;
-    font-size: 14px;
+    font-size: 10px !important;
+  }
+
+  .testimonal-content .para i{
+    font-size: 16px !important;
+  }
+
+  .testimonal-content .para p {
+    color: #002249a6;
+    font-size: 12px !important;
   }
   /* End Testimonals */
 
@@ -1995,7 +2004,7 @@
   .testimonal-content .para p {
     width: 88% !important;
     text-align: justify;
-    font-size: 14px !important;
+    font-size: 12px !important;
     line-height: 1.4 !important;
   }
 
@@ -2005,8 +2014,13 @@
 
   .testimonal-content .detail .info p {
     color: #002249a6;
-    font-size: 14px;
+    font-size: 10px !important;
   }
+
+  .testimonal-content .para i{
+    font-size: 16px !important;
+  }
+
   /* End Testimonals */
 
   /* Start contact section */
@@ -2090,8 +2104,12 @@
 
   .blogs .blogger .blog-detail {
     width: 85% !important;
-    height: 50% !important;
+    height: 40% !important;
     bottom: 5% !important;
+  }
+
+  .blogs .blogger .blog-detail .info-two h2 {
+   font-size: 20px !important;
   }
   /* End blog section */
 }
@@ -2384,9 +2402,10 @@
   }
 
   .testimonal-content .para p {
-    width: 90% !important;
-    font-size: 13px !important;
-    line-height: 1.4 !important;
+    width: 88% !important;
+    text-align: justify;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
   }
 
   .testimonal-content .detail .info h2 {
@@ -2394,8 +2413,14 @@
   }
 
   .testimonal-content .detail .info p {
-    font-size: 13px !important;
+    color: #002249a6;
+    font-size: 10px !important;
   }
+
+  .testimonal-content .para i{
+    font-size: 16px !important;
+  }
+
   /* End Testimonals */
 
   
@@ -2476,8 +2501,13 @@
 
   .blogs .blogger .blog-detail {
     width: 85% !important;
-    height: 40% !important;
+    height: 35% !important;
     bottom: 15% !important;
+  }
+
+  .blogs .blogger .blog-detail .info-two h2{
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
 
   /* End blog section */

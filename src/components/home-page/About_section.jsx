@@ -18,7 +18,7 @@ const About_section = () => {
       title: "Why Health Insurance is Essential in 2025",
       excerpt:
         "Rising medical costs can drain your savings. Learn why health insurance is a necessity, not a luxury, in today's times.",
-      link: "/blog/health-insurance-essential",
+      link: "/health-insurance-essential",
       image: "/image/office-team/office.avif",
     },
     {
@@ -28,7 +28,7 @@ const About_section = () => {
       title: "5 Mistakes to Avoid When Buying Car Insurance",
       excerpt:
         "Don't just look for cheap premiums. Read why checking coverage and hidden clauses is crucial before buying a policy.",
-      link: "/blog/car-insurance-mistakes",
+      link: "/car-insurance-mistakes",
       image: "/image/office-team/office1.avif",
     },
     {
@@ -38,7 +38,7 @@ const About_section = () => {
       title: "Term Insurance vs. Life Insurance: Right Choice?",
       excerpt:
         "Confused between the two? We explain in simple terms which plan is best suited for your family's financial security.",
-      link: "/blog/term-vs-life-insurance",
+      link: "/term-vs-life-insurance",
       image: "/image/office-team/office2.jpg",
     },
     {
@@ -48,7 +48,7 @@ const About_section = () => {
       title: "How to File an Insurance Claim Without Hassle",
       excerpt:
         "Avoid claim rejections. Follow this step-by-step guide to get your insurance claim approved quickly and easily.",
-      link: "/blog/how-to-claim",
+      link: "/how-to-claim",
       image: "/image/office-team/office3.jpg",
     },
     {
@@ -58,7 +58,7 @@ const About_section = () => {
       title: "Retirement Planning: The Power of Starting Early",
       excerpt:
         "Secure your old age. Discover how starting with small investments today can lead to financial freedom in the future.",
-      link: "/blog/retirement-planning",
+      link: "/retirement-planning",
       image: "/image/office-team/office4.jpg",
     },
   ];
@@ -975,13 +975,9 @@ const About_section = () => {
                             <i className="ri-user-line"></i>
                             <p>By {data.author}</p>
                           </div>
-                          <div className="info-icon">
-                            <i className="ri-question-answer-line"></i>
-                            <p>0 Comments</p>
-                          </div>
                         </div>
                         <div className="info-two">
-                          <h2>{data.title}</h2>
+                         <NavLink to={data.link}> <h2>{data.title}</h2></NavLink>
                         </div>
                         <div className="info-three">
                           <h4>Read More</h4>
