@@ -221,7 +221,8 @@
 
   .guidlines {
     max-width: 380px !important;
-    /* background-color: red; */
+    padding: 0 5px !important;
+
   }
 
   .guidline-container {
@@ -268,6 +269,7 @@
 
   .pdf-section {
     max-width: 380px !important;
+    padding: 0 5px !important;
   }
 
   .pdf-section .h2 {

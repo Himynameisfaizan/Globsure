@@ -447,6 +447,7 @@
 
   .header-section {
     max-width: 380px !important;
+    padding: 0 5px !important;
   }
 
   .header-section .first-section h2 {
@@ -481,7 +482,7 @@
 
   .benefit_first_container {
     max-width: 380px !important;
-    padding: 0 !important;
+    padding: 0 5px !important;
   }
 
   .benefit_img_container img {
@@ -538,6 +539,7 @@
 
   .share-section {
     max-width: 380px !important;
+    padding: 0 10px !important;
   }
 
   .share-section h1 {
@@ -554,6 +556,7 @@
 
   .accordion {
     max-width: 380px !important;
+    padding: 0 10px !important;
   }
 
   .accordion-section {
