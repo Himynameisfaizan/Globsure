@@ -348,6 +348,7 @@
   /* start first container page section */
   .first_container {
     max-width: 380px !important;
+    padding: 0 5px !important;
   }
 
   .company_detail h2 {
@@ -369,6 +370,8 @@
 
   .origin-section {
     width: 380px;
+    padding: 0 5px !important;
+
   }
 
   .origin-section .right,
@@ -415,8 +418,11 @@
   /* End origin section */
 
   /* Start team section */
+  
   .team_section {
     max-width: 380px !important;
+    padding: 0 5px !important;
+
   }
 
   .team_section .meet h1 {
