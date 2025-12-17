@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../css/header.css";
+// import './responsive.css'
 import { NavLink, Link } from "react-router-dom";
 export const Header = () => {
 
@@ -94,11 +95,6 @@ export const Header = () => {
             <i className={`ri-menu-line absolute transition-all ease-in-out duration-200 ${isOpen ? 'opacity-0 rotate-90 scale-0 ' : 'opacity-100 rotate-0 scale-100'} `}></i>
             <i className={`ri-close-large-line transition-all ease-in-out duration-200 ${isOpen ? 'opacity-100 rotate-0 scale-100 ' : 'opacity-0 -rotate-90 scale-0'}`}></i>
           </div>
-        </div>
-        <div className="line"></div>
-        <div className="icon">
-          <i className="ri-search-eye-line"></i>
-          <i className="ri-user-3-line"></i>
         </div>
       </div>
 

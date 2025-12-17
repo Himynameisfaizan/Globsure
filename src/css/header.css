@@ -50,28 +50,25 @@ body {
 
 .menu {
   display: flex;
-  width: 60%;
-  justify-content: start;
-  align-items: start;
+  width: 80%;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
 }
 
 .menu ul {
-  /* background-color: red; */
   display: flex;
-  justify-content: space-evenly;
+  gap: 40px;
   align-items: center;
-  width: 80%;
 }
 
 .menu li {
   list-style-type: none;
   display: flex;
-  /* align-items: center; */
 }
 
 .menu li a {
   display: flex;
-  /* align-items: center; */
 }
 
 .insurance {
@@ -103,28 +100,4 @@ body {
   width: 160px;
   top: 100%;
   right: -30%;
-}
-
-.header .icon {
-  width: 8%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header .line {
-  height: 40%;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.288);
-}
-
-.icon i {
-  font-size: 20px;
-  color: #000000af;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.icon i:hover {
-  color: #000000;
 }
