@@ -1,19 +1,19 @@
 @media (max-width: 1024px) {
-  .parent {
+  .blog-parent {
     max-width: 950px;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 350px;
   }
 }
 
 @media (max-width: 768px) {
-  .parent {
+  .blog-parent {
     max-width: 950px;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 280px;
   }
 
@@ -21,23 +21,23 @@
     font-size: 14px;
   }
 
-  .parent h2 {
+  .blog-parent h2 {
     font-size: 25px;
   }
 
-  .parent p {
+  .blog-parent p {
     font-size: 14px;
     line-height: 22px;
   }
 }
 
 @media (max-width: 425px) {
-  .parent {
+  .blog-parent {
     max-width: 400px;
     padding: 30px 0 !important;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 220px;
   }
 
@@ -49,34 +49,34 @@
     font-size: 12px;
   }
 
-  .parent h2 {
+  .blog-parent h2 {
     font-size: 22px;
   }
 
-  .parent p {
+  .blog-parent p {
     font-size: 13px;
     line-height: 20px;
   }
 }
 
 @media (max-width: 400px) {
-  .parent {
+  .blog-parent {
     max-width: 380px;
     padding: 30px 0 !important;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 200px;
   }
 }
 
 @media (max-width: 375px) {
-  .parent {
+  .blog-parent {
     max-width: 340px;
     padding: 30px 0 !important;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 180px;
   }
 
@@ -91,32 +91,32 @@
     font-size: 12px;
   }
 
-  .parent h2 {
+  .blog-parent h2 {
     font-size: 20px;
   }
 
-  .parent p {
+  .blog-parent p {
     font-size: 12px;
     line-height: 18px;
   }
 }
 
 @media (max-width: 320px) {
-  .parent {
+  .blog-parent {
     max-width: 300px;
     padding: 20px 0 !important;
   }
 
-  .parent img {
+  .blog-parent img {
     height: 160px;
   }
 
 
-  .parent h2 {
+  .blog-parent h2 {
     font-size: 18px;
   }
 
-  .parent p {
+  .blog-parent p {
     font-size: 11px;
     line-height: 16px;
   }

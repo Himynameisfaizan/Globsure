@@ -4,7 +4,7 @@ const Blog_contain = ({date, admin, title, desc, image}) => {
   return (
     <>
       <div
-        className="parent max-w-[1100px]"
+        className="blog-parent max-w-[1100px]"
         style={{ margin: "auto", padding: "50px" }}
       >
         <img
