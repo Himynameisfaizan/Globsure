@@ -10,7 +10,6 @@
 
 footer {
   width: 100%;
-  /* height: 80vh; */
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
@@ -61,14 +60,12 @@ footer {
   height: 60%;
   display: flex;
   align-items: center;
-  /* background-color: red; */
   justify-content: space-around;
 }
 
 .footer-quicklink .explore {
   width: 20%;
   height: 100%;
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -106,7 +103,6 @@ footer {
 .footer-quicklink .insurance {
   width: 20%;
   height: 100%;
-  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -143,12 +139,10 @@ footer {
 .footer-quicklink .address {
   width: 20%;
   height: 100%;
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 20px;
-  /* padding-left: 50px; */
 }
 
 .footer-quicklink .address h3 {
@@ -164,7 +158,6 @@ footer {
 }
 
 .footer-quicklink .address .social {
-  /* background-color: red; */
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -237,7 +230,6 @@ footer {
 .footer-copyright {
   width: 100%;
   height: 20%;
-  /* background-color: green; */
   border-top: 1px #ffffff15 solid;
 }
 

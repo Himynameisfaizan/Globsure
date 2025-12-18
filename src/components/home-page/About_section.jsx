@@ -495,87 +495,7 @@ const About_section = () => {
           </div>
         </div>
 
-        {/* Start brand slider */}
-        <div
-          className="brand-slider max-w-[1250px] overflow-hidden"
-          style={{ margin: "60px auto" }}
-        >
-          <div className="animate-slider flex flex-nowrap gap-10">
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo1.jpg"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo2.png"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo4.webp"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo6.avif"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo7.avif"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo1.jpg"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo2.png"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo4.webp"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo6.avif"
-                alt="logo1"
-              />
-            </div>
-            <div className="w-40 h-20 shrink-0">
-              <img
-                className="w-full h-full object-contain"
-                src="/image/logo7.avif"
-                alt="logo1"
-              />
-            </div>
-          </div>
-        </div>
-        {/* End brand slider */}
-
-        <div className="member flex flex-col items-center">
+        <div className="member flex flex-col items-center" style={{marginTop:'50px'}}>
           <div className="part1 flex flex-col items-center">
             <h4 className="text-[#0000007c] leading-0.5">OUR TEAM MEMBERS</h4>
             <h1 className="text-[#002249] text-3xl font-bold">
@@ -797,6 +717,37 @@ const About_section = () => {
             </Swiper>
           </div>
         </div>
+
+           {/* Start brand slider */}
+        <div
+          className="brand-slider max-w-[1250px] overflow-hidden"
+          style={{ margin: "0 auto 40px auto" }}
+        >
+
+        <h2 className="text-center text-4xl text-[#002249] font-bold" style={{padding:'20px 0'}}>Our Insurance Partners</h2>
+        <div className="animate-slider flex flex-nowrap gap-10 w-max" style={{margin:'10px 0'}}>
+          
+          <div className="flex gap-10 shrink-0">
+             <div className="w-30 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/digit.webp" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/hdfc.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/icicilogo.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/relience-logo.webp" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/royal-logo.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/TataAigLogo.svg" alt="logo" /></div>
+          </div>
+
+          <div className="flex gap-10 shrink-0">
+             <div className="w-30 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/digit.webp" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/hdfc.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/icicilogo.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/relience-logo.webp" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/royal-logo.png" alt="logo" /></div>
+             <div className="w-40 h-20 shrink-0"><img className="w-full h-full object-contain" src="/image/TataAigLogo.svg" alt="logo" /></div>
+          </div>
+
+        </div>
+        </div>
+        {/* End brand slider */}
 
         <div className="contact">
           <div className="svg">

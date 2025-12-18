@@ -18,6 +18,9 @@ import Blog_two from "./components/blog-section/Blog_two";
 import Blog_three from "./components/blog-section/Blog_three";
 import Blog_four from "./components/blog-section/Blog_four";
 import Blog_five from "./components/blog-section/Blog_five";
+import Login from "./components/login-user/Login";
+import Signup from "./components/login-user/Signup";
+import WhatsAppBtn from "./components/header footer/WhatsAppBtn";
 function App() {
   return (
     <>
@@ -38,7 +41,10 @@ function App() {
         <Route path="/term-vs-life-insurance" element={<Blog_three />} />
         <Route path="/how-to-claim" element={<Blog_four />} />
         <Route path="/retirement-planning" element={<Blog_five />} />
+        <Route path="/login-user" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
+      <WhatsAppBtn/>
       <Footer />
     </>
   );

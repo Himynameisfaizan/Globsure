@@ -35,7 +35,7 @@
 /* Start offering section */
 
 .offering {
-  max-width: 1250px; 
+  max-width: 1250px;
   margin: 50px auto;
 }
 
@@ -164,25 +164,6 @@
 }
 
 /* End benefits section */
-
-
-/* Start animate slider */
-
-.animate-slider{
-  animation: animate-slider 18s linear infinite;
-}
-
-@keyframes animate-slider {
-  from{
-    transform: translateX(0%);
-  }
-  to{
-    transform: translateX(-40%);
-  }
-}
-
-/* End animate slider */
-
 
 /* Start member swiper slider */
 
@@ -363,6 +344,28 @@
 
 /* End testimonals section */
 
+/* Start animate slider */
+
+.animate-slider {
+  animation: animate-slider 18s linear infinite;
+  cursor: pointer;
+}
+
+.animate-slider:hover {
+  animation-play-state: paused;
+}
+
+@keyframes animate-slider {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+/* End animate slider */
+
 /* Start contact section */
 
 .contact {
@@ -516,12 +519,10 @@
 
 /* Start Blog section */
 
-
 .blog-first h4 {
   letter-spacing: 1px;
   padding-top: 10px;
 }
-
 
 .blog-second .blogs {
   width: 100%;
@@ -640,4 +641,3 @@
 }
 
 /* End Blog section */
-

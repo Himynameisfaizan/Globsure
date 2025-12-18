@@ -43,16 +43,18 @@ body {
 }
 
 .header .logo img {
-  height: 180px;
-  width: 180px;
+  width: 200px;
   object-fit: contain;
+  height: 100%;
+  /* background-color: red; */
 }
 
 .menu {
   display: flex;
-  width: 80%;
+  width: 60%;
+  /* background-color: red; */
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   padding-right: 10px;
 }
 
@@ -100,4 +102,10 @@ body {
   width: 160px;
   top: 100%;
   right: -30%;
+}
+
+.header .line{
+  width: 1px;
+  height: 50%;
+  background-color: #00000057;
 }

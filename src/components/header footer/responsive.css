@@ -189,8 +189,12 @@
 }
 
 @media (max-width: 768px) {
+
   .menu-icon {
     margin-left: 380px;
+  }
+  .header .login{
+    display: none;
   }
 }
 
