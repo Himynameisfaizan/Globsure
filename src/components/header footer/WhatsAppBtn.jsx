@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppBtn = () => {
-  const phoneNumber = "919876543210"; 
+  const phoneNumber = "9274741151"; 
 
   const message = "Hello Globsure, I want to know more about insurance plans.";
 
