@@ -12,7 +12,6 @@ import Health_insurance from "./components/insurnce-page/health/Health_insurance
 import General_inurance from "./components/insurnce-page/general/General_inurance";
 import ScrollToTop from "./components/header footer/ScrollToTop";
 import Vehicle_insurance from "./components/insurnce-page/vehicle/Vehicle_insurance";
-import Testing from "./components/testing/Testing";
 import Blog_one from "./components/blog-section/Blog_one";
 import Blog_two from "./components/blog-section/Blog_two";
 import Blog_three from "./components/blog-section/Blog_three";
@@ -35,7 +34,6 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/claim" element={<Claim />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/testing" element={<Testing />} />
         <Route path="/health-insurance-essential" element={<Blog_one />} />
         <Route path="/car-insurance-mistakes" element={<Blog_two />} />
         <Route path="/term-vs-life-insurance" element={<Blog_three />} />

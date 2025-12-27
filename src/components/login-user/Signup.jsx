@@ -6,7 +6,6 @@ const Signup = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
   const [loading, setLoading] = useState(false);
   
-  // Message State
   const [message, setMessage] = useState({ type: '', text: '' });
 
   useEffect(() => {
@@ -18,7 +17,7 @@ const Signup = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setMessage({ type: '', text: '' }); // Typing shuru karte hi error hatao
+    setMessage({ type: '', text: '' }); 
   };
 
   const handleSubmit = async (e) => {
@@ -52,7 +51,6 @@ const Signup = () => {
       if (result.status === 'success') {
         setMessage({ type: 'success', text: "Account Created Successfully! Please Login." });
         
-        // Success ke baad thoda ruk kar login page par bhejo
         setTimeout(() => {
            navigate('/login-user');
         }, 2000);

@@ -35,7 +35,7 @@ const Health_content = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    message: "", // 'Doubts' ko message variable mein store kar rahe hain
+    message: "",
   });
 
   const [status, setStatus] = useState({ loading: false, msg: "", type: "" });
@@ -51,13 +51,12 @@ const Health_content = () => {
     setStatus({ loading: true, msg: "", type: "" });
 
     try {
-      // 👇 APNA LOCALHOST URL YAHAN CHECK KAR LENA
       const response = await fetch(
         "https://globsure.grey8art.com/globsure-api/mail.php",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...formData, type: "quote" }), // 👈 TYPE "QUOTE" BHEJA
+          body: JSON.stringify({ ...formData, type: "quote" }), 
         }
       );
 
@@ -69,7 +68,7 @@ const Health_content = () => {
           msg: "Request Sent! We'll call you shortly.",
           type: "success",
         });
-        setFormData({ name: "", phone: "", message: "" }); // Clear form
+        setFormData({ name: "", phone: "", message: "" }); 
       } else {
         setStatus({ loading: false, msg: result.message, type: "error" });
       }

@@ -8,23 +8,17 @@ const Form = () => {
     phone: "",
     message: "",
   });
-
-  // State for Loading and Messages
   const [status, setStatus] = useState({ loading: false, type: "", msg: "" });
 
-  // Handle Input Change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle Form Submit
   const handleSubmit = async (e) => {
-    e.preventDefault(); // 🛑 Page Reload Rokna
+    e.preventDefault();
     setStatus({ loading: true, type: "", msg: "" });
 
     try {
-      // API Call using Fetch
-      // 👇 IMPORTANT: Yahan apne localhost PHP file ka sahi path daalo
       const response = await fetch(
         "https://globsure.grey8art.com/globsure-api/mail.php",
         {
@@ -32,15 +26,14 @@ const Form = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData), // Data ko JSON banake bhejo
+          body: JSON.stringify(formData), 
         }
       );
 
-      const result = await response.json(); // PHP se JSON response padho
+      const result = await response.json(); 
 
       if (result.status === "success") {
         setStatus({ loading: false, type: "success", msg: result.message });
-        // Form Clear karo
         setFormData({
           name: "",
           email: "",

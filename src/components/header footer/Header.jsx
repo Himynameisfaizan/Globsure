@@ -1,31 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "../../css/header.css";
-// import './responsive.css'
 import { NavLink, Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  // 1. IsLoggedIn ko 'State' bana diya taaki UI update ho sake
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // 2. Component load hone par check karo ki user login hai ya nahi
   useEffect(() => {
     const userStatus = localStorage.getItem('isLoggedIn') === 'true';
     setIsLoggedIn(userStatus);
   }, []);
 
   const handleLogout = () => {
-    // Storage clear karo
     localStorage.removeItem('isLoggedIn'); 
-    
-    // 3. State update karo (Isse page bina refresh kiye update ho jayega)
     setIsLoggedIn(false); 
-    
-    // Alert hata diya hai (User request)
-    
-    // Login page par bhej do
     navigate('/login-user');
   };
 
@@ -38,9 +28,6 @@ export const Header = () => {
               src="/image/logo/logoo.png"
               alt="logo"
             />
-            {/* <h2 className="text-[8px] font-thin text-[#002249]" style={{paddingLeft:'10px'}}>
-              GEICO INSURANCE BROKERS PRIVATE LIMITED
-            </h2> */}
           </Link>
         </div>
         
@@ -95,12 +82,10 @@ export const Header = () => {
         <div className="login">
           {isLoggedIn ? (
             <button onClick={handleLogout} title="Logout">
-              {/* Maine icon change karke Logout wala kar diya hai taaki clear dikhe, aap chaho to user-3-line wapas laga lena */}
-              <i className="text-2xl text-red-600 hover:text-red-800 cursor-pointer ri-logout-circle-r-line"></i>
+             <i className="text-2xl text-red-600 hover:text-red-800 cursor-pointer ri-logout-circle-r-line"></i>
             </button>
           ) : (
-            // Agar Login nahi hai to LOGIN link dikhao
-            <NavLink to="/login-user">
+              <NavLink to="/login-user">
               <i className="text-2xl text-[#000000a6] ri-user-3-line"></i>
             </NavLink>
           )}

@@ -19,8 +19,6 @@ const WhatsAppBtn = () => {
         <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
         
         <i className="ri-whatsapp-line text-3xl text-white relative z-10"></i>
-
-        {/* Optional: Hover karne par "Chat" text dikhana ho to ye uncomment karein */}
         <span className="absolute right-16 bg-white text-gray-800 text-xs font-bold rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap" style={{padding:'4px 8px'}}>
           Chat with us
         </span>

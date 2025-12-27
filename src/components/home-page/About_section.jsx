@@ -104,7 +104,7 @@ const About_section = () => {
           msg: "Quote Request Sent!",
           type: "success",
         });
-        setFormData({ fullName: "", email: "", insuranceType: "" }); // Form clear
+        setFormData({ fullName: "", email: "", insuranceType: "" }); 
         setTimeout(
           () => setStatus({ loading: false, msg: "", type: "" }),
           3000

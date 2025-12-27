@@ -5,12 +5,11 @@ const Login = () => {
   const navigate = useNavigate();
   const [creds, setCreds] = useState({ email: '', password: '' });
   
-  // Naya State: Message dikhane ke liye (null, 'success', ya 'error')
   const [message, setMessage] = useState({ type: '', text: '' });
 
   const handleChange = (e) => {
     setCreds({ ...creds, [e.target.name]: e.target.value });
-    setMessage({ type: '', text: '' }); // Type karte waqt error hata do
+    setMessage({ type: '', text: '' }); 
   };
 
   const handleLogin = (e) => {
@@ -28,14 +27,12 @@ const Login = () => {
       localStorage.setItem('isLoggedIn', 'true');
       setMessage({ type: 'success', text: "Login Successful! Redirecting..." });
       
-      // Thoda wait karo taaki user message padh sake, fir redirect karo
       setTimeout(() => {
         navigate('/');
         window.location.reload();
       }, 1500);
 
     } else {
-      // Login Fail
       setMessage({ type: 'error', text: "Invalid Email or Password!" });
     }
   };
@@ -89,8 +86,8 @@ const Login = () => {
                 borderRadius: '8px',
                 fontSize: '14px',
                 fontWeight: '500',
-                backgroundColor: message.type === 'error' ? '#fee2e2' : '#dcfce7', // Light Red vs Light Green
-                color: message.type === 'error' ? '#991b1b' : '#166534',       // Dark Red vs Dark Green
+                backgroundColor: message.type === 'error' ? '#fee2e2' : '#dcfce7', 
+                color: message.type === 'error' ? '#991b1b' : '#166534',      
                 border: message.type === 'error' ? '1px solid #f87171' : '1px solid #4ade80'
               }}
             >
@@ -120,9 +117,6 @@ const Login = () => {
             <div style={{ marginBottom: '25px' }}>
               <div className="flex justify-between items-center" style={{ marginBottom: '8px' }}>
                 <label className="text-sm font-semibold text-gray-700">Password</label>
-                <span className="text-sm text-[#002249] font-medium cursor-pointer hover:underline">
-                  Forgot password?
-                </span>
               </div>
               <input 
                 className="w-full bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#002249] transition-all shadow-sm"
