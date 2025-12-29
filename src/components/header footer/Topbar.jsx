@@ -23,7 +23,6 @@ const Topbar = () => {
           <div className="info">
             <div className="nav">
               <NavLink to="/claim">How a claim</NavLink>
-              <NavLink to="">FAQs</NavLink>
               <NavLink to="/about-us">About</NavLink>
             </div>
             <div className="socail">

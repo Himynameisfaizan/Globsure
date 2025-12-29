@@ -20,6 +20,8 @@ import Blog_five from "./components/blog-section/Blog_five";
 import Login from "./components/login-user/Login";
 import Signup from "./components/login-user/Signup";
 import WhatsAppBtn from "./components/header footer/WhatsAppBtn";
+import PrivacyPolicy from "./components/privacy/PrivacyPolicy";
+import TermsConditions from "./components/privacy/TermsConditions";
 function App() {
   return (
     <>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/retirement-planning" element={<Blog_five />} />
         <Route path="/login-user" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms-condition" element={<TermsConditions />} />
       </Routes>
       <WhatsAppBtn/>
       <Footer />

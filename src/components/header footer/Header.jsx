@@ -44,10 +44,10 @@ export const Header = () => {
               <div className="main flex items-center">
                 Insurance <i className="ri-arrow-drop-down-line text-xl"></i>
               </div>
-              <div className="dropdown absolute top-full left-0 bg-white shadow-lg rounded p-2 hidden group-hover:block w-48 z-20">
-                <NavLink className="block p-2 hover:bg-gray-100 text-sm" to="/general_insurance">General Insurance</NavLink>
-                <NavLink className="block p-2 hover:bg-gray-100 text-sm" to="/health_insurance">Health Insurance</NavLink>
-                <NavLink className="block p-2 hover:bg-gray-100 text-sm" to="/vehicle_insurance">Vehicle Insurance</NavLink>
+              <div className="dropdown absolute top-full -left-5 bg-white shadow-lg rounded hidden group-hover:block w-48 z-20">
+                <NavLink style={{marginTop:'5px'}} className="block p-2 hover:bg-gray-100 text-sm" to="/general_insurance">General Insurance</NavLink>
+                <NavLink style={{marginTop:'5px'}} className="block p-2 hover:bg-gray-100 text-sm" to="/health_insurance">Health Insurance</NavLink>
+                <NavLink style={{marginTop:'5px'}} className="block p-2 hover:bg-gray-100 text-sm" to="/vehicle_insurance">Vehicle Insurance</NavLink>
               </div>
             </li>
 

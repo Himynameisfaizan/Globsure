@@ -50,7 +50,7 @@ const General_content = () => {
 
     try {
       const response = await fetch(
-        "https://globsure.grey8art.com/globsure-api/mail.php",
+        "https://globsureinternational.com/globsure-api/mail.php",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
