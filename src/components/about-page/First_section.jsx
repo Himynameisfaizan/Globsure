@@ -107,11 +107,9 @@ const First_section = () => {
           </h1>
         </div>
 
-        <div className="team-card flex flex-wrap gap-10">
-            <Card teamName={'Yashika muchal'} teamPosition={'Co - founder'} image={'/image/man.avif'}/>
-            <Card teamName={'Hitesh Pathak'} teamPosition={'Director'} image={'/image/office-team/office.avif'}/>
-            <Card teamName={'Ishika Deewan'} teamPosition={'Finance Manager'} image={'/image/office-team/office4.jpg'}/>
-            <Card teamName={'Rahul Kumar'} teamPosition={'Human Resource'} image={'/image/office-team/office2.jpg'}/>
+        <div className="team-card flex flex-wrap gap-1">
+            <Card teamName={'Co - founder & Ceo'}  image={'/image/co-founder-and-ceo.jpeg'}/>
+            <Card teamName={'Co - founder'} image={'/image/co-founder.jpeg'}/>
         </div>
       </div>
 
